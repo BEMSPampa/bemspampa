@@ -1,0 +1,13 @@
+@mixin defaultFlexRow($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow: row nowrap;
+}
+
+@mixin defaultFlexColumn($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow: column nowrap;
+}
