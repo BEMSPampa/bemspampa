@@ -1,0 +1,19 @@
+@mixin defaultInitialize(){
+    opacity: 0;
+    transform: translateX(-2em);
+
+    animation-name: animInitialize;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+@keyframes animInitialize{
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
