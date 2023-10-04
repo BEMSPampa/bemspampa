@@ -1,6 +1,7 @@
 import "./Home.scss"
 
 const Home = () => {
+
   return (
     <div className='home'>
       <div className='container'>
@@ -11,9 +12,10 @@ const Home = () => {
         </div>
 
         <iframe
-            title="Mapa"
-            src="..\bemspampa\src\assets\map\MapaAreaContemplada.html"
+          title="Mapa"
+          src="/bemspampa/MapaAreaContemplada.html"
         ></iframe>
+
       </div>
     </div>
   )

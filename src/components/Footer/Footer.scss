@@ -1,6 +1,7 @@
 .footer{
     width: 99vw;
     height: 5vw;
-    background-color: #224222;
-    box-shadow: 1;
+    background: rgb(34,66,34);
+    background: radial-gradient(circle, rgba(34,66,34,0.9) 0%, rgba(34,66,34,0.9) 100%);
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
 }

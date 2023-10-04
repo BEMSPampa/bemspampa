@@ -15,8 +15,8 @@
 
     padding: 3vw 0 5vw 0;
 
-    background: rgb(34,66,34);
-    background: linear-gradient(90deg, rgba(34,66,34,1) 0%, rgba(62,119,62,1) 30%, rgba(62,119,62,1) 70%, rgba(34,66,34,1) 100%);
+    background: rgb(16,134,32);
+    background: radial-gradient(circle, rgba(16,134,32,0.5) 0%, rgba(16,134,32,0.2) 100%);
     .container{
         @include mixins.defaultFlexColumn(center, flex-end);
         width: 70%;
@@ -32,7 +32,7 @@
                 font-weight: 700;
                 font-style: black;
                 letter-spacing: 0.175rem;
-                color: white;
+                color: #000000da;
             }
             p{
                 font-size: 1.5rem;
@@ -40,7 +40,7 @@
                 font-weight: 300;
                 font-style: italic;
                 line-height: 2.2rem;
-                color: #e6ebe6;
+                color: #000000da;
             }
         }
 
