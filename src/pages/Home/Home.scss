@@ -9,7 +9,6 @@
 }
 
 .home{
-    
     @include animations.defaultInitialize();
     @include mixins.defaultFlexColumn(center, center);
     width: 99vw;
