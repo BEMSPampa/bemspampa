@@ -17,3 +17,20 @@
         opacity: 1;
     }
 }
+
+
+@mixin defaultHover(){
+    transition: all 0.3s ease;
+    opacity: 1.5;
+    transform: scale(1.1, 1.1);
+    transform-origin: center; 
+    cursor: pointer;
+}
+
+@mixin smallHover(){
+    transition: all 0.3s ease;
+    opacity: 1.5;
+    transform: scale(1.01, 1.01);
+    transform-origin: center; 
+    cursor: pointer;
+}

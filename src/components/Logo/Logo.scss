@@ -1,0 +1,32 @@
+@use '../../UI/animations';
+@use '../../UI/colors';
+@use '../../UI/mixins';
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+}
+
+.logo{
+    @include mixins.defaultFlexRow(center, center);
+    
+    
+    gap: 2rem;
+    img{
+        width: 5rem;
+        height: 5rem;
+        overflow-clip-margin: none;
+        overflow: none;
+    }
+
+    h2{
+        font-size: 3.5rem;
+        font-family: Roboto;
+        color: rgba(255, 255, 255, 0.778);
+    }
+}
+.logo:hover{
+    @include animations.defaultHover();
+}
