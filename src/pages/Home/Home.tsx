@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Home.scss"
 
 const Home = () => {
@@ -13,7 +12,7 @@ const Home = () => {
 
         <iframe
             title="Mapa"
-            src="..\src\assets\map\MapaAreaContemplada.html"
+            src="..\bemspampa\src\assets\map\MapaAreaContemplada.html"
         ></iframe>
       </div>
     </div>
