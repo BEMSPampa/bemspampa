@@ -25,13 +25,21 @@
             @include mixins.defaultFlexColumn(center, flex-end);
             width: 75%;
             gap: 1.5rem;
-            h3{
-                font-size: 4.5rem;
-                font-family: Roboto;
-                font-weight: 700;
-                font-style: black;
-                letter-spacing: 0.175rem;
-                color: colors.$fontColor;
+            div{
+                @include mixins.defaultFlexRow(center, center);
+                gap: 0.5rem;
+                h3{
+                    font-size: 4.5rem;
+                    font-family: Roboto;
+                    font-weight: 700;
+                    font-style: black;
+                    letter-spacing: 0.175rem;
+                    color: colors.$fontColor;
+                }
+                img{
+                    width: 4rem;
+                    height: 4rem;
+                }
             }
             p{
                 font-size: 2rem;

@@ -1,4 +1,5 @@
 import "./Home.scss"
+import point from '../../assets/point.png';
 
 const Home = () => {
 
@@ -7,7 +8,10 @@ const Home = () => {
       <div className='container'>
 
         <div className="aboutmap">
-          <h3>WebMapa</h3>
+          <div>
+            <img src={point}/>
+            <h3>WebMapa</h3>
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo eget arcu cursus varius. Quisque suscipit lacus at eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo eget arcu cursus varius. Quisque suscipit lacus at eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo eget arcu cursus varius. Quisque suscipit lacus at eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo eget arcu cursus varius. Quisque suscipit lacus at eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo eget arcu cursus varius. Quisque suscipit lacus at eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo eget arcu cursus varius. Quisque suscipit lacus at eleifend. </p>
         </div>
         <div className="line"/>
