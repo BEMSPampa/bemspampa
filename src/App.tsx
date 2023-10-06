@@ -6,14 +6,16 @@ import WebMapa from './pages/WebMapa/WebMapa.tsx'
 import { Route, Routes } from 'react-router';
 
 function App() {
-
+  
   return (
     <>
+      <Header/>
       <Routes>
-          <Route path='/' element={<><Header />  <Home/>  <Footer /></>} />
-          <Route path='/about' element={<><Header />  <About/>  <Footer /></>} />
-          <Route path='/webmap' element={<><Header />  <WebMapa/>  <Footer /></>} />
+          <Route path='/' element={<> <Home/> </>} />
+          <Route path='/about' element={<> <About/> </>} />
+          <Route path='/webmap' element={<> <WebMapa/> </>} />
       </Routes>
+      <Footer/>
     </>
   )
 }

@@ -29,18 +29,16 @@
                     gap: 5rem; 
                 }
                 li{
-                    a{
-                        display: block;
-                        color: rgba(255, 255, 255, 0.778);
-                        font-size: 1.6rem;
-                        font-family: Roboto;
-                        font-weight: 500;
-                        text-decoration: none;
-                    }
-                    a:hover{
-                        @include animations.defaultHover();
-                        color: colors.$primaryColor;
-                    }
+                    display: block;
+                    color: rgba(255, 255, 255, 0.778);
+                    font-size: 1.6rem;
+                    font-family: Roboto;
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+                li:hover{
+                    @include animations.defaultHover();
+                    color: colors.$primaryColor;
                 }
             }
 

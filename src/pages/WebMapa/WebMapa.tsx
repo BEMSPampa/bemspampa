@@ -3,10 +3,10 @@ import point from '../../assets/point.png';
 
 const WebMapa = () => {
   return (
-    <section className='webmapa'>
-      <div className='container'>
+    <section className='webmap'>
+      <div className='webmap-container'>
 
-        <div className="aboutmap">
+        <div className="about-map">
           <div>
             <img src={point}/>
             <h3>WebMapa</h3>

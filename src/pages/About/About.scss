@@ -10,6 +10,7 @@
 }
 
 .about{
+    background: colors.$primaryColor;
     @include animations.defaultInitialize();
     @include mixins.defaultFlexColumn(center, center)
 }
@@ -64,7 +65,6 @@
 
 .about-text{
     @include mixins.defaultFlexColumn(center, center);
-    background: colors.$primaryColor;
     padding: 15rem 20rem;
     gap: 10rem;
     h2{
