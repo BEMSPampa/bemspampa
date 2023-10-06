@@ -1,7 +1,24 @@
-
+import './About.scss'
+import pic from '../../assets/energypic.jpg';
 const About = () => {
   return (
-    <div>About</div>
+    <section className='about'>
+
+      <div className='about-container'>
+        <img src={pic}/>
+        <div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus eveniet quas mollitia aspernatur ab assumenda laudantium. Suscipit iste, non similique praesentium soluta possimus, dicta nostrum sunt ad est laboriosam perspiciatis nesciunt dolores. Saepe laborum excepturi, eius vitae dolorem maxime dicta ut itaque voluptate assumenda numquam cupiditate! Odit, incidunt nesciunt.</p>
+          <p>Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Ex esse voluptatibus ab explicabo, veritatis, dolorum obcaecati facere quia, totam doloremque ratione. Repellat eum quod molestiae tenetur ipsum ut necessitatibus quia non magnam. Quam, error. Velit itaque placeat, vel praesentium rem quas alias, repudiandae aperiam, nobis molestias suscipit veniam accusantium eius!</p>
+        </div>
+      </div>
+      
+      <div className='about-text'>
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, similique.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quaerat ab ducimus asperiores sint magnam fuga, earum quis! Unde culpa consequuntur cum dicta repellat esse sequi provident sapiente, aut est delectus deserunt fuga, reiciendis quasi error facilis. Dolorem fugit vero quod, itaque voluptate aut ipsum rem ullam minima accusantium soluta eius suscipit repellendus nemo impedit ea minus veritatis placeat aspernatur ipsam delectus voluptates totam! Deleniti quasi velit, quos consequatur amet, eligendi itaque porro nobis omnis harum libero qui aspernatur animi possimus ducimus sit quia enim cum. Aliquam eius quam sapiente corporis soluta necessitatibus dolores nulla qui velit rerum! Placeat dolore consequatur commodi, quam possimus molestias asperiores nobis assumenda! Repellendus sunt culpa in praesentium labore numquam, dolorum consequuntur sequi magni voluptas quod totam dignissimos neque sit iste odio, illo ad unde officia reprehenderit iusto amet porro. Dolorem dolores consequuntur quis magni repellat aspernatur rem aut earum impedit harum soluta facilis pariatur est, cupiditate nihil a sed ea voluptates minima incidunt atque repellendus? Incidunt deserunt minima pariatur, at magni in iste nobis temporibus odio eligendi nisi voluptate esse earum, cupiditate illo dolores laudantium sunt sint. Quos, id laborum ut est nesciunt voluptatibus ipsa consequatur iure maxime aliquid voluptates dignissimos ipsum, maiores corrupti, nulla necessitatibus assumenda tenetur libero magni. Ab similique et dolorum hic, sint deserunt doloribus saepe cupiditate sequi debitis minima excepturi molestias mollitia, voluptatibus pariatur dicta provident! Eius quaerat itaque reprehenderit veniam dolore, ut veritatis, consequatur quidem deleniti dignissimos odio officiis repudiandae. Deserunt pariatur perspiciatis qui consequatur provident iusto hic natus. In inventore reiciendis eos quas enim accusamus facere officia rem vitae mollitia, aspernatur itaque quaerat quidem, necessitatibus nesciunt perspiciatis dolore voluptate fuga quisquam optio veritatis. Expedita pariatur sit qui, laborum officiis quos dolores suscipit tempore, est debitis a adipisci provident modi architecto aut dignissimos earum quisquam quia explicabo temporibus vel. Modi magni perspiciatis odit iusto placeat quos at praesentium exercitationem odio et omnis dolorum id voluptatibus minima nesciunt tempore quibusdam accusamus impedit mollitia possimus, earum rem vero assumenda aperiam. Ex id rem fuga quae recusandae nostrum error, libero neque incidunt repellendus obcaecati sint voluptate cumque minima ipsum. Alias in, repellat facere harum ipsa nostrum suscipit voluptate aliquam ea maiores? Repudiandae incidunt dolorem excepturi, corporis blanditiis atque magnam tenetur suscipit ut? Reprehenderit ab dolorum dolore harum, commodi natus voluptas placeat tenetur similique laboriosam earum debitis porro enim cumque at laborum sequi possimus magni sed repellat, labore, blanditiis aperiam. Ut suscipit dicta fugit rerum repellat aperiam architecto accusamus voluptate, error, dignissimos obcaecati omnis autem voluptatem a similique eveniet nesciunt cupiditate quibusdam animi at, cum magni. Eum corrupti reiciendis quos sed accusantium fuga fugiat voluptates reprehenderit provident cupiditate quisquam eaque adipisci, ex aliquam ipsum at earum sapiente esse, vero, voluptate voluptatibus ut. Odit incidunt aliquid, voluptatibus delectus voluptatem pariatur suscipit possimus esse officiis sit quasi. Quo sequi maxime veniam quasi enim quaerat aperiam quos ea rerum atque nihil excepturi quidem natus vel ad eaque, maiores deserunt illum, iste ab aut explicabo. Voluptates aspernatur impedit dolore culpa officiis dolorum corporis eius laborum voluptatum quo.</p>
+      </div>
+
+    </section>
   )
 }
 
