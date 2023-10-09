@@ -2,7 +2,11 @@ import Logo from '../Logo/Logo';
 import './Header.scss';
 import {Link} from 'react-router-dom';
 
-const Header = () => {
+interface propss{
+  scrollToFooter: any
+}
+
+const Header: React.FC<propss> = (props) => {
   return (
     <div className='header'>
       <div className='container'>
@@ -17,7 +21,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <button>Contatos</button>
+          <button onClick={props.scrollToFooter}>Contatos</button>
         </div>
       </div>
     </div>

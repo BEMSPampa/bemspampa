@@ -4,18 +4,28 @@ import Footer from './components/Footer/Footer.tsx'
 import About from './pages/About/About.tsx'
 import WebMapa from './pages/WebMapa/WebMapa.tsx'
 import { Route, Routes } from 'react-router';
+import { useRef } from 'react'
 
 function App() {
-  
+  const footerRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToFooter = () => { 
+    if (footerRef.current) {
+      footerRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
-    <>
-      <Header/>
+    <>      
+      <Header scrollToFooter={scrollToFooter} />
       <Routes>
           <Route path='/' element={<> <Home/> </>} />
           <Route path='/about' element={<> <About/> </>} />
           <Route path='/webmap' element={<> <WebMapa/> </>} />
       </Routes>
-      <Footer/>
+
+      <div ref={footerRef}>
+        <Footer />
+      </div>
     </>
   )
 }

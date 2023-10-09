@@ -3,7 +3,7 @@ import pic from '../../assets/energypic.jpg';
 const About = () => {
   return (
     <section className='about'>
-
+      <div className='temporary'></div>
       <div className='about-container'>
         <img src={pic}/>
         <div>
