@@ -7,13 +7,14 @@ import { Route, Routes } from 'react-router';
 import { useRef } from 'react'
 
 function App() {
-  const footerRef = useRef<HTMLDivElement | null>(null);
 
+  const footerRef = useRef<HTMLDivElement | null>(null);
   const scrollToFooter = () => { 
     if (footerRef.current) {
       footerRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
   return (
     <>      
       <Header scrollToFooter={scrollToFooter} />
@@ -24,7 +25,7 @@ function App() {
       </Routes>
 
       <div ref={footerRef}>
-        <Footer />
+        <Footer/>
       </div>
     </>
   )
