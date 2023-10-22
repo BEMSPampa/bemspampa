@@ -9,10 +9,8 @@ const About = () => {
     <section className='about'>
       <div className='about-container'>
         <img src={pic}/>
-
-
+        
         <div className='about-project'>
-
           <div className='about-info'>
             <h3>Explicando o projeto</h3>
             <div className='about-p-container'>
@@ -20,7 +18,6 @@ const About = () => {
               <p>Será desenvolvido o Atlas BEMSPampa para disponibilização das informações consolidadas;</p>
               <p>A equipe de pesquisa é formada por bolsistas, pesquisadores e voluntários.</p>
             </div>
-            
 
             <h3>Objetivos</h3>
             <div className='about-p-container'>
@@ -36,7 +33,6 @@ const About = () => {
               <p>O conteúdo do Atlas abrange:</p>
             </div> 
           </div>
-          
         </div>
       </div>
     </section>
