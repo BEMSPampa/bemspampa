@@ -1,6 +1,6 @@
 import './Footer.scss'
 import pic from '../../assets/emailpic.png';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Footer = () => {
 

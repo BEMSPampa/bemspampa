@@ -1,5 +1,5 @@
 import './Logo.scss'
-import logo from '../../assets/logomap.png';
+//import logo from '../../assets/logomap.png';
 const Logo = () => {
   //<img src={logo}></img>
   return (
