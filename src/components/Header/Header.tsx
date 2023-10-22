@@ -15,7 +15,7 @@ const Header: React.FC<propss> = (props) => {
         <div className='links'>
           <nav>
             <ul>
-              <Link to={'/about'}><li>Sobre Nós</li></Link>
+              <Link to={'/about'}><li>Sobre</li></Link>
               <Link to={'/data'}><li>Dados</li></Link>
               <Link to={'/webmap'}><li>WebMapa</li></Link>
             </ul>
