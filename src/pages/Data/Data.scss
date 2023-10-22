@@ -5,6 +5,7 @@
 .data-container{
     width: 100vw;
     height: 100vh;
+    background: colors.$primaryColor;
 
     .warning{
         @include mixins.defaultFlexColumn(center, center);
