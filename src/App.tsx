@@ -2,6 +2,7 @@ import Home from './pages/Home/Home.tsx'
 import Header from './components/Header/Header.tsx'
 import Footer from './components/Footer/Footer.tsx'
 import About from './pages/About/About.tsx'
+import Data from './pages/Data/Data.tsx'
 import WebMapa from './pages/WebMapa/WebMapa.tsx'
 import { Route, Routes } from 'react-router';
 import { useRef } from 'react'
@@ -21,6 +22,7 @@ function App() {
       <Routes>
           <Route path='/' element={<> <Home/> </>} />
           <Route path='/about' element={<> <About/> </>} />
+          <Route path='/data' element={<> <Data/> </>} />
           <Route path='/webmap' element={<> <WebMapa/> </>} />
       </Routes>
 

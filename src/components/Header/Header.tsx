@@ -16,7 +16,7 @@ const Header: React.FC<propss> = (props) => {
           <nav>
             <ul>
               <Link to={'/about'}><li>Sobre Nós</li></Link>
-              <Link to={'/'}><li>Dados</li></Link>
+              <Link to={'/data'}><li>Dados</li></Link>
               <Link to={'/webmap'}><li>WebMapa</li></Link>
             </ul>
           </nav>

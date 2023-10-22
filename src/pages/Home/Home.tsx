@@ -6,27 +6,16 @@ const Home = () => {
   return (
     <div className='home'>
     <img src={pic}></img>
-      <div className="home-content" id="#teste">
+      <div className="home-container" id="#teste">
 
         <h2>Em desenvolvimento</h2>
 
         <div className="cards">
-          <div className="card">
-
-          </div>
-          <div className="card">
-
-          </div>
-          <div className="card">
-
-          </div>
-          <div className="card">
-
-          </div>
-          <div className="card">
-
-          </div>
-
+          <div className="card"/>
+          <div className="card"/>
+          <div className="card"/>
+          <div className="card"/>
+          <div className="card"/>
         </div>
       </div>
     </div>

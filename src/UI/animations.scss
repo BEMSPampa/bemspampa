@@ -11,6 +11,11 @@
     animation-iteration-count: 1;
     animation-play-state: running;
 }
+
+@mixin spin(){
+    animation: animSpin 10s linear infinite; 
+}
+
 @keyframes animInitialize{
     to{
         transform: translateX(0);
@@ -18,6 +23,15 @@
     }
 }
 
+
+@keyframes animSpin{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 @mixin defaultHover(){
     transition: all 0.3s ease;
