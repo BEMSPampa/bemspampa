@@ -30,7 +30,7 @@ const About = () => {
             <div className='about-p-container'>
               <p>Será realizado processo metodológico na forma de triagem;</p>
               <p>Será construído uma ferramenta computacional constituída de relatórios que consolidam os resultados da pesquisa, com armazenamento na nuvem, disponibilizadas em plataforma digital;</p>
-              <p>O conteúdo do Atlas abrange:</p>
+              <p>O conteúdo do Atlas abrange: <span>Históricos anemométricos e solamétricos</span>, <span>Potencial termelétrico</span>, <span>Inventários hidrelétricos</span> e <span>Disponibilidade de fontes alternativas</span>.</p>
             </div> 
           </div>
         </div>
