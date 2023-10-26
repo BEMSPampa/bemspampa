@@ -17,7 +17,7 @@ const WebMapa = () => {
         <div className="line"/>
         <iframe
           title="Mapa"
-          src="/bemspampa/MapaAreaContemplada.html"
+          src="/bemspampa/map.html"
         ></iframe>
 
       </div>
