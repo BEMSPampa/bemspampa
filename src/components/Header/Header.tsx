@@ -2,26 +2,27 @@ import Logo from '../Logo/Logo';
 import './Header.scss';
 import {Link} from 'react-router-dom';
 
-interface propss{
+interface Props{
   scrollToFooter: any
 }
 
-const Header: React.FC<propss> = (props) => {
+const Header: React.FC<Props> = (props) => {
+
   return (
     <div className='header'>
-      <div className='container'>
+      <div className='header-container'>
         <Link to={'/'}><Logo/></Link>
 
-        <div className='links'>
+        <div className='header-menu'>
           <nav>
             <ul>
-              <Link to={'/about'}><li>Sobre</li></Link>
-              <Link to={'/data'}><li>Dados</li></Link>
-              <Link to={'/webmap'}><li>WebMapa</li></Link>
+              <Link to={'/about'}><li>Sobre Nós</li></Link>
+              <Link to={'/data'}><li>Banco de Dados</li></Link>
+              <li onClick={props.scrollToFooter}>Contatos</li>
             </ul>
           </nav>
-
-          <button onClick={props.scrollToFooter}>Contatos</button>
+          <div className='header-bar'></div>
+          <Link to={'/webmap'}><button>WebMapa</button></Link>
         </div>
       </div>
     </div>

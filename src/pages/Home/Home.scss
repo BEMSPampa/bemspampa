@@ -2,13 +2,30 @@
 @use '../../UI/colors';
 @use '../../UI/mixins';
 
-
 .home-container{
-    background: colors.$primaryColor;
+    //background: colors.$primaryColor;
     @include animations.defaultInitialize();
-    
-    img{
-        width: 100%;
-        height: 100vh;
-    }
+    background-image: url('../../assets/unipampapic.jpg');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    //filter: blur(2.5px);
+    width: 100%;
+    height: 80vh;
+}
+
+.home-search{
+    width: 50rem;
+    height: auto;
+    background-color: transparent;
+    border: 0.2rem solid #fff;
+    border-radius: 5rem;
+    padding: 1rem 1.5rem;
+    outline: none;
+
+    font-family: Poppins;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #FFFFFF;
 }

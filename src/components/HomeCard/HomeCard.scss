@@ -1,0 +1,57 @@
+@use '../../UI/animations';
+@use '../../UI/colors';
+@use '../../UI/mixins';
+
+.home-card{
+    @include mixins.defaultFlexColumn(center, flex-start);
+
+    background-color: #FFFFFF;
+    width: 52rem;
+    padding: 2.5rem;
+    height: auto;
+    gap: 2rem;
+
+    h2{
+        font-family: Red Hat Display;
+        color: #312F1E;
+        font-size: 3.5rem;
+        font-weight: 700;
+        font-style: bold;
+        line-height: 1.2;
+    }
+
+    .home-card-buttons{
+        @include mixins.defaultFlexRow(flex-start, center);
+        gap: 3rem;
+        button{
+            font-size: 2rem;
+            padding: 1.4rem 2.2rem;
+            border-radius: 1rem;
+            color: #FEFEFE;
+            font-family: Red Hat Display;
+            font-weight: 400;
+        }
+
+        .home-card-buttons-info{
+            background-color: #2A3D32;
+        }
+        .home-card-buttons-pub{
+            background-color: #C27729;
+        }
+        .home-card-buttons-dashboard{
+            background-color: #0D473F;
+        }
+        
+    }
+
+    .home-card-about{
+        @include mixins.defaultFlexColumn(center, flex-start);
+        gap: 1rem;
+        h5{
+            font-family: Red Hat Display;
+            color: #1B5E1F;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+}

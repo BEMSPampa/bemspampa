@@ -35,15 +35,15 @@
 
     .about-project{
         @include mixins.defaultFlexRow(center, center);
-        background: colors.$secondaryColor;
+        background: colors.$primaryColor;
         padding: 5vw 0;
         .about-info{
             @include mixins.defaultFlexColumn(center, flex-start);
-            background: colors.$secondaryColor;
+            background: colors.$primaryColor;
             width: 80%;
             gap: 3rem;
             h3{
-                font-family: Roboto;
+                font-family: Red Hat Display;
                 font-weight: 600;
                 font-style: bold;
                 font-size: 3rem;
@@ -55,7 +55,7 @@
                 @include mixins.defaultFlexColumn(center, flex-start);
                 gap: 1.5rem;
                 p{
-                    font-family: Roboto;
+                    font-family: Red Hat Display;
                     font-weight: 400;
                     font-style: italic;
                     font-size: 1.8rem;
@@ -64,7 +64,7 @@
                     color: rgba(255, 255, 255, 0.650);
                     span{
                         font-style: bold;
-                        font-family: Roboto;
+                        font-family: Red Hat Display;
                         font-weight: 600;
                         font-size: 1.8rem;
                         letter-spacing: 0.15rem;

@@ -11,56 +11,57 @@
 .header{
     width: 100%;
     height: 9rem;
-    background: colors.$secondaryColor;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: colors.$primaryColor;
+}
 
-    .container{
-        @include mixins.defaultFlexRow(space-between, center);
-        padding: 0 17.5rem;
-        
-        height: 100%;
-        .links{
+.header-container{
+    @include mixins.defaultFlexRow(space-between, center);
+    padding: 0 17.5rem;
+    height: 100%;
+}
+
+.header-menu{
+    @include mixins.defaultFlexRow(center, center);
+    gap: 5rem;
+    nav{
+        ul{
+            
             @include mixins.defaultFlexRow(center, center);
+            list-style-type: none;
             gap: 5rem;
-            nav{
-                ul{
-                    
-                    @include mixins.defaultFlexRow(center, center);
-                    list-style-type: none;
-                    gap: 5rem;
-                }
-                li{
-                    display: block;
-                    color: colors.$primaryColor;
-                    font-size: 1.6rem;
-                    font-family: Roboto;
-                    font-weight: 500;
-                    text-decoration: none;
-                }
-                li:hover{
-                    @include animations.defaultHover();
-                    color: #C3C2C8;
-                }
-            }
-
-            button{
-                width: 15rem;
-                height: 5.5rem;
-                border-radius: 1rem;
-                font-family: Roboto;
-                font-weight: 900;
-                font-size: 1.4rem;
-                font-style: bold;
-                color: colors.$secondaryColor;
-                background-color: colors.$primaryColor;
-            }
-            button:hover{
-                @include animations.smallHover();
-
-                background: #C3C2C8;
-            }
         }
-
-
+        li{
+            display: block;
+            color: #FEFEFE;
+            font-size: 1.6rem;
+            font-family: Red Hat Display;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        li:hover{
+            @include animations.defaultHover();
+        }
     }
+
+    button{
+        width: 15rem;
+        height: 5.5rem;
+        border-radius: 1rem;
+        font-family: Red Hat Display;
+        font-weight: 900;
+        font-size: 1.6rem;
+        font-style: bold;
+        color: #fefefe;
+        background-color: #c27729;
+    }
+    button:hover{
+        @include animations.smallHover();
+        background: #C3C2C8;
+    }
+}
+
+.header-bar{
+    width: 0.1rem; 
+    background-color: #D6A067;
+    height: 5rem;
 }

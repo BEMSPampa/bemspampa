@@ -11,8 +11,6 @@
 
 .logo{
     @include mixins.defaultFlexRow(center, center);
-    
-    
     gap: 2rem;
     img{
         width: 5rem;
@@ -23,8 +21,8 @@
 
     h2{
         font-size: 3.5rem;
-        font-family: Roboto;
-        color: colors.$primaryColor;
+        font-family: Montserrat;
+        color: #E9E9E7;
     }
 }
 .logo:hover{

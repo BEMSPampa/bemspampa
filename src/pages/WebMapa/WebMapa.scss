@@ -32,15 +32,15 @@
                 gap: 0.5rem;
                 h3{
                     font-size: 4.5rem;
-                    font-family: Roboto;
+                    font-family: Red Hat Display;
                     font-weight: 700;
-                    font-style: black;
                     letter-spacing: 0.175rem;
-                    color: colors.$fontColor;
+                    color: #FEFEFE;
                 }
                 img{
                     width: 4rem;
                     height: 4rem;
+
                 }
             }
             p{
@@ -54,21 +54,21 @@
         }
 
         hr{
-            color: black;
+            color: #FEFEFE;
             
         }
         iframe{
             width: 100%;
             height: 55vw;
             border-radius: 1rem;
-            border: 3px solid colors.$secondaryColor; /* Uma borda sólida preta de 1 pixel */
+            border: 3px solid #FEFEFE; /* Uma borda sólida preta de 1 pixel */
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
         }
     }
 }
 
 .line{
-    background-color: rgba(0, 0, 0, 0.187);
+    background-color: #FEFEFE;
     width: 100%;
     height: 0.008rem;
 }
