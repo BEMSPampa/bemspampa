@@ -4,7 +4,7 @@
 
 .home-card{
     @include mixins.defaultFlexColumn(center, flex-start);
-
+    margin: 0 15rem;
     background-color: #FFFFFF;
     width: 52rem;
     padding: 2.5rem;
@@ -52,6 +52,26 @@
             color: #1B5E1F;
             font-size: 2rem;
             font-weight: 400;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .home-card{
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 500px){
+    .home-card{
+        width: 30rem;
+        align-items: center;
+        .home-card-buttons{
+            @include mixins.defaultFlexColumn(center, center);
+            button{
+                width: 100%;
+            }
         }
     }
 }

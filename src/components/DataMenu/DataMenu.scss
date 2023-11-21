@@ -55,39 +55,8 @@
     cursor: pointer;
 }
 
-//DESKTOP
-@media (max-width: 1800px) {
-    html{
-        font-size: 8px;
-    }
-} 
-
-@media (max-width: 1500px) {
-    html{
-        font-size: 6px;
-    }
-}
-
-
-//TABLETS
 @media (max-width: 1080px) {
-    html{
-        font-size: 9px
-    }
-
     .datamenu-item{
         height: 45rem;
     }
-}
-
-@media (max-width: 810px) {
-    html{
-        font-size: 8px
-    }
-}
-
-@media (max-width: 500px) {
-    html{
-        font-size: 9px
-    }
-}
+  }

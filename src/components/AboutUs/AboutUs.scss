@@ -47,7 +47,6 @@
             font-size: 2rem;
             color: #FFFFFF;
             font-weight: 500;
-            transition: font-size 0.3s ease; 
         }
         width: 50rem;
     }
@@ -55,4 +54,24 @@
 
 @media (max-width:560px){
     
+    .aboutus-container{
+        gap: 10rem;
+    }
+
+    .aboutus-content{
+        gap: 10rem;
+    }
+
+    .aboutus-item{
+        padding: 0 4rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .aboutus-item-description{
+            justify-self: center;
+            width: auto;
+            height: auto;
+            overflow-wrap: normal;
+            word-break: normal;
+        }
+    }
 }

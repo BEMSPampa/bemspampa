@@ -7,14 +7,15 @@ import AboutUs from "../../components/AboutUs/AboutUs";
 const Home = () => {
 //  <img src={pic}></img>
 /*
-<div className='home-container'>
-        <input placeholder="Search..." className="home-search"/>
-        <HomeCard/>
-      </div>
+<input placeholder="Search..." className="home-search"/> dentro do container
       <AboutUs/>*/
 
   return (
     <div className='homepage'>
+      <div className='home-container'>
+        
+        <HomeCard/>
+      </div>
       <AboutUs/>
       <DataMenu/>
     </div>
