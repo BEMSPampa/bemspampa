@@ -3,7 +3,6 @@ import './AboutUs.scss'
 const AboutUs = () => {
   return (
     <div className='aboutus-container'>
-        
         <div className='aboutus-content'>
             <h3>EXPLICANDO O PROJETO</h3>
             <div className='aboutus-item'>

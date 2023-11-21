@@ -15,10 +15,15 @@ function App() {
       footerRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  //<Header scrollToFooter={scrollToFooter} />
 
+  /*
+  <div ref={footerRef}>
+        <Footer/>
+      </div>*/
   return (
     <>      
-      <Header scrollToFooter={scrollToFooter} />
+      
       <Routes>
           <Route path='/' element={<> <Home/> </>} />
           <Route path='/about' element={<> <About/> </>} />
@@ -26,9 +31,7 @@ function App() {
           <Route path='/webmap' element={<> <WebMapa/> </>} />
       </Routes>
 
-      <div ref={footerRef}>
-        <Footer/>
-      </div>
+      
     </>
   )
 }

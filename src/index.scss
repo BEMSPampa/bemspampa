@@ -10,6 +10,15 @@ Poppins
 @import './UI/colors';
 @import './UI/mixins';
 
-:root {
+
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
   font-size: 10px;
 }
+/*:root {
+  font-size: 10px;
+}
+*/
