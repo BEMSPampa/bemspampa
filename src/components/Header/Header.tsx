@@ -1,4 +1,5 @@
 import Logo from '../Logo/Logo';
+import MobileMenu from '../MobileMenu/MobileMenu';
 import './Header.scss';
 import {Link} from 'react-router-dom';
 
@@ -15,7 +16,7 @@ const Header: React.FC<Props> = (props) => {
         <div className='header-menu'>
           <nav>
             <ul>
-              <Link to={'/about'}><li>Sobre Nós</li></Link>
+              <li>Sobre Nós</li>
               <Link to={'/data'}><li>Banco de Dados</li></Link>
               <li>Eventos</li>
               <li onClick={props.scrollToFooter}>Contatos</li>
@@ -24,6 +25,8 @@ const Header: React.FC<Props> = (props) => {
           <div className='header-bar'></div>
           <Link to={'/webmap'}><button>WebMapa</button></Link>
         </div>
+
+
       </div>
     </div>
   )

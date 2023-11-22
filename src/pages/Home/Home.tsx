@@ -10,10 +10,14 @@ const Home = () => {
 <input placeholder="Search..." className="home-search"/> dentro do container
       <AboutUs/>*/
 
+      /*<div className='home-container'>
+        <HomeCard/>
+      </div>
+      <AboutUs/>
+      <DataMenu/>*/
   return (
     <div className='homepage'>
       <div className='home-container'>
-        
         <HomeCard/>
       </div>
       <AboutUs/>
