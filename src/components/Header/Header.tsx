@@ -1,5 +1,4 @@
 import Logo from '../Logo/Logo';
-import MobileMenu from '../MobileMenu/MobileMenu';
 import './Header.scss';
 import {Link} from 'react-router-dom';
 
@@ -8,7 +7,7 @@ interface Props{
 }
 
 const Header: React.FC<Props> = (props) => {
-
+//<li onClick={props.scrollToFooter}>Contatos</li>
   return (
     <div className='header'>
       <div className='header-container'>
@@ -17,16 +16,14 @@ const Header: React.FC<Props> = (props) => {
           <nav>
             <ul>
               <li>Sobre Nós</li>
-              <Link to={'/data'}><li>Banco de Dados</li></Link>
+              <Link to={'/data'}><li>Dados</li></Link>
               <li>Eventos</li>
-              <li onClick={props.scrollToFooter}>Contatos</li>
+              <li>GeoEnergia</li>
             </ul>
           </nav>
           <div className='header-bar'></div>
           <Link to={'/webmap'}><button>WebMapa</button></Link>
         </div>
-
-
       </div>
     </div>
   )
