@@ -1,5 +1,4 @@
 import "./Home.scss"
-import pic from '../../assets/unipampapic.jpg';
 import HomeCard from "../../components/HomeCard/HomeCard";
 import DataMenu from "../../components/DataMenu/DataMenu";
 import AboutUs from "../../components/AboutUs/AboutUs";
