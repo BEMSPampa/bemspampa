@@ -1,12 +1,12 @@
 import './DataMenu.scss'
-import point from '../../assets/point.png'
+import point from '../../assets/engpic.png'
 
 const DataMenu = () => {
   return (
     <div className='datamenu-container'>
       <div className='datamenu-item'>
         <div className='datamenu-item-logo'>
-          <img src={point}/>
+        <img src={point} alt="" />
         </div>
         <div className='datamenu-item-description'>
           <h3>HÍDRICA</h3>
@@ -15,7 +15,7 @@ const DataMenu = () => {
 
       <div className='datamenu-item'>
         <div className='datamenu-item-logo'>
-          <img src={point}/>
+        <img src={point} alt="" />
         </div>
         <div className='datamenu-item-description'>
           <h3>CARVÃO</h3>
@@ -25,7 +25,7 @@ const DataMenu = () => {
 
       <div className='datamenu-item'>
         <div className='datamenu-item-logo'>
-          <img src={point}/>
+        <img src={point} alt="" />
         </div>
         <div className='datamenu-item-description'>
           <h3>RADIAÇÃO</h3>
@@ -35,7 +35,7 @@ const DataMenu = () => {
 
       <div className='datamenu-item'>
         <div className='datamenu-item-logo'>
-          <img src={point}/>
+        <img src={point} alt="" />
         </div>
         <div className='datamenu-item-description'>
           <h3>CINÉTICA DOS</h3>
@@ -45,7 +45,7 @@ const DataMenu = () => {
 
       <div className='datamenu-item'>
         <div className='datamenu-item-logo'>
-          <img src={point}/>
+        <img src={point} alt="" />
         </div>
         <div className='datamenu-item-description'>
           <h3>FÓSSIL</h3>
@@ -54,7 +54,7 @@ const DataMenu = () => {
 
       <div className='datamenu-item'>
         <div className='datamenu-item-logo'>
-          <img src={point}/>
+        <img src={point} alt="" />
         </div>
         <div className='datamenu-item-description'>
           <h3>BIOENERGIA</h3>
