@@ -1,20 +1,26 @@
 import "./Home.scss"
+import HomeCard from "../../components/HomeCard/HomeCard";
+import DataMenu from "../../components/DataMenu/DataMenu";
+import AboutUs from "../../components/AboutUs/AboutUs";
 
 const Home = () => {
-  return (
-    <div className='home'>
-      <div className='container'>
+//  <img src={pic}></img>
+/*
+<input placeholder="Search..." className="home-search"/> dentro do container
+      <AboutUs/>*/
 
-        <div>
-          <h3>WebMapa</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo eget arcu cursus varius. Quisque suscipit lacus at eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo eget arcu cursus varius. Quisque suscipit lacus at eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo eget arcu cursus varius. Quisque suscipit lacus at eleifend.</p>
-        </div>
-
-        <iframe
-            title="Mapa"
-            src="..\bemspampa\src\assets\map\MapaAreaContemplada.html"
-        ></iframe>
+      /*<div className='home-container'>
+        <HomeCard/>
       </div>
+      <AboutUs/>
+      <DataMenu/>*/
+  return (
+    <div className='homepage'>
+      <div className='home-container'>
+        <HomeCard/>
+      </div>
+      <AboutUs/>
+      <DataMenu/>
     </div>
   )
 }

@@ -11,9 +11,40 @@
     animation-iteration-count: 1;
     animation-play-state: running;
 }
+
+@mixin spin(){
+    animation: animSpin 10s linear infinite; 
+}
+
 @keyframes animInitialize{
     to{
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+
+@keyframes animSpin{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@mixin defaultHover(){
+    transition: all 0.3s ease;
+    //opacity: 1.5;
+    transform: scale(1.1, 1.1);
+    transform-origin: center; 
+    cursor: pointer;
+}
+
+@mixin smallHover(){
+    transition: all 0.3s ease;
+    //opacity: 1.5;
+    transform: scale(1.01, 1.01);
+    transform-origin: center; 
+    cursor: pointer;
 }
