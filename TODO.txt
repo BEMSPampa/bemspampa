@@ -1,0 +1,22 @@
+* Slider para mostrar eventos;
+    - Pronto para começar.
+    - Pegar imagens e textos com a Domminic.
+
+* Páginas do GeoEnergia;
+    - Esperar imagens e canvas da Carol.
+ 
+* Contador de visualizações;
+    - Conversar com o grupo Dev no WPP sobre.
+
+* Formulário para avaliação;
+    - Botão que leva ao google forms?
+    - Formulário do próprio site? Com BD? Ou gera um email?
+
+* Funcionalidade aos botões;
+    - Esperar por designs da Domminic.
+
+
+--------------------------
+* Inserir dados no site;
+    - Com BD?
+    - Esperar por designs da Domminic.
