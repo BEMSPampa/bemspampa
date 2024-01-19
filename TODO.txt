@@ -1,5 +1,5 @@
 * Slider para mostrar eventos;
-    - Pronto para começar.
+    - Pronto, falta ajustar
     - Pegar imagens e textos com a Domminic.
 
 * Páginas do GeoEnergia;
