@@ -5,7 +5,8 @@ import Data from './pages/Data/Data.tsx'
 import WebMapa from './pages/WebMapa/WebMapa.tsx'
 import Event from './pages/Event/Event.tsx'
 import Error from './pages/Error/Error.tsx'
-import { Route, Routes  } from 'react-router';
+import { Route, Routes , useLocation  } from 'react-router';
+import { useEffect } from 'react'
 
 function App() {
 
@@ -16,14 +17,15 @@ function App() {
     }
   };
   //
-<Header scrollToFooter={scrollToFooter} />
+  <Header scrollToFooter={scrollToFooter} />
 
-<div ref={footerRef}>
+  <div ref={footerRef}>
         <Footer/>
       </div>*/
   //<Route path='/*' element={<Navigate to='/error' />} />
   return (
     <>      
+      <ScrollToTop/>
       <Header/>
       <Routes>
           <Route path='/' element={<> <Home/> </>} />
@@ -37,5 +39,13 @@ function App() {
     </>
   )
 }
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
 
 export default App
