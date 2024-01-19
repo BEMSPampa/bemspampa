@@ -10,12 +10,13 @@ const Event: React.FC = () => {
   const eventData = events.find((event) => event.url === url);
   console.log(eventData);
 
-
   return (
     <div className="event-container">
-      <h1>evento</h1>
-      <h1>{url}</h1>
-      <h1>{eventData?.description}</h1>
+      <h1>{eventData?.title}</h1>
+      <h4>Prévia da matéria</h4>
+      <h5>{eventData?.date}</h5>
+      <img src={eventData?.image} />
+      <h3>{eventData?.description}</h3>
     </div>
   )
 }

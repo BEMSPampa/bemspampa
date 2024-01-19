@@ -4,7 +4,8 @@ import Footer from './components/Footer/Footer.tsx'
 import Data from './pages/Data/Data.tsx'
 import WebMapa from './pages/WebMapa/WebMapa.tsx'
 import Event from './pages/Event/Event.tsx'
-import { Route, Routes, Navigate  } from 'react-router';
+import Error from './pages/Error/Error.tsx'
+import { Route, Routes  } from 'react-router';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 <div ref={footerRef}>
         <Footer/>
       </div>*/
+  //<Route path='/*' element={<Navigate to='/error' />} />
   return (
     <>      
       <Header/>
@@ -29,7 +31,7 @@ function App() {
           <Route path='/webmap' element={<> <WebMapa/> </>} />
           <Route path='/event/:url' element={<> <Event/> </>} />
 
-          <Route path='/*' element={<Navigate to='/' />} />
+          <Route path='/*' element={<> <Error/> </>} />
       </Routes>
       <Footer/>
     </>

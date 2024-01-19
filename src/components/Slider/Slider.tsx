@@ -43,7 +43,7 @@ const Slider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <h1>{events[parseInt(currentSlide)].description}</h1>
+      <h5>{events[parseInt(currentSlide)].description}</h5>
     </div>
   )
 }
