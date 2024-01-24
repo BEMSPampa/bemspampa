@@ -15,14 +15,14 @@ const Header: React.FC = () => {
         <div className='header-menu'>
           <nav>
             <ul>
-              <li>Sobre Nós</li>
-              <Link to={'/data'}><li>Dados</li></Link>
-              <Link to={'/event'}><li>Eventos</li></Link>
+              <Link to={'/sobre-nos'}><li>Sobre Nós</li></Link>
+              <Link to={'/dados'}><li>Dados</li></Link>
+              <Link to={'/publicacoes'}><li>Publicações</li></Link>
               <li>GeoEnergia</li>
             </ul>
           </nav>
           <div className='header-bar'></div>
-          <Link to={'/webmap'}><button>WebMapa</button></Link>
+          <Link to={'/webmapa'}><button>WebMapa</button></Link>
         </div>
       </div>
     </div>

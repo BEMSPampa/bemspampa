@@ -23,7 +23,7 @@ const Slider = () => {
   const navigate = useNavigate();
   const handleEventPage = () => {
     const eventToPass = events[parseInt(currentSlide)];
-    navigate('/event/' + events[parseInt(currentSlide)].url, {state: { event: eventToPass }});
+    navigate('/eventos/' + events[parseInt(currentSlide)].url, {state: { event: eventToPass }});
   }
 
   return (

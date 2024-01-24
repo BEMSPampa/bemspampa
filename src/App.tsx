@@ -7,6 +7,8 @@ import Event from './pages/Event/Event.tsx'
 import Error from './pages/Error/Error.tsx'
 import { Route, Routes , useLocation  } from 'react-router';
 import { useEffect } from 'react'
+import Publication from './pages/Publication/Publication.tsx'
+import AboutUs from './pages/AboutUs/AboutUs.tsx'
 
 function App() {
 
@@ -29,9 +31,11 @@ function App() {
       <Header/>
       <Routes>
           <Route path='/' element={<> <Home/> </>} />
-          <Route path='/data' element={<> <Data/> </>} />
-          <Route path='/webmap' element={<> <WebMapa/> </>} />
-          <Route path='/event/:url' element={<> <Event/> </>} />
+          <Route path='/dados' element={<> <Data/> </>} />
+          <Route path='/webmapa' element={<> <WebMapa/> </>} />
+          <Route path='/publicacoes' element={<> <Publication/> </>} />
+          <Route path='/sobre-nos' element={<> <AboutUs/> </>} />
+          <Route path='/eventos/:url' element={<> <Event/> </>} />
 
           <Route path='/*' element={<> <Error/> </>} />
       </Routes>

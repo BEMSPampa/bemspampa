@@ -32,7 +32,7 @@
         }
         li{
             display: block;
-            color: #FEFEFE;
+            color: colors.$secondaryColor;
             font-size: 1.6rem;
             font-family: Red Hat Display;
             font-weight: 500;
@@ -52,7 +52,7 @@
         font-size: 1.6rem;
         font-style: bold;
         color: #fefefe;
-        background-color: #c27729;
+        background-color: #2B9348;
     }
     button:hover{
         @include animations.smallHover();
