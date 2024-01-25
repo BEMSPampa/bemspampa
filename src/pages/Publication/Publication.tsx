@@ -1,5 +1,5 @@
 import './Publication.scss'
-
+import pic from '../../assets/unipampapic.jpg';
 const Publication = () => {
 
     const authorsUFSM: string[] = ["Autores", "Silva, Vinicius Amaro Ferreira", "Garcia, Enoque Dutra", "Silva, Dominnic Gomes", "Machado, Rodrigo Buroni", "Rodrigues, Thiago Prestes", "Filho, Itiberê Gonçalves Silva", "Santana, Caique Nunes Maria"];
@@ -19,25 +19,30 @@ const Publication = () => {
 
             <div className='publication-right'>
                 <div className='publication-card'>
-                    <img src="" alt="" />
+                    <div>
+                    <img src={pic} alt="" />
+                        <div className='publication-url'>
+                            <p>URL</p>
+                            <p>http://repositorio.ufsm.br/handle/1/30583</p>
+                        </div>
+                    </div>
                     <div>
                         <h3>BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética</h3>
                         {authorsUFSM.map(author => (<p>{author}</p>))}
-                        <button>Baixar</button>
+                        <button>BAIXAR</button>
                     </div>
                 </div>
 
-                <div className='publication-url'>
-                    <p>URL</p>
-                    <p>http://repositorio.ufsm.br/handle/1/30583</p>
-                </div>
+                
 
                 <div className='publication-card'>
-                    <img src="" alt="" />
+                    <img src={pic} alt="" />
                     <div>
                         <h3>BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética</h3>
-                        {authorsSIEPE.map(author => (<p>{author}</p>))}
-                        <button>Baixar</button>
+                        <div>
+                            {authorsSIEPE.map(author => (<p>{author}</p>))}
+                        </div>
+                        <button>BAIXAR</button>
                     </div>
                 </div>
             </div>
