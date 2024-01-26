@@ -9,6 +9,7 @@ import { Route, Routes , useLocation  } from 'react-router';
 import { useEffect } from 'react'
 import Publication from './pages/Publication/Publication.tsx'
 import AboutUs from './pages/AboutUs/AboutUs.tsx'
+import Info from './pages/Info/Info.tsx'
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           <Route path='/' element={<> <Home/> </>} />
           <Route path='/dados' element={<> <Data/> </>} />
           <Route path='/webmapa' element={<> <WebMapa/> </>} />
+          <Route path='/info' element={<> <Info/> </>} />
           <Route path='/publicacoes' element={<> <Publication/> </>} />
           <Route path='/sobre-nos' element={<> <AboutUs/> </>} />
           <Route path='/eventos/:url' element={<> <Event/> </>} />

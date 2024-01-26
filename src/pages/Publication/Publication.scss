@@ -6,13 +6,14 @@
     border-top: 1.5px solid #F68712;
     @include mixins.defaultFlexRow(center, center);
     height: 100vh;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .publication-left{
     @include mixins.defaultFlexColumn(space-around, center);
+    
     height: 100%;
-    width: 40%;
+    width: 45%;
     flex-grow: 1;
     background-image: url('../../assets/unipampapic.jpg');
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
@@ -41,7 +42,7 @@
 }
 
 .publication-right{
-    @include mixins.defaultFlexColumn(center, flex-start);
+    @include mixins.defaultFlexColumn(center, center);
     height: 100%;
     width: 60%;
     flex-grow: 2;
@@ -51,7 +52,7 @@
 .publication-card{
     @include mixins.defaultFlexRow(flex-start, center);
     max-width: 105rem;
-    gap: 1.5rem;
+    gap: 3rem;
     img{
         border: 1rem solid #D8670D;
         border-radius: 2rem;
@@ -65,8 +66,8 @@
         h3{
             color: #000;
             font-family: Poppins;
-            font-weight: 400;
-            font-size: 3rem;
+            font-weight: 500;
+            font-size: 2.5rem;
         }   
     
         button{
@@ -83,6 +84,19 @@
         }
     }
     
+}
+
+.publication-card:nth-child(2){
+    flex-direction: row-reverse;
+    div{
+        @include mixins.defaultFlexColumn(space-around, flex-end);
+        h3{
+            //ARRUMAR
+        }
+        button{
+            align-self: flex-start;
+        }
+    }
 }
 
 .publication-url{

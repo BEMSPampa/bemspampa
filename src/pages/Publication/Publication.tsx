@@ -20,14 +20,16 @@ const Publication = () => {
             <div className='publication-right'>
                 <div className='publication-card'>
                     <div>
-                    <img src={pic} alt="" />
+                        <img src={pic} alt="" />
                         <div className='publication-url'>
                             <p>URL</p>
                             <p>http://repositorio.ufsm.br/handle/1/30583</p>
                         </div>
                     </div>
                     <div>
-                        <h3>BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética</h3>
+                        <h3>BEMSPampa: Balanço Energético da</h3>
+                        <h3>Metade Sul - Bioma Pampa no contexto</h3>
+                        <h3>da Transição Energética</h3>
                         {authorsUFSM.map(author => (<p>{author}</p>))}
                         <button>BAIXAR</button>
                     </div>
@@ -38,13 +40,16 @@ const Publication = () => {
                 <div className='publication-card'>
                     <img src={pic} alt="" />
                     <div>
-                        <h3>BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética</h3>
+                        <h3>BEMSPampa: Balanço Energético da</h3>
+                        <h3>Metade Sul - Bioma Pampa no contexto</h3>
+                        <h3>da Transição Energética</h3>
                         <div>
                             {authorsSIEPE.map(author => (<p>{author}</p>))}
                         </div>
                         <button>BAIXAR</button>
                     </div>
                 </div>
+
             </div>
         </section>
     )
