@@ -53,7 +53,7 @@ import Marcelo from '../assets/about-us/members/Marcelo.png';
 import AnaRosa from '../assets/about-us/members/AnaRosa.png';
 import Cristine from '../assets/about-us/members/Cristine.png';
 
-export const colaborators: MembersData[] = [
+export const collaborators: MembersData[] = [
     {id: '0', name: 'Dr. Jocemar Biasi Parizzi', image: Jocemar},
     {id: '1', name: 'Dra. Sabrina Neves da Silva', image: Sabrina},
     {id: '2', name: 'Dr. Erico Marcelo Hoff Do Amaral', image: Erico},

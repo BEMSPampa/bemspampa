@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+}
+
+.goals-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3vw 5vw;
+}
+
+.goals-gallery{
+    padding: 2vw 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8.5rem;
+}
+
+.goal-card{
+    margin: 2vw 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 34rem;
+    background: #FFFAE5;
+    img{
+        width: 35.5rem;
+        height: 23rem;
+    }
+    .goal-card-info{
+        height: 12rem;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        h3{
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: #37818A;
+        }
+        h4{
+            font-size: 1.5rem;
+            color: #000000;
+        }
+
+        div{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+}
