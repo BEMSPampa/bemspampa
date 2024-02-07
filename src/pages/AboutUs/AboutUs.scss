@@ -1,0 +1,49 @@
+.aboutus-container{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.aboutus-organization{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 3vw 5vw;
+    img{
+        justify-self: center;
+        align-self: center;
+        width: 70vw;
+        height: 40vw;
+    }
+}
+
+.aboutus-front{
+    background-image: url('../../assets/about-us/Background.png');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    //filter: blur(2.5px);
+    width: 100%;
+    height: 80vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    .aboutus-frontleft{
+        width: 50%;
+        height: 100%;
+        gap: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+    }
+
+    .aboutus-frontright{
+        width: 50%;
+
+        img{
+            width: 5rem;
+            height: 3.5rem;
+        }
+    }
+}
