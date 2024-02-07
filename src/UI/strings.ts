@@ -18,14 +18,14 @@ export const events: EventData[] = [
 ]
 
 import Enoque from '../assets/about-us/members/Enoque.png';
-import Dominnic from '../assets/about-us/members/Dominnic.png';
-import Vinicius from '../assets/about-us/members/Vinicius.png';
-import Rodrigo from '../assets/about-us/members/Rodrigo.png';
-import Thiago from '../assets/about-us/members/Thiago.png';
-import Itibere from '../assets/about-us/members/Itibere.png';
-import Guilherme from '../assets/about-us/members/Guilherme.png';
-import Caique from '../assets/about-us/members/Caique.png';
-import John from '../assets/about-us/members/John.png';
+import Dominnic from '../assets/about-us/members/Enoque.png';
+import Vinicius from '../assets/about-us/members/Enoque.png';
+import Rodrigo from '../assets/about-us/members/Enoque.png';
+import Thiago from '../assets/about-us/members/Enoque.png';
+import Itibere from '../assets/about-us/members/Enoque.png';
+import Guilherme from '../assets/about-us/members/Enoque.png';
+import Caique from '../assets/about-us/members/Enoque.png';
+import John from '../assets/about-us/members/Enoque.png';
 
 export type MembersData = {
     id: string,
@@ -35,7 +35,7 @@ export type MembersData = {
 
 export const developers: MembersData[] = [
     {id: '0', name: 'Dr. Enoque Dutra Garcia', image: Enoque},
-    {id: '1', name: 'Domminic Gomes da Silva', image: Dominnic},
+    {id: '1', name: 'Dominnic Gomes da Silva', image: Dominnic},
     {id: '2', name: 'Vinicius Amaro Ferreira da Silva', image: Vinicius},
     {id: '3', name: 'Eng. Rodrigo Buroni Machado', image: Rodrigo},
     {id: '4', name: 'Thiago Prestes Rodrigues', image: Thiago},
@@ -45,13 +45,13 @@ export const developers: MembersData[] = [
     {id: '8', name: 'Eng. John Roger Roldan Aleixo', image: John}
 ]
 
-import Jocemar from '../assets/about-us/members/Jocemar.png';
-import Sabrina from '../assets/about-us/members/Sabrina.png';
-import Erico from '../assets/about-us/members/Erico.png';
-import Carlos from '../assets/about-us/members/Carlos.png';
-import Marcelo from '../assets/about-us/members/Marcelo.png';
-import AnaRosa from '../assets/about-us/members/AnaRosa.png';
-import Cristine from '../assets/about-us/members/Cristine.png';
+import Jocemar from '../assets/about-us/members/Enoque.png';
+import Sabrina from '../assets/about-us/members/Enoque.png';
+import Erico from '../assets/about-us/members/Enoque.png';
+import Carlos from '../assets/about-us/members/Enoque.png';
+import Marcelo from '../assets/about-us/members/Enoque.png';
+import AnaRosa from '../assets/about-us/members/Enoque.png';
+import Cristine from '../assets/about-us/members/Enoque.png';
 
 export const collaborators: MembersData[] = [
     {id: '0', name: 'Dr. Jocemar Biasi Parizzi', image: Jocemar},

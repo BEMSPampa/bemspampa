@@ -5,13 +5,14 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-flow: column nowrap;
-    background: #92B6DA;
+    background: #DDEEFF;
 }
 
-h3{
+p{
     color: #000000;
     font-family: Roboto;
-    font-size: 3rem
+    font-size: 3rem;
+    align-self: center;
 }
 
 h4{
@@ -23,26 +24,14 @@ h4{
 .members-gallery{
     display: flex;
     flex-flow: row wrap;
-    gap: 2rem;
+    gap: 1rem;
     align-self: center;
     justify-self: center;
-}
-
-.members-card{
-    border: 0.1rem solid #000;
-    max-width: 20rem;
-    padding: 0 2rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center;
-    img{
-        width: 20rem;
-        height: 14.5rem;
-    }
+    width: 100%;
     
-    h5{
-        color: #323232;
-        font-size: 1.8rem;
+    img{
+        width: 28rem;
+        height: 18; //height: 14.5rem;
+        padding-bottom: 1rem;
     }
 }
