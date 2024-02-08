@@ -12,9 +12,8 @@ const AboutUs = () => {
         <section className='aboutus-container'>
             <div className='aboutus-front'>
                 <div className='aboutus-frontleft'>
-                    <TitlePage name='Quem Somos'/>
-
                     <div className='aboutus-description'>
+                        <TitlePage name='Quem Somos'/>
                         <p>Com o objetivo de mapear informações de recursos energéticos e fontes renováveis na região, o BEMSPampa é um projeto em formato de </p>
                         <div>
                             <h1>Plataforma</h1>
@@ -25,9 +24,6 @@ const AboutUs = () => {
                 </div>
 
                 <div className='aboutus-frontright'>
-                    
-                    
-
                     <div>
                         <div>
                             <img src={CheckPic} alt="" />
@@ -50,7 +46,6 @@ const AboutUs = () => {
             <OurHistory/>
             <Goals/>
             <Members/>
-
             <div className='aboutus-organization'>
                 <TitlePage name='Organização'/>
                 <img src={Organization} alt="" />

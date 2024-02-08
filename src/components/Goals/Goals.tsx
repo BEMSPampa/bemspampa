@@ -13,32 +13,38 @@ const Goals = () => {
             <div className='goal-card'>
                 <img src={pic1} alt="" />
                 <div className='goal-card-info'>
-                    <div>
+                    <div className='goalcard-title'>
                         <h3>POTENCIAL</h3>
                         <h3>ELETROENERGÉTICO</h3>
                     </div>
-                    <h4>Organizar as informações sobre recursos energéticos por mesorregião ampliando o acesso às informações sobre potencial energético;</h4>
+                    <div className='goalcard-desc'>
+                        <p>Organizar as informações sobre recursos energéticos por mesorregião ampliando o acesso às informações sobre potencial energético;</p>
+                    </div>
                 </div>    
             </div>
 
             <div className='goal-card'>
                 <img src={pic2} alt="" />
                 <div className='goal-card-info'>
-                    <div>
+                    <div className='goalcard-title'>
                         <h3>BALANÇO ENERGÉTICO DA</h3>
                         <h3>MESOREGIÃO</h3>
                     </div>
-                    <h4>Realizar o balanço energético por mesorregião apurando os montantes de energia no processo</h4>
+                    <div className='goalcard-desc'>
+                        <p>Realizar o balanço energético por mesorregião apurando os montantes de energia no processo</p>
+                    </div>
                 </div>
             </div>
 
             <div className='goal-card'>
                 <img src={pic3} alt="" />
                 <div className='goal-card-info'>
-                    <div>
+                    <div className='goalcard-title'>
                         <h3>TRANSIÇÃO ENERGÉTICA</h3>
                     </div>
-                    <h4>Relacionar a transição energética ao desenvolvimento regional e a busca por fontes de energias renováveis. </h4>
+                    <div className='goalcard-desc'>
+                        <p>Relacionar a transição energética ao desenvolvimento regional e a busca por fontes de energias renováveis. </p>
+                    </div>
                 </div>
             </div>
         </div>

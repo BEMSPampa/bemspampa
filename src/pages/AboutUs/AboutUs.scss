@@ -16,34 +16,93 @@
 }
 
 .aboutus-front{
-    background-image: url('../../assets/about-us/Background.png');
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
-    background-position: center; /* Centraliza a imagem no elemento */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    //background-image: url('../../assets/about-us/Background.png');
+    //background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    //background-position: center; /* Centraliza a imagem no elemento */
+    //background-repeat: no-repeat; /* Evita a repetição da imagem */
     //filter: blur(2.5px);
+
+    background-color: #000;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
     .aboutus-frontleft{
+        .titlepage-container{
+            h2{
+                font-family: Poppins;
+                font-weight: 700;
+                font-style: bold;
+                font-size: 3rem;
+                
+                border-left: 0.4rem solid #D8670D;
+                padding-left: 1rem;
+                color: #fff;
+            }
+        }
         width: 50%;
         height: 100%;
         gap: 5rem;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         flex-flow: column nowrap;
+
+        .aboutus-description{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-evenly;
+            height: 100%;
+            width: 60%;
+            p{
+                font-family: Poppins;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 2rem;
+                color: #fff;
+            }
+            div{
+                display: flex;
+                flex-flow: column nowrap;
+            }
+            h1{   
+                font-family: Poppins;
+                font-weight: 700;
+                font-style: bold;
+                font-size: 8rem;
+                color: #fff;
+            }
+        }
     }
 
     .aboutus-frontright{
+        border-left: 1px solid #fff;
+        height: 100%;
         width: 50%;
-
-        img{
-            width: 5rem;
-            height: 3.5rem;
+        div{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 1rem;
+            align-items: flex-start;
+            justify-content: flex-start;
+            div{
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 1rem;
+                
+                img{
+                    width: 5rem;
+                    height: 3.5rem;
+                }
+                h5{
+                    font-family: Poppins;
+                    font-weight: 300;
+                    font-style: bold;
+                }
+            }
         }
     }
 }
