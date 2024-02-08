@@ -6,7 +6,7 @@ import TitlePage from '../../components/TitlePage/TitlePage'
 
 import Organization from '../../assets/about-us/Organizacao.png';
 import CheckPic from '../../assets/checkpic.png';
-
+import PampaPic from '../../assets/about-us/pampapic.png';
 const AboutUs = () => {
     return(
         <section className='aboutus-container'>
@@ -24,6 +24,8 @@ const AboutUs = () => {
                 </div>
 
                 <div className='aboutus-frontright'>
+                    <img src={PampaPic} alt="" />
+                    
                     <div>
                         <div>
                             <img src={CheckPic} alt="" />

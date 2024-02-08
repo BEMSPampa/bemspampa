@@ -1,6 +1,8 @@
 import './Footer.scss'
 import pic from '../../assets/emailpic.png';
 import { useState } from 'react';
+import Logo from '../Logo/Logo';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -25,10 +27,21 @@ const Footer = () => {
 
 
   return (
-    <section className='footer'>
-      <h2>Contatos</h2>
-      <img onClick={copyToClipboard} src={pic} />
-      {copied && <p>Email copiado!</p>}
+    <section className='footer-container'>
+      <div>
+        <Link to={'/'}><Logo/></Link>
+
+        <div className='footer-copy'>
+          {copied && <p>Email copiado!</p>}
+          <p><span>C</span>Copyright 2024 BEMSPampa, Inc.</p>
+        </div>
+
+        <div className='footer-socialgallery'>
+          <img onClick={copyToClipboard} src={pic} className='footer-social'/>
+          <img onClick={copyToClipboard} src={pic} className='footer-social'/>
+          <img onClick={copyToClipboard} src={pic} className='footer-social'/>
+        </div>
+      </div>
     </section>
   )
 }

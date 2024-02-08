@@ -1,9 +1,11 @@
 import './Logo.scss'
+import LogoPic from '../../assets/LogoHeader.png';
+
 const Logo = () => {
   //<img src={logo}></img>
   return (
     <div className="logo">
-      <h2>BEMSPampa</h2>
+      <img src={LogoPic} alt="" />
     </div>
   )
 }

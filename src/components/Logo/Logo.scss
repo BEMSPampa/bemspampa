@@ -13,16 +13,10 @@
     @include mixins.defaultFlexRow(center, center);
     gap: 2rem;
     img{
-        width: 5rem;
-        height: 5rem;
+        width: 24rem;
+        height: 18rem;
         overflow-clip-margin: none;
         overflow: none;
-    }
-
-    h2{
-        font-size: 3.5rem;
-        font-family: Montserrat;
-        color: colors.$secondaryColor;
     }
 }
 .logo:hover{

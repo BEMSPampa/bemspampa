@@ -16,12 +16,11 @@
 }
 
 .aboutus-front{
-    //background-image: url('../../assets/about-us/Background.png');
-    //background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
-    //background-position: center; /* Centraliza a imagem no elemento */
-    //background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-image: url('../../assets/about-us/Background.png');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
     //filter: blur(2.5px);
-
     background-color: #000;
     width: 100%;
     height: 85vh;
@@ -79,10 +78,18 @@
     }
 
     .aboutus-frontright{
-        border-left: 1px solid #fff;
         height: 100%;
         width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        img{
+            align-self: flex-end;    
+            width: 85rem;
+            height: 60rem;
+        }
         div{
+            padding-left: 1vw;
             display: flex;
             flex-flow: column nowrap;
             gap: 1rem;
@@ -105,4 +112,5 @@
             }
         }
     }
+
 }
