@@ -7,9 +7,9 @@ import Event from './pages/Event/Event.tsx'
 import Error from './pages/Error/Error.tsx'
 import { Route, Routes , useLocation  } from 'react-router';
 import { useEffect } from 'react'
-import Publication from './pages/Publication/Publication.tsx'
+//import Publication from './pages/Publication/Publication.tsx'
 import AboutUs from './pages/AboutUs/AboutUs.tsx'
-import Info from './pages/Info/Info.tsx'
+//import Info from './pages/Info/Info.tsx'
 
 function App() {
 
@@ -26,6 +26,10 @@ function App() {
         <Footer/>
       </div>*/
   //<Route path='/*' element={<Navigate to='/error' />} />
+
+
+  //<Route path='/publicacoes' element={<> <Publication/> </>} />
+  //<Route path='/info' element={<> <Info/> </>} />
   return (
     <>      
       <ScrollToTop/>
@@ -34,11 +38,8 @@ function App() {
           <Route path='/' element={<> <Home/> </>} />
           <Route path='/dados' element={<> <Data/> </>} />
           <Route path='/webmapa' element={<> <WebMapa/> </>} />
-          <Route path='/info' element={<> <Info/> </>} />
-          <Route path='/publicacoes' element={<> <Publication/> </>} />
           <Route path='/sobre-nos' element={<> <AboutUs/> </>} />
           <Route path='/eventos/:url' element={<> <Event/> </>} />
-
           <Route path='/*' element={<> <Error/> </>} />
       </Routes>
       <Footer/>

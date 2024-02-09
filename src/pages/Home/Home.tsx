@@ -2,7 +2,7 @@ import "./Home.scss"
 import HomeCard from "../../components/HomeCard/HomeCard";
 import DataMenu from "../../components/DataMenu/DataMenu";
 import About from "../../components/About/About";
-import Slider from "../../components/Slider/Slider";
+//import Slider from "../../components/Slider/Slider";
 
 const Home = () => {
   return (
@@ -10,7 +10,6 @@ const Home = () => {
       <div className='home-container'>
         <HomeCard/>
       </div>
-      <Slider/>
       <About/>
       <DataMenu/>
     </div>

@@ -1,11 +1,17 @@
 import './Logo.scss'
-import LogoPic from '../../assets/LogoHeader.png';
+import LogoHeader from '../../assets/LogoHeader.png';
+import LogoFooter from '../../assets/LogoFooter.png';
 
-const Logo = () => {
-  //<img src={logo}></img>
+interface LogoProps{
+  name: string
+}
+
+
+const Logo: React.FC<LogoProps> = (props) => {
   return (
     <div className="logo">
-      <img src={LogoPic} alt="" />
+      {props.name==="header" ? <img src={LogoHeader} alt=""/> : null}
+      {props.name==="footer" ? <img src={LogoFooter} alt=""/>: null}
     </div>
   )
 }

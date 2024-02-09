@@ -10,14 +10,20 @@ const Members = () => {
         <h4>DESENVOLVEDORES</h4>
         <div className='members-gallery'>
             {developers.map(developer => (
-                <img src={developer.image}/>
+                <div className='members-card'>
+                    <img src={developer.image} />
+                    <p>{developer.name}</p>
+                </div>
             ))}
         </div>
 
         <h4>COLABORADORES</h4>
         <div className='members-gallery'>
             {collaborators.map(collaborator => (
-                <img src={collaborator.image} />
+                <div className='members-card'>
+                    <img src={collaborator.image} />
+                    <p>{collaborator.name}</p>
+                </div>
             ))}
         </div>
         

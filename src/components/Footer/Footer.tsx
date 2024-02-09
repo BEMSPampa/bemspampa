@@ -1,5 +1,7 @@
 import './Footer.scss'
-import pic from '../../assets/emailpic.png';
+import emailpic from '../../assets/emailpic.png';
+import linkedinpic from '../../assets/linkedinpic.png';
+import instagrampic from '../../assets/instagrampic.png';
 import { useState } from 'react';
 import Logo from '../Logo/Logo';
 import { Link } from 'react-router-dom';
@@ -29,7 +31,7 @@ const Footer = () => {
   return (
     <section className='footer-container'>
       <div>
-        <Link to={'/'}><Logo/></Link>
+        <Link to={'/'}><Logo name='footer'/></Link>
 
         <div className='footer-copy'>
           {copied && <p>Email copiado!</p>}
@@ -37,9 +39,9 @@ const Footer = () => {
         </div>
 
         <div className='footer-socialgallery'>
-          <img onClick={copyToClipboard} src={pic} className='footer-social'/>
-          <img onClick={copyToClipboard} src={pic} className='footer-social'/>
-          <img onClick={copyToClipboard} src={pic} className='footer-social'/>
+          <img onClick={copyToClipboard} src={emailpic} className='footer-social'/>
+          <img onClick={copyToClipboard} src={instagrampic} className='footer-social'/>
+          <img onClick={copyToClipboard} src={linkedinpic} className='footer-social'/>
         </div>
       </div>
     </section>

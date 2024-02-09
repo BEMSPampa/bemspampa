@@ -4,20 +4,11 @@
 
 .footer-container{
     width: 100%;
-    max-height: 10rem;
+    height: 10rem;
     background-color: #E9E9E7;
     box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 
-    
-    .logo{
-        img{
-            width: 18rem;
-            height: 12rem;
-            overflow-clip-margin: none;
-            overflow: none;
-        }
-    }
     div{
         padding: 0 3vw;
         height: 100%;
@@ -61,8 +52,7 @@
         
         .footer-social{ 
             width: 4rem;
-            height: 4rem;
-            border-radius: 5rem;
+            height: 3rem;
         }
     }
     img:hover{

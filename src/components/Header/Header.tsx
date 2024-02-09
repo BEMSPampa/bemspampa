@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   return (
     <div className='header'>
       <div className='header-container'>
-        <Link to={'/'}><Logo/></Link>
+        <Link to={'/'}><Logo name='header'/></Link>
         <div className='header-menu'>
           <nav>
             <ul>
