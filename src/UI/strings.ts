@@ -18,7 +18,7 @@ export const events: EventData[] = [
 ]
 
 import Enoque from '../assets/about-us/members/Enoque.png';
-import Dominnic from '../assets/about-us/members/Enoque.png';
+import Dominnic from '../assets/about-us/members/Dominnic.png';
 import Vinicius from '../assets/about-us/members/Vinicius.png';
 import Rodrigo from '../assets/about-us/members/Rodrigo.png';
 import Thiago from '../assets/about-us/members/Thiago.png';
