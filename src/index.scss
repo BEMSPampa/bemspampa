@@ -20,6 +20,15 @@ Poppins
 }
 
 //DESKTOP
+@media (max-width: 1920px) {
+  html{
+      font-size:0.5vw;
+  }
+} 
+
+
+/*
+
 @media (max-width: 1800px) {
   html{
       font-size: 8px;
@@ -55,6 +64,7 @@ Poppins
       font-size: 9px
   }
 }
+*/
 
 /*:root {
   font-size: 10px;
