@@ -5,7 +5,7 @@ const Members = () => {
   return (
     <div className='members-container'>
         <TitlePage name='Nossa Equipe'/>
-        <p>Composta por discentes e docentes da Universidade Federal do Pampa, engenheiros de energia e da computação.</p>
+        <p>Composta por discentes e docentes da Universidade Federal do Pampa, engenheiros de energia, computação e química.</p>
 
         <h4>DESENVOLVEDORES</h4>
         <div className='members-gallery'>
