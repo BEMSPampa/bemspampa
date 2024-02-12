@@ -3,18 +3,13 @@
 @use '../../UI/mixins';
 
 .publication-container{
-    border-top: 1.5px solid #F68712;
     @include mixins.defaultFlexRow(center, center);
-    height: 100vh;
-    gap: 3rem;
 }
 
 .publication-left{
     @include mixins.defaultFlexColumn(space-around, center);
-    
-    height: 100%;
+    height: 100rem;
     width: 45%;
-    flex-grow: 1;
     background-image: url('../../assets/unipampapic.jpg');
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem no elemento */
@@ -43,31 +38,50 @@
 
 .publication-right{
     @include mixins.defaultFlexColumn(center, center);
-    height: 100%;
+    //height: 100rem;
     width: 60%;
-    flex-grow: 2;
     gap: 5rem;
 }
 
 .publication-card{
     @include mixins.defaultFlexRow(flex-start, center);
-    max-width: 105rem;
+    width: 105rem;
     gap: 3rem;
     img{
-        border: 1rem solid #D8670D;
-        border-radius: 2rem;
-        width: 24rem;   
-        height: 30rem;
+        border: 2rem solid #D8670D;
+        border-radius: 4rem;
+        width: 28rem;   
+        height: 35rem;
     }
     
     div{
         @include mixins.defaultFlexColumn(space-around, flex-start);
         gap: 0.5rem;
+        
+
+        .publication-url{
+            p{
+                font-family: Red Hat Display;
+                font-weight: 500;
+                color: #000;
+                font-size: 1.5rem;
+                padding-left: 1rem;
+            }
+        }
+        .publication-authors{
+            p{
+                font-family: Red Hat Display;
+                font-weight: 500;
+                font-size: 1.7rem;
+                color: #000;
+            }
+        }
+
         h3{
             color: #000;
             font-family: Poppins;
             font-weight: 500;
-            font-size: 2.5rem;
+            font-size: 3rem;
         }   
     
         button{
@@ -76,8 +90,8 @@
             font-style: bold;
             background-color: transparent;
             border-radius: 3rem;
-            border: 0.3rem solid #F68712;
-            padding: 0.7rem;
+            border: 0.4rem solid #F68712;
+            padding: 1rem;
             font-weight: 700;
             font-size: 1.5rem;
             align-self: flex-end;
@@ -91,24 +105,10 @@
     div{
         @include mixins.defaultFlexColumn(space-around, flex-end);
         h3{
-            //ARRUMAR
+            text-align: end;
         }
         button{
             align-self: flex-start;
         }
     }
-}
-
-.publication-url{
-    p{
-        font-size: 1.1rem;
-        padding-left: 1rem;
-    }
-}
-
-p{
-    font-family: Red Hat Display;
-    font-weight: 500;
-    font-size: 1.3rem;
-    color: #000;
 }
