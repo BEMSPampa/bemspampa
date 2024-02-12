@@ -1,9 +1,14 @@
 import './Publication.scss'
-import pic from '../../assets/unipampapic.jpg';
+import FirstArticle from '../../assets/publication/firstarticle.png';
+import SecondArticle from '../../assets/publication/secondarticle.jpeg';
+import { Link } from 'react-router-dom';
+
 const Publication = () => {
 
     const authorsUFSM: string[] = ["Autores", "Silva, Vinicius Amaro Ferreira", "Garcia, Enoque Dutra", "Silva, Dominnic Gomes", "Machado, Rodrigo Buroni", "Rodrigues, Thiago Prestes", "Filho, Itiberê Gonçalves Silva", "Santana, Caique Nunes Maria"];
     const authorsSIEPE: string[] = ["Autores", "Rodrigues, Thiago Prestes", "Silva, Dominnic Gomes", "Silva, Vinicius Amaro Ferreira", "Santana, Caique Nunes Maria", "Machado, Rodrigo Buroni", "Garcia, Enoque Dutra"];
+
+    const pubURL: string = "http://repositorio.ufsm.br/handle/1/30583";
 
     return(
         <section className='publication-container'>
@@ -19,10 +24,10 @@ const Publication = () => {
             <div className='publication-right'>
                 <div className='publication-card'>
                     <div>
-                        <img src={pic} alt="" />
+                        <img src={FirstArticle} alt="" />
                         <div className='publication-url'>
                             <p>URL</p>
-                            <p>http://repositorio.ufsm.br/handle/1/30583</p>
+                            <Link to={pubURL} target="_blank"><p>http://repositorio.ufsm.br/handle/1/30583</p></Link>
                         </div>
                     </div>
                     <div>
@@ -37,7 +42,7 @@ const Publication = () => {
                 
 
                 <div className='publication-card'>
-                    <img src={pic} alt="" />
+                    <img src={SecondArticle} alt="" />
                     <div>
                         <h3>BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética</h3>
                         <div className="publication-authors">
