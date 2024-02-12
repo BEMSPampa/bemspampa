@@ -9,7 +9,7 @@
 .publication-left{
     @include mixins.defaultFlexColumn(space-around, center);
     height: 100rem;
-    width: 40%;
+    width: 45%;
     background-image: url('../../assets/unipampapic.jpg');
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem no elemento */
