@@ -1,6 +1,11 @@
 import TitlePage from '../../components/TitlePage/TitlePage';
 import './Info.scss'
 
+import FirstInfo from '../../assets/info/info1.png';
+import SecondInfo from '../../assets/info/info2.png';
+import FutureInfo from '../../assets/info/bemspampa-future.png'
+import CheckPic from '../../assets/checkpic.png';
+
 const Info = () => {
     
     type stepInfo = {
@@ -17,7 +22,7 @@ const Info = () => {
                                 {num: 3, description: "Balanços energéticos dos centros de transformação, incluindo as suas perdas. Força-tarefa para validação das informações obtidas nessa etapa e nas anteriores com inclusão em plataforma digital."},
                             {num: 4, description: "Recursos e Reservas Energéticas, contempla os dados dos recursos e reservas das fontes primárias de energia. Força-tarefa para estruturação das informações."},
                         {num: 5, description: "Dados de produção das principais fontes de energia, o consumo residencial de eletricidade, instalações energéticas e reservas, potencial hidráulico, solar, eólico, carvão mineral, bioenergia, outros. Força-tarefa para organização dos dados em estrutura adequada às aplicações previstas."},
-                    {num: 6, description: "Apresentação de informações e dados:(a)capacidade instalada de geração elétrica;(b)autoprodução de Eletricidade;(c)indicadores energéticos de produção, importação, exportação e consumo, por área energética;(d) análises energéticas com base na energia útil;(e) outros.Força-tarefa para disponibilização dos dados na forma web e divulgação."}];
+                    {num: 6, description: "Apresentação de informações e dados: (a)capacidade instalada de geração elétrica; (b)autoprodução de Eletricidade; (c)indicadores energéticos de produção, importação, exportação e consumo, por área energética; (d) análises energéticas com base na energia útil; (e) outros.Força-tarefa para disponibilização dos dados na forma web e divulgação."}];
     
     const stringsInfoAbout: string[] = ["Produção, autoprodução e indicadores energéticos", "Consumo residencial e outras instalações", "Dependência externa de energia", "Resumo da oferta interna de energia", "Composição setorial do consumo de energéticos",
                                         "Recursos e reservas energéticas", "Balanço energético dos centros de transformação", "Potencial hidráulico, solar, eólico, carvão mineral, bioenergia, outros"];
@@ -30,30 +35,32 @@ const Info = () => {
             <div>
                 <TitlePage name='Visão Geral'/>
                 {stringsInfo.map((item) => (<p>{item}</p>))}
-                <div>
+
+                <div className='info-about'>
                     <div>
-                        {stringsInfoAbout.map((item) => (<><img src="" alt="" /><h3>{item}</h3></>))}
+                        {stringsInfoAbout.map((item) => (<div className='info-aboutitem'><img src={CheckPic} alt="" className='info-checkpic'/><h3>{item}</h3></div>))}
                     </div>
-                    <img src="" alt="" />
+                    <img src={FirstInfo} alt="" className='firstinfo-img'/>
                 </div>
 
-                <div>
-                    <img src="" alt="" />
+                <div className='info-consolidated'>
+                    <img src={SecondInfo} alt="" className='secondinfo-img'/>
                     <div>
                         <h2>Informações consolidadas sobre:</h2>
-                        {stringsInfoConsolidated.map((item) => (<><img src="" alt="" /><h3>{item}</h3></>))}
+                        {stringsInfoConsolidated.map((item) => (<div className='info-consolidateditem'><img src={CheckPic} className='info-checkpic'/><h3>{item}</h3></div>))}
                     </div>
                 </div>
+                
             </div>
 
-            <div>
+            <div className='info-step'>
                 <TitlePage name='Etapas'/>
-                {stringsStep.map((item) => (<><h2>{item.num}</h2><p>{item.description}</p></>))}
+                {stringsStep.map((item) => (<div className='info-stepitem'><h2>{item.num}</h2><p>{item.description}</p></div>))}
             </div>
             
-            <div>   
+            <div className='info-future'>   
                 <TitlePage name='Futuro'/>
-                <img src="" alt="" />
+                <img src={FutureInfo} alt="" />
             </div>
             
         </section>
