@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './HomeCard.scss';
 
 const HomeCard= () => {
@@ -11,9 +12,9 @@ const HomeCard= () => {
         </div>
         
         <div className="home-card-buttons">
-          <button className="home-card-buttons-info">Info</button>
-          <button className="home-card-buttons-pub">Publicações</button>
-          <button className="home-card-buttons-dashboard">Dashboard</button>
+          <Link to="/info"><button className="home-card-buttons-info">Info</button></Link>
+          <Link to="/publicacoes"><button className="home-card-buttons-pub">Publicações</button></Link>
+          <Link to="/dashboard"><button className="home-card-buttons-dashboard">Dashboard</button></Link>
         </div>
       </div>
   )
