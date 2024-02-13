@@ -10,7 +10,7 @@
     @include mixins.defaultFlexColumn(space-around, center);
     height: 100rem;
     width: 45%;
-    background-image: url('../../assets/unipampapic.jpg');
+    background-image: url('../../assets/publication/backgroundwfilter.png');
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem no elemento */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
@@ -60,12 +60,24 @@
         
 
         .publication-url{
+            max-width: 28rem;
             p{
                 font-family: Red Hat Display;
                 font-weight: 500;
                 color: #000;
                 font-size: 1.5rem;
                 padding-left: 1rem;
+                cursor: pointer;
+            }
+        }
+
+        .publication-url:nth-child(2){
+            p{
+                font-family: Red Hat Display;
+                font-weight: 500;
+                color: #000;
+                font-size: 1.5rem;
+                padding-right: 1rem;
                 cursor: pointer;
             }
         }

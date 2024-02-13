@@ -8,8 +8,23 @@ const Publication = () => {
     const authorsUFSM: string[] = ["Autores", "Silva, Vinicius Amaro Ferreira", "Garcia, Enoque Dutra", "Silva, Dominnic Gomes", "Machado, Rodrigo Buroni", "Rodrigues, Thiago Prestes", "Filho, Itiberê Gonçalves Silva", "Santana, Caique Nunes Maria"];
     const authorsSIEPE: string[] = ["Autores", "Rodrigues, Thiago Prestes", "Silva, Dominnic Gomes", "Silva, Vinicius Amaro Ferreira", "Santana, Caique Nunes Maria", "Machado, Rodrigo Buroni", "Garcia, Enoque Dutra"];
 
-    const pubURL: string = "http://repositorio.ufsm.br/handle/1/30583";
+    const urlUFSM: string = "http://repositorio.ufsm.br/handle/1/30583";
+    const urlSIEPE: string = "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/116940";
 
+    const urlArticleUFSM: string = "/articleUFSM.pdf";
+    const urlArticleSIEPE: string = "/articleSIEPE.pdf";
+
+    const downloadFileAtURL = (url: string) => {
+        const parts = url.split("/");
+        const fileName: string = parts.length > 0 ? parts.pop()! : 'file';
+        const aTag = document.createElement("a");
+        aTag.href = url;
+        aTag.setAttribute("download", fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+    }
+    
     return(
         <section className='publication-container'>
             <div className='publication-left'>
@@ -23,32 +38,40 @@ const Publication = () => {
 
             <div className='publication-right'>
                 <div className='publication-card'>
+
                     <div>
                         <img src={FirstArticle} alt="" />
                         <div className='publication-url'>
                             <p>URL</p>
-                            <Link to={pubURL} target="_blank"><p>http://repositorio.ufsm.br/handle/1/30583</p></Link>
+                            <Link to={urlUFSM} target="_blank"><p>{urlUFSM}</p></Link>
                         </div>
                     </div>
+
                     <div>
                         <h3>BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética</h3>
                         <div className="publication-authors">
                             {authorsUFSM.map(author => (<p>{author}</p>))}
                         </div>
-                        <button>BAIXAR</button>
+                        <button onClick={()=>downloadFileAtURL(urlArticleUFSM)}>BAIXAR</button>
                     </div>
                 </div>
 
-                
-
                 <div className='publication-card'>
-                    <img src={SecondArticle} alt="" />
+
+                    <div>
+                        <img src={SecondArticle} alt="" />
+                        <div className='publication-url'>
+                            <p>URL</p>
+                            <Link to={urlSIEPE} target="_blank"><p>{urlSIEPE}</p></Link>
+                        </div>
+                    </div>
+
                     <div>
                         <h3>BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética</h3>
                         <div className="publication-authors">
                             {authorsSIEPE.map(author => (<p>{author}</p>))}
                         </div>
-                        <button>BAIXAR</button>
+                        <button onClick={()=>downloadFileAtURL(urlArticleSIEPE)}>BAIXAR</button>
                     </div>
                 </div>
 
