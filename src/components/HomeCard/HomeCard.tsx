@@ -3,7 +3,7 @@ import './HomeCard.scss';
 
 const HomeCard= () => {
   return (
-    <div className="home-card">
+    <div className="home-cardfront">
         <h2>Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética.</h2>
         <div className="home-card-about">
           <h5>Apurado dos montantes de energia por fonte de energia</h5>
