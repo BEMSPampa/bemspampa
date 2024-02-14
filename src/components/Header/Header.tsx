@@ -17,7 +17,6 @@ const Header: React.FC = () => {
             <ul>
               <Link to={'/sobre-nos'}><li>Sobre Nós</li></Link>
               <Link to={'/dados'}><li>Dados</li></Link>
-              <Link to={'/publicacoes'}><li>Publicações</li></Link>
               <li>GeoEnergia</li>
             </ul>
           </nav>
