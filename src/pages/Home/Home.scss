@@ -46,9 +46,10 @@
             flex-flow: row nowrap;
             justify-content: flex-start;
             align-items: center;
+            gap: 1rem;
             img{
-                width: 7.5rem;
-                height: 5rem;
+                width: 5.5rem;
+                height: 4.8rem;
             }
             h5{
                 font-family: Poppins;
@@ -76,6 +77,7 @@
                 flex-flow: row nowrap;
                 align-items: center;
                 padding-right: 0.6vw;
+                gap: 1rem;
             }
             p{
                 color: #FEFEFE;
@@ -84,8 +86,8 @@
                 font-size: 2rem;
             }
             img{
-                width: 4rem;
-                height: 2.7rem;
+                width: 3rem;
+                height: 3rem;
             }
         }
 
@@ -105,7 +107,6 @@
     }
 }
 
-
 .home-about{
     padding: 3vw 5vw;
     display: flex;
@@ -124,7 +125,7 @@
             font-weight: 400;
             font-size: 2.3rem;
             text-align: start;
-            letter-spacing: 0.2rem;
+            letter-spacing: 0.1rem;
             text-align: justify;
         }
         .home-aboutlayout{
@@ -177,6 +178,91 @@
 .home-infograficos{
     padding: 1vw 5vw 0 5vw;
 }
+
+
+.home-methodologylayout{
+    padding: 3vw 0;
+    .home-arrowpic{
+        width: 6rem;
+        height: 4rem;
+        margin-top: 32rem;
+    }
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    .home-methodologycard{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 45rem;
+        gap: 3rem;
+        img{
+            width: 27rem;
+            height: 27rem;
+            align-self: center;
+        }
+        h4{
+            font-family: Poppins;
+            font-weight: 700;
+            font-style: bold;
+            color: #37818A;
+            font-size: 3.1rem;
+            text-align: center;
+        }
+        .home-methodologycard-items{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            gap: 1.5rem;
+            div{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                gap: 1rem;
+                img{
+                    width:5.2rem;
+                    height: 4.8rem;
+                }
+                p{
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 2rem;
+                }
+            }
+            ul{
+                margin-left: 9rem;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 1rem;
+                li{
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 /*

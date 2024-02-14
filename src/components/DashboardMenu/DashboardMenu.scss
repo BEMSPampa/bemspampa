@@ -15,17 +15,13 @@
     gap: 3rem;
 
     .dashboard-item-logo{
-        @include mixins.defaultFlexRow(center, center);
-        background-color: #405D4C;
-        border-radius: 10rem;
-        //border: .3rem solid #fff;
-        width: 20rem;
-        height: 20rem;
         img{
-            width: 10rem;
-            height: 10rem;
+            width: 20rem;
+            height: 20rem;
+            border-radius: 10rem;
             overflow-clip-margin: none;
             overflow: none;
+            border: .3rem solid #006601;
         }
     }
 
@@ -43,6 +39,7 @@
             font-size: 2.4rem;
             text-align: center;
             max-width: 100%;
+            overflow-wrap: break-word;
         }
     }
 

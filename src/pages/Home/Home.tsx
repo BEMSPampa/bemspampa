@@ -1,9 +1,22 @@
 import "./Home.scss"
-import DashboardMenu from "../../components/DataMenu/DashboardMenu";
-import CheckPic from "../../assets/checkpic.png";
+import DashboardMenu from "../../components/DashboardMenu/DashboardMenu";
+import CheckPic from "../../assets/home/checkpic.png";
 import UnipampaPic from "../../assets/unipampapic.jpg";
 import { Link } from 'react-router-dom';
 import TitlePage from "../../components/TitlePage/TitlePage";
+import MapeamentoPic from "../../assets/home/mapeamento.png";
+import MetodologiaPic from "../../assets/home/metodologia.png";
+
+import InfoPic from "../../assets/home/infopic.png";
+import PublicationPic from "../../assets/home/publicationpic.png";
+import DashboardPic from "../../assets/home/dashboardpic.png";
+
+
+import Methodology1 from "../../assets/home/methodology1.png";
+import Methodology2 from "../../assets/home/methodology2.png";
+import Methodology3 from "../../assets/home/methodology3.png";
+import ArrowPic from "../../assets/home/arrowpic.png";
+
 const Home = () => {
   return (
     <div className='home-container'>
@@ -26,9 +39,9 @@ const Home = () => {
             </div>
           </div>
           <div className="home-cardbuttons">
-            <Link to="/info"><button className="home-card-buttons-info"><div><img src={CheckPic}/><p>Info</p></div></button></Link>
-            <Link to="/publicacoes"><button className="home-card-buttons-pub"><div><img src={CheckPic}/><p>Publicações</p></div></button></Link>
-            <Link to="/dashboard"><button className="home-card-buttons-dashboard"><div><img src={CheckPic}/><p>Dashboard</p></div></button></Link>
+            <Link to="/info"><button className="home-card-buttons-info"><div><img src={InfoPic}/><p>Info</p></div></button></Link>
+            <Link to="/publicacoes"><button className="home-card-buttons-pub"><div><img src={PublicationPic}/><p>Publicações</p></div></button></Link>
+            <Link to="/dashboard"><button className="home-card-buttons-dashboard"><div><img src={DashboardPic}/><p>Dashboard</p></div></button></Link>
           </div>
         </div>
       </div>
@@ -40,7 +53,7 @@ const Home = () => {
         
           <div className="home-aboutlayout">
             <div className="home-aboutcard">
-              <img src={UnipampaPic} alt="" />
+              <img src={MapeamentoPic} alt="" />
               <ul>
                 <li>Coletar dados eletroenergéticos;</li>
                 <li>Usar divisão a nível municipal;</li>
@@ -55,7 +68,7 @@ const Home = () => {
             </div>
 
             <div className="home-aboutcard">
-              <img src={UnipampaPic} alt="" />
+              <img src={MetodologiaPic} alt="" />
               <ul>
                 <li>Dimensionar a matriz geoenergética.</li>
                 <li>Usar dados para prospectar balanço energético.</li>
@@ -68,17 +81,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="home-infograficos">
-        <TitlePage name="Infográficos"/>
-      </div>
-      <DashboardMenu/>
-
-      <div className="home-processlayout">
-
-        <div className="home-processcard">
-          <img src={UnipampaPic}/>
+      <div className="home-methodologylayout">
+        <div className="home-methodologycard">
+          <img src={Methodology1}/>
           <h4>PESQUISA E COLETA DE DADOS</h4>
-          <div className="home-processcard-items">
+          <div className="home-methodologycard-items">
               <div>
                 <img src={CheckPic} alt="" />
                 <p>Obter Dados Gerais</p>
@@ -96,10 +103,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="home-processcard">
-          <img src={UnipampaPic}/>
+        <img src={ArrowPic} alt="" className="home-arrowpic"/>
+
+        <div className="home-methodologycard">
+          <img src={Methodology2}/>
           <h4>PROCESSAMENTO DE INFORMAÇÕES</h4>
-          <div className="home-processcard-items">
+          <div className="home-methodologycard-items">
               <div>
                 <img src={CheckPic} alt="" />
                 <p>Inovação Tecnológica</p>
@@ -123,10 +132,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="home-processcard">
-          <img src={UnipampaPic}/>
+        <img src={ArrowPic} alt="" className="home-arrowpic"/>
+
+        <div className="home-methodologycard">
+          <img src={Methodology3}/>
           <h4>RELATÓRIO DE INFORMAÇÕES AO USUÁRIO</h4>
-          <div className="home-processcard-items">
+          <div className="home-methodologycard-items">
               <div>
                 <img src={CheckPic} alt="" />
                 <p>Exibição de Informações consolidadas</p>
@@ -153,9 +164,12 @@ const Home = () => {
               </div>
           </div>
         </div>
-
-
       </div>
+
+      <div className="home-infograficos">
+        <TitlePage name="Infográficos"/>
+      </div>
+      <DashboardMenu/>
     </div>
   )
 }

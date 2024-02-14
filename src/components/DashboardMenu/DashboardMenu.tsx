@@ -1,11 +1,14 @@
 import './DashboardMenu.scss'
 
-import hidrica from '../../assets/menu/hidrica.png'
-import bioenergia from '../../assets/menu/bioenergia.png'
-import carvaomineral from '../../assets/menu/carvaomineral.png'
-import eolica from '../../assets/menu/eolica.png'
-import fossil from '../../assets/menu/fossil.png'
-import solar from '../../assets/menu/solar.png'
+import hidrica from '../../assets/dashboard/hidrica.png'
+import bioenergia from '../../assets/dashboard/bioenergia.png'
+import carvao_mineral from '../../assets/dashboard/carvao_mineral.png'
+import eolica from '../../assets/dashboard/eolica.png'
+import fossil from '../../assets/dashboard/fossil.png'
+import solar from '../../assets/dashboard/solar.png'
+import hidrogenio_verde from '../../assets/dashboard/hidrogenio_verde.png'
+import eletromobilidade from '../../assets/dashboard/eletromobilidade.png'
+
 
 const DashboardMenu = () => {
   return (
@@ -21,7 +24,7 @@ const DashboardMenu = () => {
 
       <div className='dashboard-item'>
         <div className='dashboard-item-logo'>
-          <img src={carvaomineral} alt="" />
+          <img src={carvao_mineral} alt="" />
         </div>
         <div className='dashboard-item-description'>
           <h3>SOLAR</h3>
@@ -66,17 +69,16 @@ const DashboardMenu = () => {
 
       <div className='dashboard-item'>
         <div className='dashboard-item-logo'>
-        <img src={bioenergia} alt="" />
+        <img src={eletromobilidade} alt="" />
         </div>
         <div className='dashboard-item-description'>
-          <h3>ELETROMOBILI</h3>
-          <h3>DADE</h3>
+          <h3>ELETROMOBILIDADE</h3>
         </div>
       </div>
 
       <div className='dashboard-item'>
         <div className='dashboard-item-logo'>
-        <img src={bioenergia} alt="" />
+        <img src={hidrogenio_verde} alt="" />
         </div>
         <div className='dashboard-item-description'>
           <h3>HIDROGÊNIO VERDE</h3>
