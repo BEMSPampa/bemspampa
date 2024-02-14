@@ -1,7 +1,6 @@
 import "./Home.scss"
 import DashboardMenu from "../../components/DashboardMenu/DashboardMenu";
 import CheckPic from "../../assets/home/checkpic.png";
-import UnipampaPic from "../../assets/unipampapic.jpg";
 import { Link } from 'react-router-dom';
 import TitlePage from "../../components/TitlePage/TitlePage";
 import MapeamentoPic from "../../assets/home/mapeamento.png";
