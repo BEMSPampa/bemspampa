@@ -42,7 +42,7 @@ export const developers: MembersData[] = [
     {id: '5', name: 'Eng. Itiberê Gonçalves S. Filho', image: Itibere},
     {id: '6', name: 'Guilherme Caneda Correia', image: Guilherme},
     {id: '7', name: 'Eng. Caique Nunes M. Santana', image: Caique},
-    {id: '8', name: 'Eng. John Roger Roldan Aleixo', image: John}
+    {id: '8', name: 'Dr. Erico Marcelo Hoff Do Amaral', image: Erico}
 ]
 
 import Jocemar from '../assets/about-us/members/Jocemar.png';
@@ -56,7 +56,7 @@ import Cristine from '../assets/about-us/members/Cristine.png';
 export const collaborators: MembersData[] = [
     {id: '0', name: 'Dr. Jocemar Biasi Parizzi', image: Jocemar},
     {id: '1', name: 'Dra. Sabrina Neves da Silva', image: Sabrina},
-    {id: '2', name: 'Dr. Erico Marcelo Hoff Do Amaral', image: Erico},
+    {id: '2', name: 'Eng. John Roger Roldan Aleixo', image: John},
     {id: '3', name: 'Dr. Carlos Sonier do Nascimento', image: Carlos},
     {id: '4', name: 'Dr. Marcelo Romero de Moraes', image: Marcelo},
     {id: '5', name: 'Dra. Ana Rosa Costa Muniz', image: Ana},
