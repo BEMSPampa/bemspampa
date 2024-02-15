@@ -29,9 +29,9 @@ const Publication = () => {
         <section className='publication-container'>
             <div className='publication-left'>
                 <div>
-                    <h3>Aqui você encontrará todas as</h3>
-                    <h3><span>pesquisas</span> e <span>publicações</span> realizadas</h3>
-                    <h3>pelos membros do projeto!</h3>
+                    <h3>Aqui você encontra <span>pesquisas</span></h3>
+                    <h3> e <span>publicações</span> realizadas pelos </h3>
+                    <h3>membros do projeto!</h3>
                 </div>
                 <h1>Publicações</h1>
             </div>
