@@ -15,6 +15,7 @@ import Methodology1 from "../../assets/home/methodology1.png";
 import Methodology2 from "../../assets/home/methodology2.png";
 import Methodology3 from "../../assets/home/methodology3.png";
 import ArrowPic from "../../assets/home/arrowpic.png";
+import CarouselEvents from "../../components/CarouselEvents/CarouselEvents";
 
 const Home = () => {
   return (
@@ -163,6 +164,11 @@ const Home = () => {
               </div>
           </div>
         </div>
+      </div>
+
+      <div className="home-events">
+        <TitlePage name="Eventos"/>
+        <CarouselEvents/>
       </div>
 
       <div className="home-infograficos">

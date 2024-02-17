@@ -1,0 +1,67 @@
+@use '../../UI/animations';
+@use '../../UI/colors';
+@use '../../UI/mixins';
+
+.carousel-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    //margin: 0 auto;
+
+    padding: 3vw 0;
+}
+
+.carousel-test{
+    width: 85rem;
+}
+
+.slide-item{
+    width: 100%;
+    height: 55.5rem;
+    object-fit: cover;
+}
+
+.carousel-description{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    
+    h3{
+        font-family: Poppins;
+        font-size: 3rem;
+        color: #000000;
+        letter-spacing: 0.10rem;
+        text-align: center;
+        font-weight: 700;
+        font-style: bold;
+    }
+
+    h5{
+        font-family: Poppins;
+        font-size: 2rem;
+        color: #000000;
+        letter-spacing: 0.10rem;
+        text-align: center;
+        font-weight: 600;        
+        font-style: normal;
+    }
+}
+
+.carousel-date{
+    width: 25rem;
+    height: 10rem;
+    align-self: flex-end;
+    justify-self: flex-end;
+
+    p{
+        font-family: Poppins;
+        font-size: 2rem;
+        color: #000000;
+        letter-spacing: 0.10rem;
+        text-align: center;
+    }
+}
