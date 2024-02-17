@@ -33,7 +33,7 @@ const CarouselEvents = () => {
 
   return (
     <div className="carousel-container">
-      <div className='carousel-test'>
+      <div className='carousel-img'>
       <Swiper
           modules={[EffectCoverflow]}
           effect="coverflow"

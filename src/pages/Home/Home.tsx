@@ -166,8 +166,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="home-events">
+      <div className="homevents-title">
         <TitlePage name="Eventos"/>
+      </div>
+      <div className="home-events">
         <CarouselEvents/>
       </div>
 
