@@ -10,7 +10,6 @@ Poppins
 @import './UI/colors';
 @import './UI/mixins';
 
-
 *{
   padding: 0;
   margin: 0;
@@ -19,54 +18,28 @@ Poppins
   font-size: 10px;
 }
 
-//DESKTOP
-@media (max-width: 1920px) {
-  html{
-      font-size:0.5vw;
-  }
-} 
-
-
-/*
-
-@media (max-width: 1800px) {
-  html{
-      font-size: 8px;
-  }
-} 
-
-@media (max-width: 1500px) {
-  html{
-      font-size: 8px;
-  }
-}
-
-
-//TABLETS
-@media (max-width: 1080px) {
-  html{
-      font-size: 9px
-  }
-
-  .datamenu-item{
-      height: 45rem;
-  }
-}
-
-@media (max-width: 810px) {
-  html{
-      font-size: 8px
-  }
-}
-
-@media (max-width: 500px) {
-  html{
-      font-size: 9px
-  }
-}
-*/
-
 /*:root {
   font-size: 10px;
 }
 */
+
+//SMARTPHONE
+@media (min-width: 0px) and (max-width: 767px) {
+  html{
+    font-size: 0.5vw;
+  }
+} 
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+  html{
+    font-size: 0.5vw;
+  }
+} 
+
+//DESKTOP
+@media (min-width: 1025px) { //and (max-width: 1920px) 
+  html{
+    font-size: 0.5vw;
+  }
+}
