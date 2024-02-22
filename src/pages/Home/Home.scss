@@ -188,7 +188,6 @@
     padding: 1vw 5vw 0 5vw;
 }
 
-
 .home-methodologylayout{
     padding: 3vw 0;
     .home-arrowpic{
@@ -264,40 +263,34 @@
     }
 }
 
+//SMARTPHONE
+/*@media (min-width: 0px) and (max-width: 767px) {
+  html{
+    font-size: 0.9vw;
+  }
+} */
 
-
-
-
-
-
-
-
-
-
-/*
-@media (max-width: 1024px) {
-    .home-container{
-        justify-content: center;
-    }    
-}
-
-@media (max-width: 500px){
-    .home-container{
-        height: auto;
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+    .home-about{
+        .home-explaingproject{
+            .home-aboutlayout{
+                flex-flow: row wrap;
+                .home-aboutitems{
+                    order: 3;
+                    width: 97rem;
+                }
+                .home-aboutcard:nth-child(2){
+                    order: 2;
+                }
+            }
+        }
     }
-}
-.home-search{
-    width: 50rem;
-    height: auto;
-    background-color: transparent;
-    border: 0.2rem solid #fff;
-    border-radius: 5rem;
-    padding: 1rem 1.5rem;
-    outline: none;
-    font-family: Poppins;
-    font-style: italic;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #FFFFFF;
-}
-s*/
+
+    .home-methodologylayout{
+        flex-flow: row wrap;
+        .home-arrowpic:nth-child(4){
+            display: none;
+        }
+    }
+} 

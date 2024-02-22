@@ -83,7 +83,7 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-evenly;
-        img{
+        .about-uspampapic{
             align-self: flex-end;    
             width: 85rem;
             height: 60rem;
@@ -116,3 +116,40 @@
     }
 
 }
+
+
+
+//SMARTPHONE
+/*@media (min-width: 0px) and (max-width: 767px) {
+  html{
+    font-size: 0.9vw;
+  }
+} */
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    
+.aboutus-front{
+    .aboutus-frontleft{
+        align-items: flex-start;
+        padding-left: 5vw;
+    }
+
+    .aboutus-frontright{
+        .about-uspampapic{
+            align-self: flex-end;    
+            margin-right: -6rem;
+            width: 80rem;
+            height: 55rem;
+        }
+    }
+
+    }   
+    .aboutus-organization{
+        img{
+            width: 100vw;
+            height: 55vw;
+        }
+    }
+} 

@@ -136,3 +136,25 @@
         }
     }
 }
+
+//SMARTPHONE
+/*@media (min-width: 0px) and (max-width: 767px) {
+  html{
+    font-size: 0.9vw;
+  }
+} */
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .publication-container{
+        flex-flow: column wrap;
+        .publication-left{
+            width: 100%;
+        }
+        .publication-right{
+            padding: 3vw 0;
+            width: 100%;
+        }
+    }
+} 

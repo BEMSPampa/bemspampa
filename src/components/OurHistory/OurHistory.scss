@@ -45,11 +45,6 @@
             justify-content: center;
             align-items: center;
             flex-flow: row nowrap;
-            .lifetime-line{
-                width: 7.8rem;
-                height: 0.5rem;
-                background-color: #000;
-            }
         }
 
         h4{
@@ -74,4 +69,24 @@
     width: 7.8rem;
     height: 0.5rem;
     background-color: #000;
+}
+
+//SMARTPHONE
+/*@media (min-width: 0px) and (max-width: 767px) {
+  html{
+    font-size: 0.9vw;
+  }
+} */
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+    .lifetime-gallery{
+        padding: 3vw 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3.5rem;
+    }
+
 }
