@@ -9,6 +9,9 @@ import mercopar from '../assets/events/mercopar.png';
 import siepe from '../assets/events/siepe.png';
 import seminario_socioambiental from '../assets/events/seminario_socioambiental.png';
 
+//GOOGLE ANALYTICS
+export const idGoogleAnalytics: string = "teste"
+
 export type EventData = {
     id: string,
     image: string,

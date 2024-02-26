@@ -12,6 +12,18 @@ import AboutUs from './pages/AboutUs/AboutUs.tsx'
 import Info from './pages/Info/Info.tsx'
 //import Info from './pages/Info/Info.tsx'
 
+
+
+
+//GOOGLE ANALYTICS
+/*
+import ReactGA from 'react-ga';
+import { idGoogleAnalytics } from './UI/strings';
+*/
+
+
+
+
 function App() {
 
   /*const footerRef = useRef<HTMLDivElement | null>(null);
@@ -27,6 +39,20 @@ function App() {
         <Footer/>
       </div>*/
   //<Route path='/*' element={<Navigate to='/error' />} />
+
+
+
+
+  //GOOGLE ANALYTICS
+  /*
+  ReactGA.initialize(idGoogleAnalytics);
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+  */
+
 
 
   
