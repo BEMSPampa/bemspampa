@@ -57,7 +57,6 @@
     div{
         @include mixins.defaultFlexColumn(space-around, flex-start);
         gap: 0.5rem;
-        
 
         .publication-url{
             max-width: 28rem;
@@ -138,11 +137,43 @@
 }
 
 //SMARTPHONE
-/*@media (min-width: 0px) and (max-width: 767px) {
-  html{
-    font-size: 0.9vw;
-  }
-} */
+@media (min-width: 0px) and (max-width: 767px) {
+    .publication-container{
+        flex-flow: column wrap;
+        .publication-left{
+            width: 100%;
+        }
+        .publication-right{
+            padding: 10rem 0;
+            width: 100%;
+            gap: 10rem;
+        }
+    }
+    .publication-card, .publication-card:nth-child(2){
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+        div{
+            flex-flow: column nowrap;
+            align-items: center;
+            width: 95%;
+            gap: 1rem;
+            button{
+                margin-top: 2rem;
+                align-self: center;
+                width: 100%;
+                font-size: 2.5rem;
+            }
+            h3{
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
 
 //TABLET
 @media (min-width: 768px) and (max-width: 1024px) {

@@ -11,18 +11,35 @@ import eletromobilidade from '../../assets/dashboard/eletromobilidade.png'
 
 
 const DashboardMenu = () => {
+
+  const infograficoEolica: string = "/bemspampa/Infografico_Eolica.pdf";
+  const infograficoHidrica: string = "/bemspampa/Infografico_Hidrica.pdf";
+  const infograficoSolar: string = "/bemspampa/Infografico_Solar.pdf";
+
+  const openFileAtURL = (url: string) => {
+      const parts = url.split("/");
+      const fileName: string = parts.length > 0 ? parts.pop()! : 'file';
+      const aTag = document.createElement("a");
+      aTag.href = url;
+      aTag.setAttribute("open", fileName);
+      document.body.appendChild(aTag);
+      aTag.click();
+      aTag.remove();
+  }
+
+
   return (
     <div className='dashboard-container'>
-      <div className='dashboard-item'>
+      <div className='dashboard-item' onClick={()=>openFileAtURL(infograficoHidrica)}>
         <div className='dashboard-item-logo'>
           <img src={hidrica} alt="" />
         </div>
         <div className='dashboard-item-description'>
-          <h3>HÍDRICA</h3>
+          <a><h3>HÍDRICA</h3></a>
         </div>
       </div>
 
-      <div className='dashboard-item'>
+      <div className='dashboard-item' onClick={()=>openFileAtURL(infograficoSolar)}>
         <div className='dashboard-item-logo'>
           <img src={carvao_mineral} alt="" />
         </div>
@@ -31,7 +48,7 @@ const DashboardMenu = () => {
         </div>
       </div>
 
-      <div className='dashboard-item'>
+      <div className='dashboard-item' onClick={()=>openFileAtURL(infograficoEolica)}>
         <div className='dashboard-item-logo'>
         <img src={solar} alt="" />
         </div>

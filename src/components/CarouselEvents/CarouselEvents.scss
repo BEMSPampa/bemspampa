@@ -72,11 +72,17 @@
 
 
 //SMARTPHONE
-/*@media (min-width: 0px) and (max-width: 767px) {
-  html{
-    font-size: 0.9vw;
-  }
-} */
+@media (min-width: 0px) and (max-width: 767px) {
+    .carousel-img{
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .carousel-container{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+} 
 
 //TABLET
 @media (min-width: 768px) and (max-width: 1024px) {

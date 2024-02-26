@@ -120,30 +120,60 @@
 
 
 //SMARTPHONE
-/*@media (min-width: 0px) and (max-width: 767px) {
-  html{
-    font-size: 0.9vw;
-  }
-} */
+@media (min-width: 0px) and (max-width: 767px) {
+    .aboutus-front{
+        padding: 3vw 0;
+        height: auto; 
+        flex-flow: column nowrap; 
+        .aboutus-frontleft{
+            width: 90%; 
+            height: auto; 
+            align-items: flex-start;
+            .aboutus-description{   
+                width: 100%;
+                gap: 3rem;
+            }
+        }
+    
+        .aboutus-frontright{
+            width: 100%; 
+            .about-uspampapic{   
+                width: 80rem;
+                height: 55rem;
+            }
+        }
+    }
+
+    .aboutus-organization{
+        padding: 0;
+        .titlepage-container{
+            padding: 5vw;
+        }
+        img{
+            width: 100%;
+            height: 55vw;
+        }
+    }
+} 
 
 //TABLET
 @media (min-width: 768px) and (max-width: 1024px) {
 
     
-.aboutus-front{
-    .aboutus-frontleft{
-        align-items: flex-start;
-        padding-left: 5vw;
-    }
-
-    .aboutus-frontright{
-        .about-uspampapic{
-            align-self: flex-end;    
-            margin-right: -6rem;
-            width: 80rem;
-            height: 55rem;
+    .aboutus-front{
+        .aboutus-frontleft{
+            align-items: flex-start;
+            padding-left: 5vw;
         }
-    }
+
+        .aboutus-frontright{
+            .about-uspampapic{
+                align-self: flex-end;    
+                margin-right: -6rem;
+                width: 80rem;
+                height: 55rem;
+            }
+        }
 
     }   
     .aboutus-organization{

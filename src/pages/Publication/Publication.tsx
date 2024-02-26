@@ -11,15 +11,15 @@ const Publication = () => {
     const urlUFSM: string = "http://repositorio.ufsm.br/handle/1/30583";
     const urlSIEPE: string = "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/116940";
 
-    const urlArticleUFSM: string = "/articleUFSM.pdf";
-    const urlArticleSIEPE: string = "/articleSIEPE.pdf";
+    const urlArticleUFSM: string = "/bemspampa/articleUFSM.pdf";
+    const urlArticleSIEPE: string = "/bemspampa/articleSIEPE.pdf";
 
-    const downloadFileAtURL = (url: string) => {
+    const openFileAtURL = (url: string) => {
         const parts = url.split("/");
         const fileName: string = parts.length > 0 ? parts.pop()! : 'file';
         const aTag = document.createElement("a");
         aTag.href = url;
-        aTag.setAttribute("download", fileName);
+        aTag.setAttribute("open", fileName);
         document.body.appendChild(aTag);
         aTag.click();
         aTag.remove();
@@ -52,7 +52,7 @@ const Publication = () => {
                         <div className="publication-authors">
                             {authorsUFSM.map(author => (<p>{author}</p>))}
                         </div>
-                        <button onClick={()=>downloadFileAtURL(urlArticleUFSM)}>BAIXAR</button>
+                        <button onClick={()=>openFileAtURL(urlArticleUFSM)}>ABRIR</button>
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@ const Publication = () => {
                         <div className="publication-authors">
                             {authorsSIEPE.map(author => (<p>{author}</p>))}
                         </div>
-                        <button onClick={()=>downloadFileAtURL(urlArticleSIEPE)}>BAIXAR</button>
+                        <button onClick={()=>openFileAtURL(urlArticleSIEPE)}>ABRIR</button>
                     </div>
                 </div>
 

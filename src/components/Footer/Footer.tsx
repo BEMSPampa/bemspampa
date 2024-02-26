@@ -30,7 +30,7 @@ const Footer = () => {
 
   return (
     <section className='footer-container'>
-      <div>
+      <div className='footer-items'>
         <Link to={'/'}><Logo name='footer'/></Link>
 
         <div className='footer-copy'>

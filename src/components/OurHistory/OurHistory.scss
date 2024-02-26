@@ -72,11 +72,16 @@
 }
 
 //SMARTPHONE
-/*@media (min-width: 0px) and (max-width: 767px) {
-  html{
-    font-size: 0.9vw;
-  }
-} */
+@media (min-width: 0px) and (max-width: 767px) {
+    .lifetime-line{
+        width:18rem;
+    }
+    .lifetime-gallery{
+        padding: 3vw 0;
+        flex-flow: row wrap;
+        gap: 3.5rem;
+    }
+} 
 
 //TABLET
 @media (min-width: 768px) and (max-width: 1024px) {

@@ -1,0 +1,10 @@
+.dropdownmenuheader-container{
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .dropdownmenuheader-container{
+        display: none;
+    }
+} 

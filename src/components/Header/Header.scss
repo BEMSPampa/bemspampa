@@ -14,11 +14,6 @@
     //padding: 0 17.5rem;
     padding: 0 5vw;
     height: 100%;
-
-    /*
-    margin: auto;
-    min-width: 100rem;
-    max-width: 200rem;*/
 }
 
 .header-menu{
@@ -66,3 +61,19 @@
     background-color: #D6A067;
     height: 5rem;
 }
+ 
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .header{
+        height: auto;
+        padding: 1.5vw 0;
+    }
+    .header-container{
+        flex-flow: column nowrap;
+        gap: 1rem;
+    }
+    /*
+    .header-menu{
+        display: none;
+    }*/
+} 

@@ -263,12 +263,72 @@
     }
 }
 
+
+
+
+
+
+
+
 //SMARTPHONE
-/*@media (min-width: 0px) and (max-width: 767px) {
-  html{
-    font-size: 0.9vw;
-  }
-} */
+@media (min-width: 0px) and (max-width: 767px) {
+    .home-about{
+        .home-explaingproject{
+            .home-aboutlayout{
+                flex-flow: row wrap;
+                .home-aboutitems{
+                    order: 3;
+                    width: 97rem;
+                }
+                .home-aboutcard:nth-child(2){
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    .home-methodologylayout{
+        padding: 10vw 0;
+        flex-flow: row wrap;
+        .home-arrowpic{
+            display: none;
+        }
+    }
+
+
+    .home-cardfront{
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        padding: 3vw;
+        opacity: 0.85;
+        
+        
+        .home-cardbuttons{
+            gap: 3rem;
+            width: 100%;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            button{
+                //min-width: 50%;
+                //max-width: 100%;
+                width: 57rem;
+            }
+    
+        }
+    }
+} 
+
+
+
+
+
+
+
+
+
+
 
 //TABLET
 @media (min-width: 768px) and (max-width: 1024px) {

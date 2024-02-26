@@ -203,11 +203,23 @@
 }
 
 //SMARTPHONE
-/*@media (min-width: 0px) and (max-width: 767px) {
-  html{
-    font-size: 0.9vw;
-  }
-} */
+@media (min-width: 0px) and (max-width: 767px) {
+    .webmap-about{
+        iframe{
+            width: 90%;
+            height: 100vw;
+        }
+        padding-bottom: 5vw;
+    }
+
+    .webmap-links-layout{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        .webmap-cardgroup:nth-child(5){
+            flex-flow: row nowrap;
+        }
+    }
+} 
 
 //TABLET
 @media (min-width: 768px) and (max-width: 1024px) {
