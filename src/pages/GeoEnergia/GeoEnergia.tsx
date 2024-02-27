@@ -1,10 +1,13 @@
-import SolarGeoEnergia from '../../components/SolarGeoEnergia/SolarGeoEnergia'
+import GeoEnergiaSolar from '@Components/GeoEnergiaSolar/GeoEnergiaSolar'
+import GeoEnergiaTermo from '@Components/GeoEnergiaTermo/GeoEnergiaTermo'
+
 import './GeoEnergia.scss'
 
 const GeoEnergia = () => {
   return (
     <div className='geonergia-container'> 
-        <SolarGeoEnergia/>
+        <GeoEnergiaSolar/>
+        <GeoEnergiaTermo/>
     </div>
   )
 }

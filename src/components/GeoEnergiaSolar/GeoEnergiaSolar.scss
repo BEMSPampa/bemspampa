@@ -1,0 +1,116 @@
+.gesolar-container{
+    background-color: #FB8F4C;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 3vw 5vw;
+
+    h2{
+        font-family: Poppins;
+        font-weight: 900;
+        font-style: bold;
+        text-align: center;
+        font-size: 7.7rem;
+        color: #fff;
+    }
+
+    p{
+        font-family: Poppins;
+        font-size: 2.3rem;
+        font-style: normal;
+        font-weight: 400;
+        color: #000;
+        text-align: justify;
+        letter-spacing: 0.2rem;
+    }
+    h3{
+        font-family: Poppins;
+        font-size: 4rem;
+        font-style: bold;
+        font-weight: 700;
+        color: #FB8F4C;
+        text-align: start;
+        letter-spacing: 0.25rem;
+    }
+    img{
+        align-self: center;
+        width: 60rem;
+        height: 59rem;
+        margin-bottom: -10rem;
+    }
+
+    .gesolar-card1{
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+        padding: 3vw 4vw;
+        border-radius: 4rem;
+        img:nth-child(6){
+            width: 65rem;
+            height: 64rem;
+            margin-top: -5rem;
+        }
+    }
+
+    .gesolar-card2{
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+        padding: 3vw 4vw;
+        border-radius: 4rem;
+        div{
+            display: flex;
+            flex-flow: row wrap;
+            align-self: center;
+            justify-content: center;
+            margin-top: -2.5rem;
+            padding-bottom: 4rem;
+            
+            img{  
+                width: 60rem;
+                height: 59rem;
+                margin-top: -5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    .gesolar-container{
+        gap: 2rem;
+        img{  
+            width: 45rem;
+            height: 45rem;
+            margin: 0;
+        }
+        .gesolar-card1{
+            img:nth-child(6){
+                width: 50rem;
+                height: 50rem;
+                margin: 0;
+            }
+        }
+
+        .gesolar-card2{
+            div{
+                padding: 0;
+                margin: 0;
+                img{  
+                    width: 50rem;
+                    height: 50rem;
+                    margin: 0;
+                }
+            }
+        }
+    }    
+
+}

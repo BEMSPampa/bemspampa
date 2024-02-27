@@ -14,12 +14,12 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
+      "@Assets/*": ["src/assets/*"],
       "@Components/*": ["src/components/*"],
       "@Pages/*": ["src/pages/*"],
-      "@Assets/*": ["src/assets/*"],
-      "@UI/*": ["src/UI/*"],
+      "@UI/*": ["src/UI/*"]
     },
 
 
