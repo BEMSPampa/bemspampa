@@ -8,7 +8,7 @@ const Members = () => {
         <p>Composta por discentes e docentes da Universidade Federal do Pampa, engenheiros de energia, computação e química.</p>
 
         <h4>DESENVOLVEDORES</h4>
-        <div className='members-gallery'>
+        <div className='members-gallery' >
             {developers.map(developer => (
                 <div className='members-card'>
                     <img src={developer.image} />
