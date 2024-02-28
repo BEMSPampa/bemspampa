@@ -30,7 +30,7 @@ const DashboardMenu = () => {
 
   return (
     <div className='dashboard-container'>
-      <div className='dashboard-item' onClick={()=>openFileAtURL(infograficoHidrica)}>
+      <div className='dashboard-item'>
         <div className='dashboard-item-logo'>
           <img src={hidrica} alt="" />
         </div>
@@ -39,7 +39,7 @@ const DashboardMenu = () => {
         </div>
       </div>
 
-      <div className='dashboard-item' onClick={()=>openFileAtURL(infograficoSolar)}>
+      <div className='dashboard-item'>
         <div className='dashboard-item-logo'>
           <img src={carvao_mineral} alt="" />
         </div>
@@ -48,7 +48,7 @@ const DashboardMenu = () => {
         </div>
       </div>
 
-      <div className='dashboard-item' onClick={()=>openFileAtURL(infograficoEolica)}>
+      <div className='dashboard-item'>
         <div className='dashboard-item-logo'>
         <img src={solar} alt="" />
         </div>
