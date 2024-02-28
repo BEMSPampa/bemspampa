@@ -12,9 +12,9 @@ import eletromobilidade from '../../assets/dashboard/eletromobilidade.png'
 
 const DashboardMenu = () => {
 
-  const infograficoEolica: string = "/bemspampa/Infografico_Eolica.pdf";
-  const infograficoHidrica: string = "/bemspampa/Infografico_Hidrica.pdf";
-  const infograficoSolar: string = "/bemspampa/Infografico_Solar.pdf";
+  //const infograficoEolica: string = "/bemspampa/Infografico_Eolica.pdf";
+  //const infograficoHidrica: string = "/bemspampa/Infografico_Hidrica.pdf";
+  //const infograficoSolar: string = "/bemspampa/Infografico_Solar.pdf";
 
   const openFileAtURL = (url: string) => {
       const parts = url.split("/");
