@@ -16,7 +16,7 @@ const DashboardMenu = () => {
   //const infograficoHidrica: string = "/bemspampa/Infografico_Hidrica.pdf";
   //const infograficoSolar: string = "/bemspampa/Infografico_Solar.pdf";
 
-  const openFileAtURL = (url: string) => {
+  /*const openFileAtURL = (url: string) => {
       const parts = url.split("/");
       const fileName: string = parts.length > 0 ? parts.pop()! : 'file';
       const aTag = document.createElement("a");
@@ -25,7 +25,7 @@ const DashboardMenu = () => {
       document.body.appendChild(aTag);
       aTag.click();
       aTag.remove();
-  }
+  }*/
 
 
   return (
