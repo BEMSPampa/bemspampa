@@ -1,6 +1,36 @@
+@use '../../UI/animations';
+
 .geoenergia-container{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
+
+}
+
+.ge-temporary{
+    width: 100%;
+    background-color: #fff;
+    button{
+        font-family: Poppins;
+        font-weight: 700;
+        font-style: bold;
+        font-size: 3.5rem;
+        color: #fff;
+        //border-radius: 1rem;
+        width: 100%;
+    }
+    button:nth-child(1){
+        background-color: #FB8F4C;
+    }
+    button:nth-child(2){
+        background-color: #9CC2C4;
+    }
+    button:nth-child(3){
+        background-color: #E9AE93;
+    }
+    button:hover{
+        @include animations.defaultHover();
+    }
 }
