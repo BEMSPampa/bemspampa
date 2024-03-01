@@ -1,0 +1,74 @@
+@use '../../UI/animations';
+
+.ge-termofront-container{
+    background: linear-gradient(90deg, #9abfc1 0%, #03989e 100%);
+    height: 90rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    
+    
+}
+.ge-termofront-img{
+    height: 100%;
+    width: 95rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    img{
+        height: 100%;
+        width: 100%;
+        z-index: -1; //mudar pra 0 pra colocar na tela de novo
+        margin-top: -10rem;
+        margin-bottom: -13.5rem;
+    }
+
+}
+.ge-termofront-title{
+    margin-left: -20rem;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap:12rem;
+    div{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    h1{
+        margin-block: 0;
+        margin-inline: 0;
+        font-family: Poppins;
+        font-weight: 900;
+        font-size: 17.5rem;
+        color: #A6E1D8;
+        text-align: center;
+        margin: -2.5rem;
+    }
+    h1:nth-child(2){
+        font-family: Poppins;
+        font-weight: 900;
+        font-size:8.75rem;
+        letter-spacing: 0.3rem;
+        color: #A6E1D8;
+        text-align: center;
+    }
+    button{
+        font-family: Poppins;
+        font-weight: 900;
+        font-size: 3.5rem;
+        color: #fff;
+        background-color: #A6E1D8;
+        border-radius: 5rem;
+        padding: 2rem 2.5rem;
+        cursor: pointer;
+        z-index: 1;
+    }button:hover{
+        @include animations.defaultHover();
+    }
+}

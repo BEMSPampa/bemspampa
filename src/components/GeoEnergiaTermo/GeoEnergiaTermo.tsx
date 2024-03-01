@@ -1,5 +1,4 @@
 import './GeoEnergiaTermo.scss'
-//import pic1 from "@Assets/geoenergia/termo/termo1.png"
 import pic2 from "@Assets/geoenergia/termo/termo2.png"
 import pic3 from "@Assets/geoenergia/termo/termo3.png"
 import pic4 from "@Assets/geoenergia/termo/termo4.png"
@@ -10,7 +9,7 @@ import pic7 from "@Assets/geoenergia/termo/termo7.png"
 const GeoEnergiaTermo = () => {
   return (
     <div className='getermo-container'>
-      <h2>ENERGIA TERMOELÉTRICA</h2>
+      <h2 id='getermo-title'>ENERGIA TERMOELÉTRICA</h2>
 
       <div className='getermo-card1'>
         <p><span>Energia termoelétrica</span> é um tipo de energia que é gerada a partir do <span>calor</span>. Vamos usar um exemplo para entender melhor:</p>

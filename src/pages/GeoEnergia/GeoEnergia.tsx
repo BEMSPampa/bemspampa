@@ -4,15 +4,17 @@ import GeoEnergiaNuclear from '@Components/GeoEnergiaNuclear/GeoEnergiaNuclear'
 
 import './GeoEnergia.scss'
 import { useState } from 'react'
+import GeoEnergiaTermoFront from '@Components/GeoEnergiaTermoFront/GeoEnergiaTermoFront'
 
 const GeoEnergia = () => {
-  const [isVisible, setIsVisible] = useState(1);
-
+  const [isVisible, setIsVisible] = useState(2);
+  
   const handleIsVisible = (page: number) => {
     setIsVisible(page);
   }
   return (
     <div className='geonergia-container'> 
+      <GeoEnergiaTermoFront/>
       <div className='ge-temporary'>
         <button onClick={() => handleIsVisible(1)}>Solar</button>
         <button onClick={() => handleIsVisible(2)}>Termoelétrica</button>
