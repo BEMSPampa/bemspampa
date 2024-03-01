@@ -1,7 +1,7 @@
 @use '../../UI/animations';
 
-.ge-termofront-container{
-    background: linear-gradient(90deg, #9abfc1 0%, #03989e 100%);
+.ge-nuclearfront-container{
+    background-image: linear-gradient(#D66364, #E9AE93);
     height: 90rem;
     display: flex;
     flex-flow: row nowrap;
@@ -9,7 +9,7 @@
     justify-content: space-around;
     overflow: hidden;
 }
-.ge-termofront-img{
+.ge-nuclearfront-img{
     height: 80%; //mudar para 100%
     width: 95rem;
     display: flex;
@@ -24,7 +24,7 @@
         margin-bottom: -13.5rem;
     }*/
 }
-.ge-termofront-title{
+.ge-nuclearfront-title{
     margin-left: -20rem;
     z-index: 1;
     height: 100%;
@@ -43,16 +43,16 @@
         font-family: Poppins;
         font-weight: 900;
         font-size: 17.5rem;
-        color: #A6E1D8;
+        color: #FAC9B2;
         text-align: center;
         margin: -2.5rem;
     }
     h1:nth-child(2){
         font-family: Poppins;
         font-weight: 900;
-        font-size:8.75rem;
+        font-size:15.8rem;
         letter-spacing: 0.3rem;
-        color: #A6E1D8;
+        color: #FAC9B2;
         text-align: center;
     }
     button{
@@ -60,7 +60,7 @@
         font-weight: 900;
         font-size: 3.5rem;
         color: #fff;
-        background-color: #A6E1D8;
+        background-color: #FAC9B2;
         border-radius: 5rem;
         padding: 2rem 2.5rem;
         cursor: pointer;

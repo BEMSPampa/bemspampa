@@ -7,7 +7,7 @@ import pic4 from '@Assets/geoenergia/nuclear/nuclear4.png'
 const GeoEnergiaNuclear = () => {
   return (
     <div className='genuclear-container'>
-        <h2>ENERGIA NUCLEAR</h2>
+        <h2 id='genuclear-title'>ENERGIA NUCLEAR</h2>
 
         <div className='genuclear-cards-layout'>
 

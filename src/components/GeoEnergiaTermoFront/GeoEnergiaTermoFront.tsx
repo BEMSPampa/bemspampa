@@ -14,7 +14,6 @@ const GeoEnergiaTermoFront = () => {
     <div className="ge-termofront-container">
         <div className='ge-termofront-img'>
           <GeoEnergiaLogo/>
-          <img src={pic1} alt="" />
         </div>
         <div className='ge-termofront-title'>
           <div>

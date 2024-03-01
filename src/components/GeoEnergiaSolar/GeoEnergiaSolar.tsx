@@ -10,7 +10,7 @@ import pic6 from "@Assets/geoenergia/solar/solar6.png"
 const GeoEnergiaSolar = () => {
   return (
     <div className='gesolar-container'>
-        <h2>ENERGIA SOLAR</h2>
+        <h2 id='gesolar-title'>ENERGIA SOLAR</h2>
         <div className='gesolar-card1'>
           <h3>ENERGIA SOLAR PARA AQUECIMENTO</h3>
           <p>Vamos imaginar um dia perfeito na praia para entender como a energia solar pode aquecer nossas casas. </p>

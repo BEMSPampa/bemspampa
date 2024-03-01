@@ -1,34 +1,59 @@
 @use '../../UI/animations';
 
 .gelogo-container{
+    position: relative;
     button{
-        font-family: Poppins;
-        font-weight: 900;
-        font-size: 3.5rem;
-        color: #fff;
-        background-color: #A6E1D8;
-        border-radius: 5rem;
-        padding: 2rem 2.5rem;
-        cursor: pointer;
+        position: relative;
         z-index: 1;
+        cursor: pointer;
+
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 3.5rem;
+        color: #239e44;
+        background-color: #fff;
+        letter-spacing: 0.1rem;
+        padding: 2rem 2.5rem;
+        span{
+            font-family: Poppins;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+            font-size: 3.5rem;
+            color: #75a1d8;
+        }
     }button:hover{
-        @include animations.defaultHover();
+        @include animations.smallHover();
     }
 }
 
 
+.gelogo-content{
+    position: absolute; 
+    top: 100%;
+    width: 24.6rem;
+    z-index: 1;
+    
+}
+
+.gelogo-item:nth-child(1){
+    border-top: 0.2rem solid #000;
+}
 
 .gelogo-item{
-    width: 27.5rem;
-    background-color: #fff;
-    border-bottom: 0.5rem solid #000;
+    padding-left: 1rem;
+    width: 100%;
+    background-color: #ffffff;
+    border: 0.5rem solid #ffffff;
+    border-top: 0;
     p{
         font-family: Poppins;
-        font-size: 3rem;
-        padding-left: 1rem;
+        font-size: 2.5rem;
+        font-weight: 500;
     }
+}.gelogo-item:hover{
+    background-color: #1f9b27;
+    color: #A6E1D8;
+    @include animations.smallHover();
     cursor: pointer;
-}
-.gelogo-item:hover{
-    background-color: #A6E1D8;
+    border-color: #1f9b27;
 }
