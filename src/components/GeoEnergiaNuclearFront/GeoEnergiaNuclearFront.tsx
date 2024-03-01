@@ -1,6 +1,11 @@
 import GeoEnergiaLogo from '@Components/GeoEnergiaLogo/GeoEnergiaLogo'
 import './GeoEnergiaNuclearFront.scss'
-const GeoEnergiaNuclearFront = () => {
+
+interface GeoEnergiaFrontProps{
+  setSelected: React.Dispatch<React.SetStateAction<string | null>> 
+}
+
+const GeoEnergiaNuclearFront: React.FC<GeoEnergiaFrontProps> = props => {
     const handleClick = () => {
         const element = document.getElementById('genuclear-title');
         if (element) {
@@ -11,7 +16,7 @@ const GeoEnergiaNuclearFront = () => {
     return (
         <div className="ge-nuclearfront-container">
             <div className='ge-nuclearfront-img'>
-              <GeoEnergiaLogo/>
+              <GeoEnergiaLogo setSelected={props.setSelected}/>
             </div>
             <div className='ge-nuclearfront-title'>
               <div>

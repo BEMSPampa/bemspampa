@@ -32,7 +32,7 @@ function App() {
       footerRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  //
+  
   <Header scrollToFooter={scrollToFooter} />
 
   <div ref={footerRef}>

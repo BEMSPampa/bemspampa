@@ -17,7 +17,7 @@ const Header: React.FC = () => {
             <ul>
               <Link to={'/sobre-nos'}><li>Sobre Nós</li></Link>
               <Link to={'/dados'}><li>Dados</li></Link>
-              <Link to={'/geoenergia'}><li >Geoenergia</li></Link>
+              <Link to={'/geoenergia'}><li>Geoenergia</li></Link>
             </ul>
           </nav>
           <div className='header-bar'></div>
