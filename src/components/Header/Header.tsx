@@ -1,3 +1,4 @@
+import DropdownMenuHeader from '@Components/DropdownMenuHeader/DropdownMenuHeader';
 import Logo from '../Logo/Logo';
 import './Header.scss';
 import {Link} from 'react-router-dom';
@@ -8,10 +9,15 @@ interface Props{
 }*/
 const Header: React.FC = () => {
 //<li onClick={props.scrollToFooter}>Contatos</li>
+
+
   return (
     <div className='header'>
       <div className='header-container'>
         <Link to={'/'}><Logo name='header'/></Link>
+
+        <DropdownMenuHeader/>
+
         <div className='header-menu'>
           <nav>
             <ul>

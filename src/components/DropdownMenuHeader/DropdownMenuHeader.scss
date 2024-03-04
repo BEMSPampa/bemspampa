@@ -1,10 +1,80 @@
-.dropdownmenuheader-container{
-    display: block;
+@use '../../UI/animations';
+
+.dropdownheader-container{
+    visibility: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdownheader-icon{
+    position: relative;
+    background-color: #fff;
+    width: 5rem;
+    height: 5rem;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+    .dropdownheader-line {
+        width: 50%;
+        min-height: 0.35rem; 
+        background: #000;
+    }
 }
 
 
-@media (max-width: 768px) {
-    .dropdownmenuheader-container{
-        display: none;
+.dropdownheader-content{
+    position: absolute; 
+    top: 100%;
+    right: 80%;
+    width: 20rem;
+    z-index: 1;
+}
+
+.dropdownheader-item{
+    padding-left: 1rem;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    p{
+        font-family: Poppins;
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: #000;
+    }
+}
+
+.dropdownheader-item:hover{
+    background-color: #c1c1c1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .dropdownheader-container {
+        visibility: visible;
     }
 } 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .dropdownheader-container {
+        visibility: visible;
+    }
+}
+  

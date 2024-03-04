@@ -1,6 +1,6 @@
 import GeoEnergiaLogo from '@Components/GeoEnergiaLogo/GeoEnergiaLogo';
 import './GeoEnergiaTermoFront.scss'
-import pic1 from "@Assets/geoenergia/termo/termo1.png"
+//import pic1 from "@Assets/geoenergia/termo/termo1.png"
 
 interface GeoEnergiaFrontProps{
   setSelected: React.Dispatch<React.SetStateAction<string | null>> 
