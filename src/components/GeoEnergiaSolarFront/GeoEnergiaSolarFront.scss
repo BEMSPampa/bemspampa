@@ -2,32 +2,54 @@
 
 .ge-solarfront-container{
     background-image: linear-gradient(to bottom, #FF741E, #FF914D);
-    height: 90rem;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
-    gap: 7rem;
+    height: 70rem;
     overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas com largura igual */
+    grid-template-rows: 1fr 1fr; /* Duas linhas com altura igual */
+    grid-gap: 1rem;
+    grid-template-areas:
+        "logo name"
+        "image name";
+    padding: 10rem;
 }
+.ge-solarfront-logo{
+    position: relative;
+    top: 0%;
+    left: 2.5%;
+    z-index: 2;
+    
+    grid-area: logo;
+}
+
 .ge-solarfront-img{
-    height: 80%; //mudar para 100%
+    position: relative;
+    bottom: 19%;
+    left: 0%;
+    z-index: 0;
+
+
+    //margin-top: -30rem;
+    //margin-bottom: -16rem;
+    grid-area: image;
     width: 95rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;/*
     img{
         height: 100%;
         width: 100%;
-        z-index: -1; //mudar pra 0 pra colocar na tela de novo
-        margin-top: -10rem;
-        margin-bottom: -13.5rem;
-    }*/
+        z-index: 0; 
+    }
 }
+
 .ge-solarfront-title{
-    margin-left: -20rem;
+    position: relative;
+    top: -15%;
+    right: 0%;
     z-index: 1;
+
+
+    grid-area: name;
+    z-index: 0;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -46,7 +68,7 @@
         font-size: 15.8rem;
         color: #fff;
         text-align: center;
-        margin: -2.5rem;
+        margin: -3rem;
     }
     h1:nth-child(2){
         font-family: Poppins;
@@ -65,7 +87,6 @@
         border-radius: 5rem;
         padding: 2rem 2.5rem;
         cursor: pointer;
-        z-index: 1;
     }button:hover{
         @include animations.defaultHover();
     }

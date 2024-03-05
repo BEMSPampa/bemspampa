@@ -2,31 +2,47 @@
 
 .ge-nuclearfront-container{
     background-image: linear-gradient(#D66364, #E9AE93);
-    height: 90rem;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
+    height: 70rem;
     overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas com largura igual */
+    grid-template-rows: 1fr 1fr; /* Duas linhas com altura igual */
+    grid-gap: 1rem;
+    grid-template-areas:
+        "logo name"
+        "image name";
+    padding: 10rem;
 }
+.ge-nuclearfront-logo{
+    position: relative;
+    top: 0%;
+    left: 2.5%;
+    z-index: 2;
+    grid-area: logo;
+}
+
 .ge-nuclearfront-img{
-    height: 80%; //mudar para 100%
+    position: relative;
+    bottom: 14%;
+    left: 0%;
+    z-index: 0;
+
+    grid-area: image;
     width: 95rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;/*
     img{
         height: 100%;
         width: 100%;
-        z-index: -1; //mudar pra 0 pra colocar na tela de novo
-        margin-top: -10rem;
-        margin-bottom: -13.5rem;
-    }*/
+        z-index: 0; 
+    }
 }
 .ge-nuclearfront-title{
-    margin-left: -20rem;
+    position: relative;
+    top: -15%;
+    right: 0%;
     z-index: 1;
+
+    grid-area: name;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;

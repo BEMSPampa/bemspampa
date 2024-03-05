@@ -1,6 +1,6 @@
 import GeoEnergiaLogo from '@Components/GeoEnergiaLogo/GeoEnergiaLogo';
 import './GeoEnergiaTermoFront.scss'
-//import pic1 from "@Assets/geoenergia/termo/termo1.png"
+import pic1 from "@Assets/geoenergia/termo/termo1.png"
 
 interface GeoEnergiaFrontProps{
   setSelected: React.Dispatch<React.SetStateAction<string | null>> 
@@ -16,9 +16,12 @@ const GeoEnergiaTermoFront: React.FC<GeoEnergiaFrontProps> = props => {
 
   return (
     <div className="ge-termofront-container">
-        <div className='ge-termofront-img'>
+        <div className='ge-termofront-logo'>
           <GeoEnergiaLogo setSelected={props.setSelected}/>
         </div>
+        
+        <img src={pic1} className='ge-termofront-img'/>
+        
         <div className='ge-termofront-title'>
           <div>
             <h1>ENERGIA</h1>
