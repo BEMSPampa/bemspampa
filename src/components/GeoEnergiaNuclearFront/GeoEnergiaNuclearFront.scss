@@ -85,3 +85,66 @@
         @include animations.defaultHover();
     }
 }
+
+
+//SMARTPHONE
+@media (min-width: 0px) and (max-width: 767px) {
+    .ge-nuclearfront-container{
+        grid-template-columns: 1fr; /* Duas colunas com largura igual */
+        grid-template-rows: 1fr ; /* Duas linhas com altura igual */
+        grid-template-areas:
+            "logo "
+            "image title ";
+        padding: 0;
+    }
+    .ge-nuclearfront-logo{
+        position: relative;
+        top: 50%;
+        left: 5%;
+        z-index: 2;
+        grid-area: logo;
+    }
+    .ge-nuclearfront-img{
+        left: -14%;
+    }
+    .ge-nuclearfront-title{
+        position: relative;
+        top: -10%;
+        right: 165%;
+
+        h1, h1:nth-child(2){
+            font-size: 12rem;
+        }
+        button{
+        }
+    }
+} 
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ge-nuclearfront-container{
+        grid-template-columns: 1fr; /* Duas colunas com largura igual */
+        grid-template-rows: 1fr ; /* Duas linhas com altura igual */
+        grid-template-areas:
+            "logo "
+            "image title ";
+    }
+    .ge-nuclearfront-logo{
+        position: relative;
+        top: -50%;
+        left: -2.5%;
+        z-index: 2;
+        grid-area: logo;
+    }
+
+    .ge-nuclearfront-title{
+        position: relative;
+        top: -15%;
+        right: 105%;
+
+        h1, h1:nth-child(2){
+        }
+        button{
+        }
+    }
+} 

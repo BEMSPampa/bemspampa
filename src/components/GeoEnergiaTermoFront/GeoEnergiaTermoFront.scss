@@ -87,3 +87,71 @@
         @include animations.defaultHover();
     }
 }
+
+//SMARTPHONE
+@media (min-width: 0px) and (max-width: 767px) {
+    .ge-termofront-container{
+        grid-template-columns: 1fr; /* Duas colunas com largura igual */
+        grid-template-rows: 1fr ; /* Duas linhas com altura igual */
+        grid-template-areas:
+            "logo "
+            "image title ";
+        padding: 0;
+    }
+    .ge-termofront-logo{
+        position: relative;
+        top: 50%;
+        left: 5%;
+        z-index: 2;
+        grid-area: logo;
+    }
+    .ge-termofront-img{
+        left: -14%;
+        bottom: 30%;
+    }
+    .ge-termofront-title{
+        position: relative;
+        top: -10%;
+        right: 159%;
+        h1{
+            font-size: 12rem;
+        }
+        h1:nth-child(2){
+            font-size: 7rem;
+        }
+        h1, h1:nth-child(2){
+            color: #fff
+        }
+        button{
+        }
+    }
+} 
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ge-termofront-container{
+        grid-template-columns: 1fr; /* Duas colunas com largura igual */
+        grid-template-rows: 1fr ; /* Duas linhas com altura igual */
+        grid-template-areas:
+            "logo "
+            "image title ";
+    }
+    .ge-termofront-logo{
+        position: relative;
+        top: -50%;
+        left: -2.5%;
+        z-index: 2;
+        grid-area: logo;
+    }
+
+    .ge-termofront-title{
+        position: relative;
+        top: -15%;
+        right: 105%;
+
+        h1, h1:nth-child(2){
+        }
+        button{
+        }
+    }
+} 
