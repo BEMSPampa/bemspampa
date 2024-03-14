@@ -1,0 +1,204 @@
+.gehidraulica-container{
+    background-color: #70ADCA;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 3vw 5vw;
+
+    h2{
+        font-family: Poppins;
+        font-weight: 900;
+        font-style: bold;
+        text-align: center;
+        font-size: 7.7rem;
+        color: #fff;
+    }
+
+    p{
+        font-family: Poppins;
+        font-size: 2.3rem;
+        font-style: normal;
+        font-weight: 400;
+        color: #000;
+        text-align: justify;
+        letter-spacing: 0.2rem;
+        padding: 3vw 4vw 0 4vw;
+        span{
+            font-style: bold;
+            font-family: Poppins;
+            font-size: 2.3rem;
+            font-style: bold;
+            font-weight: 700;
+            color: #000;
+            text-align: justify;
+            letter-spacing: 0.2rem;
+        }
+    }
+
+    img{
+        align-self: center;
+        width: 100%;
+        height: 85rem;
+    }
+
+    .gehidraulica-card1{
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        
+        overflow: hidden;
+        border-radius: 4rem;
+        img:nth-child(2){
+            margin: -16rem;
+        }
+        img:nth-child(4){
+            margin: -7rem 0 -3rem 0;
+        }
+    }
+
+    .gehidraulica-card4{
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-radius: 4rem;
+
+        overflow: hidden;
+        p{
+            width: 67%;
+            z-index: 1;
+        }
+        img{
+            margin: -31.5rem 0 -17rem 0;
+            z-index: 0
+        }
+    }
+}
+
+.gehidraulica-cards{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3rem;
+    div{
+        img{
+            margin-top: -25rem;
+        }
+    }
+    .gehidraulica-card2{
+        max-width: 50%;
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            padding: 0 4vw;
+        }
+        
+        padding: 3vw 0 0 0;
+        border-radius: 4rem;
+        overflow: hidden;
+    }
+
+    .gehidraulica-card3{
+        max-width: 50%;
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            margin-bottom: -0.1rem;
+            margin-right: -0.1rem;
+        }
+        p{
+            padding: 0 4vw;
+        }
+        
+        padding: 3vw 0 0 0;
+        border-radius: 4rem;
+        overflow: hidden;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .gehidraulica-container{
+        img{
+            height: 55rem;
+        }
+        .gehidraulica-card1{
+            img:nth-child(2){
+                margin: -10rem 0;
+            }
+            img:nth-child(4){
+                margin: 0;
+            }
+        }
+    
+        .gehidraulica-card4{
+            p{
+                width: auto;
+            }
+            img{
+                margin-top: -30rem;
+                opacity: 0.5;
+            }
+        }
+    }
+    
+    .gehidraulica-cards{
+        gap: 10rem;
+        flex-flow: column nowrap;
+        div{
+            img{
+                margin-top: -18rem;
+            }
+        }
+//FUI PEGAR BATIDA DE BANANA XD
+        .gehidraulica-card2{
+            max-width: 100%;
+        }.gehidraulica-card3{
+            max-width: 100%;
+        }
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .gehidraulica-container{
+        img{
+            height: 55rem;
+        }
+        .gehidraulica-card1{
+            img:nth-child(2){
+                margin: -10rem 0;
+            }
+            img:nth-child(4){
+                margin: 0;
+            }
+        }
+    
+        .gehidraulica-card4{
+            p{
+                width: 53%;
+            }
+            img{
+                margin-top: -30rem;
+            }
+        }
+    }
+    
+    .gehidraulica-cards{
+        div{
+            img{
+                margin-top: -18rem;
+            }
+        }
+    }
+}

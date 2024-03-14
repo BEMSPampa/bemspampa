@@ -1,0 +1,113 @@
+.geeolica-container{
+    background-color: #AA38B0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 3vw 5vw;
+
+    h2{
+        font-family: Poppins;
+        font-weight: 900;
+        font-style: bold;
+        text-align: center;
+        font-size: 7.7rem;
+        color: #440947;
+    }
+
+    p{
+        font-family: Poppins;
+        font-size: 2.3rem;
+        font-style: normal;
+        font-weight: 400;
+        color: #000;
+        text-align: justify;
+        letter-spacing: 0.2rem;
+        span{
+            font-style: bold;
+            font-family: Poppins;
+            font-size: 2.3rem;
+            font-style: bold;
+            font-weight: 700;
+            color: #000;
+            text-align: justify;
+            letter-spacing: 0.2rem;
+        }
+    }
+
+    img{
+        align-self: center;
+        width: 60rem;
+        height: 60rem;
+    }
+
+
+    .geeolica-card3{
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding: 3vw 4vw;
+        border-radius: 4rem;
+        overflow: hidden;
+    }
+
+    .geeolica-card4{
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-radius: 4rem;
+        overflow: hidden;
+
+        padding: 3vw 4vw;
+        img{
+            width: 100%;
+            height: 95rem;
+            margin: -25rem 0;
+        }
+    }
+}
+
+.geeolica-cards{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3rem;
+
+    div{
+        p{
+            justify-self: flex-start;
+        }
+    }
+    .geeolica-card2{
+        width: 50%;
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding: 3vw 4vw;
+        border-radius: 4rem;
+        overflow: hidden;
+    }
+
+    
+    .geeolica-card1{
+        width: 50%;
+        background-color: #fff;
+        display: flex;
+        
+        padding: 3vw 4vw;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        
+        overflow: hidden;
+        border-radius: 4rem;
+    }
+}

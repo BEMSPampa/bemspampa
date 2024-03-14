@@ -8,8 +8,7 @@ interface GeoEnergiaFrontProps{
 const GeoEnergiaLogo: React.FC<GeoEnergiaFrontProps> = props => {
     
     const [isActive, setIsActive] = useState(false);
-    const options: string[] = ["Nuclear", "Solar", "Termoelétrica"];
-    //, "Hidrelétrica", "Eólica"
+    const options: string[] = ["Home", "Nuclear", "Solar", "Termoelétrica", "Hidráulica", "Eólica"];
     return (
         <div className='gelogo-container'>
             <button onClick={() => setIsActive(!isActive)}>Geo<span>Energia</span></button>
