@@ -46,11 +46,19 @@
     .geeolica-card3{
         background-color: #fff;
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         
-        padding: 3vw 4vw;
+        p{
+            padding: 3vw 4vw;
+            z-index: 1;
+        }
+        img{
+            width: 100rem;
+            margin: 0 -5rem 0 -21rem;
+            z-index: 0;
+        }
         border-radius: 4rem;
         overflow: hidden;
     }
@@ -89,7 +97,7 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         
         padding: 3vw 4vw;
         border-radius: 4rem;
@@ -104,10 +112,85 @@
         
         padding: 3vw 4vw;
         flex-flow: column nowrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-start;
         
         overflow: hidden;
         border-radius: 4rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .geeolica-cards{
+        flex-flow: column nowrap;
+        .geeolica-card1{
+            width: auto;
+        }
+        .geeolica-card2{
+            width: auto;
+        }
+    }
+    
+    .geeolica-container{
+        img{
+            width: 50rem;
+            height: 50rem;
+        }
+        .geeolica-card4{
+            img{
+                height: 35rem;
+                margin: -10rem 0;
+            }
+        }
+        .geeolica-card3{
+            padding: 3vw 4vw;
+            flex-flow: column nowrap;
+            p{
+                padding: 0;
+                z-index: 0;
+            }
+            img{
+                width: 65rem;
+                height: 45rem;
+                margin-right: -25rem;
+                margin-bottom: -2.5rem;
+            }
+    
+        }
+    }
+} 
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    .geeolica-cards{
+        flex-flow: column nowrap;
+        .geeolica-card1{
+            width: auto;
+        }
+        .geeolica-card2{
+            width: auto;
+        }
+    }
+    
+    .geeolica-container{
+        .geeolica-card4{
+            img{
+                height: 55rem;
+                margin: -15rem 0;
+            }
+        }
+        .geeolica-card3{
+            padding: 3vw 4vw;
+            flex-flow: column nowrap;
+            p{
+                padding: 0;
+                z-index: 0;
+            }
+            img{
+                width: 85rem;
+                margin-right: -25rem;
+                margin-bottom: -5rem;
+            }
+    
+        }
     }
 }
