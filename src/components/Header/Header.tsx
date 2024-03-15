@@ -22,12 +22,12 @@ const Header: React.FC = () => {
           <nav>
             <ul>
               <Link to={'/sobre-nos'}><li>Sobre Nós</li></Link>
-              <Link to={'/dados'}><li>Dados</li></Link>
-              <Link to={'/geoenergia'}><li>Geoenergia</li></Link>
+              <Link to={'/info'}><li>Visão Geral</li></Link>
+              <Link to={'/publicacoes'}><li>Publicações</li></Link>
             </ul>
           </nav>
           <div className='header-bar'></div>
-          <Link to={'/webmapa'}><button>WebMapa</button></Link>
+          <Link to={'/geoenergia'}><button>GeoEnergia</button></Link>
         </div>
       </div>
     </div>

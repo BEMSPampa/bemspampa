@@ -12,7 +12,7 @@ import GeoEnergiaHidraulica from '@Components/GeoEnergiaHidraulica/GeoEnergiaHid
 import GeoEnergiaHome from '@Components/GeoEnergiaHome/GeoEnergiaHome'
 
 const GeoEnergia = () => {
-  const [selected, setSelected] = useState<string | null>("Eólica");
+  const [selected, setSelected] = useState<string | null>("Home");
 
   return (
     <div className='geonergia-container'> 

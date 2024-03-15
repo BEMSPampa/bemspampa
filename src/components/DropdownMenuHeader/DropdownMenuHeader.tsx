@@ -10,7 +10,7 @@ type option = {
 const DropdownMenuHeader: React.FC = () => {
     
     const [isActive, setIsActive] = useState(false);
-    const options: option[] = [{name: "Sobre Nós", link: "/sobre-nos"}, {name: "Dados", link: "/dados"}, {name: "Geoenergia", link: "/geoenergia"}, {name: "Webmapa", link: "/webmapa"}];
+    const options: option[] = [{name: "Sobre Nós", link: "/sobre-nos"}, {name: "Visão Geral", link: "/info"}, {name: "Publicações", link: "/publicacoes"}, {name: "Geoenergia", link: "/geoenergia"}];
 
     return (
         <div className='dropdownheader-container'>

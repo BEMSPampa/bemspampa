@@ -2,6 +2,13 @@
 @use '../../UI/colors';
 @use '../../UI/mixins';
 
+.dashbaord-description{
+    padding: 2vw 7vw;
+    font-size: 2.2rem;
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: normal;
+}
 .dashboard-container{
     @include mixins.defaultFlexRow(center,center);
     flex-flow: row wrap;

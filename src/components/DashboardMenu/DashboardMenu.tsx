@@ -29,79 +29,82 @@ const DashboardMenu = () => {
 
 
   return (
-    <div className='dashboard-container'>
-      <div className='dashboard-item'>
-        <div className='dashboard-item-logo'>
-          <img src={hidrica} alt="" />
+    <>
+      <h2 className='dashbaord-description'>As informações sobre a região geoenergética do BEMSPampa estão organizadas de forma sintetizada nos Infográficos (e-book).</h2>
+      <div className='dashboard-container'>
+        <div className='dashboard-item'>
+          <div className='dashboard-item-logo'>
+            <img src={hidrica} alt="" />
+          </div>
+          <div className='dashboard-item-description'>
+            <a><h3>HÍDRICA</h3></a>
+          </div>
         </div>
-        <div className='dashboard-item-description'>
-          <a><h3>HÍDRICA</h3></a>
-        </div>
-      </div>
 
-      <div className='dashboard-item'>
-        <div className='dashboard-item-logo'>
-          <img src={carvao_mineral} alt="" />
+        <div className='dashboard-item'>
+          <div className='dashboard-item-logo'>
+            <img src={carvao_mineral} alt="" />
+          </div>
+          <div className='dashboard-item-description'>
+            <h3>SOLAR</h3>
+          </div>
         </div>
-        <div className='dashboard-item-description'>
-          <h3>SOLAR</h3>
-        </div>
-      </div>
 
-      <div className='dashboard-item'>
-        <div className='dashboard-item-logo'>
-        <img src={solar} alt="" />
+        <div className='dashboard-item'>
+          <div className='dashboard-item-logo'>
+          <img src={solar} alt="" />
+          </div>
+          <div className='dashboard-item-description'>
+            <h3>ÉOLICA</h3>
+          </div>
         </div>
-        <div className='dashboard-item-description'>
-          <h3>ÉOLICA</h3>
-        </div>
-      </div>
 
-      <div className='dashboard-item'>
-        <div className='dashboard-item-logo'>
-        <img src={eolica} alt="" />
+        <div className='dashboard-item'>
+          <div className='dashboard-item-logo'>
+          <img src={eolica} alt="" />
+          </div>
+          <div className='dashboard-item-description'>
+            <h3>BIOENERGIA</h3>
+          </div>
         </div>
-        <div className='dashboard-item-description'>
-          <h3>BIOENERGIA</h3>
-        </div>
-      </div>
 
-      <div className='dashboard-item'>
-        <div className='dashboard-item-logo'>
-        <img src={fossil} alt="" />
+        <div className='dashboard-item'>
+          <div className='dashboard-item-logo'>
+          <img src={fossil} alt="" />
+          </div>
+          <div className='dashboard-item-description'>
+            <h3>FÓSSIL</h3>
+          </div>
         </div>
-        <div className='dashboard-item-description'>
-          <h3>FÓSSIL</h3>
-        </div>
-      </div>
 
-      <div className='dashboard-item'>
-        <div className='dashboard-item-logo'>
-        <img src={bioenergia} alt="" />
+        <div className='dashboard-item'>
+          <div className='dashboard-item-logo'>
+          <img src={bioenergia} alt="" />
+          </div>
+          <div className='dashboard-item-description'>
+            <h3>CARVÃO MINERAL</h3>
+          </div>
         </div>
-        <div className='dashboard-item-description'>
-          <h3>CARVÃO MINERAL</h3>
-        </div>
-      </div>
 
-      <div className='dashboard-item'>
-        <div className='dashboard-item-logo'>
-        <img src={eletromobilidade} alt="" />
+        <div className='dashboard-item'>
+          <div className='dashboard-item-logo'>
+          <img src={eletromobilidade} alt="" />
+          </div>
+          <div className='dashboard-item-description'>
+            <h3>ELETROMOBILIDADE</h3>
+          </div>
         </div>
-        <div className='dashboard-item-description'>
-          <h3>ELETROMOBILIDADE</h3>
-        </div>
-      </div>
 
-      <div className='dashboard-item'>
-        <div className='dashboard-item-logo'>
-        <img src={hidrogenio_verde} alt="" />
-        </div>
-        <div className='dashboard-item-description'>
-          <h3>HIDROGÊNIO VERDE</h3>
+        <div className='dashboard-item'>
+          <div className='dashboard-item-logo'>
+          <img src={hidrogenio_verde} alt="" />
+          </div>
+          <div className='dashboard-item-description'>
+            <h3>HIDROGÊNIO VERDE</h3>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

@@ -10,7 +10,7 @@ const Members = () => {
         <h4>DESENVOLVEDORES</h4>
         <div className='members-gallery' >
             {developers.map(developer => (
-                <div className='members-card'>
+                <div className='members-card' key={developer.id}>
                     <img src={developer.image} />
                     <p>{developer.name}</p>
                 </div>
@@ -20,7 +20,7 @@ const Members = () => {
         <h4>COLABORADORES</h4>
         <div className='members-gallery'>
             {collaborators.map(collaborator => (
-                <div className='members-card'>
+                <div className='members-card' key={collaborator.id}>
                     <img src={collaborator.image} />
                     <p>{collaborator.name}</p>
                 </div>

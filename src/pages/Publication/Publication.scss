@@ -37,10 +37,17 @@
 }
 
 .publication-right{
-    @include mixins.defaultFlexColumn(center, center);
-    //height: 100rem;
+    height: 100rem;
     width: 60%;
+    overflow-y: scroll;
+
+    //ALTERAR AQUI
+}
+
+.publication-rightscroll{
+    @include mixins.defaultFlexColumn(center, center);
     gap: 5rem;
+    padding: 5rem 0;
 }
 
 .publication-card{
@@ -113,7 +120,14 @@
     
 }
 
-.publication-card:nth-child(2){
+//MODIFICAR AQUI
+.publication-card:nth-child(3), .publication-card:nth-child(4), .publication-card:nth-child(5){
+    div{
+        justify-content: space-between;
+    }
+}
+
+.publication-card:nth-child(2), .publication-card:nth-child(4){
     img{
         border-color: #0D473F;
     }

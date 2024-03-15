@@ -1,15 +1,7 @@
 import './Publication.scss'
-import FirstArticle from '../../assets/publication/firstarticle.png';
-import SecondArticle from '../../assets/publication/secondarticle.jpeg';
 import { Link } from 'react-router-dom';
-
+import {publicationData} from '@UI/strings'
 const Publication = () => {
-
-    const authorsUFSM: string[] = ["Autores", "Silva, Vinicius Amaro Ferreira", "Garcia, Enoque Dutra", "Silva, Dominnic Gomes", "Machado, Rodrigo Buroni", "Rodrigues, Thiago Prestes", "Filho, Itiberê Gonçalves Silva", "Santana, Caique Nunes Maria"];
-    const authorsSIEPE: string[] = ["Autores", "Rodrigues, Thiago Prestes", "Silva, Dominnic Gomes", "Silva, Vinicius Amaro Ferreira", "Santana, Caique Nunes Maria", "Machado, Rodrigo Buroni", "Garcia, Enoque Dutra"];
-
-    const urlUFSM: string = "http://repositorio.ufsm.br/handle/1/30583";
-    const urlSIEPE: string = "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/116940";
 
     const urlArticleUFSM: string = "/bemspampa/articleUFSM.pdf";
     const urlArticleSIEPE: string = "/bemspampa/articleSIEPE.pdf";
@@ -37,45 +29,33 @@ const Publication = () => {
             </div>
 
             <div className='publication-right'>
-                <div className='publication-card'>
 
-                    <div>
-                        <img src={FirstArticle} alt="" />
-                        <div className='publication-url'>
-                            <p>URL</p>
-                            <Link to={urlUFSM} target="_blank"><p>{urlUFSM}</p></Link>
-                        </div>
-                    </div>
+                <div className='publication-rightscroll'>
 
-                    <div>
-                        <h3>BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética</h3>
-                        <div className="publication-authors">
-                            {authorsUFSM.map(author => (<p>{author}</p>))}
-                        </div>
-                        <button onClick={()=>openFileAtURL(urlArticleUFSM)}>ABRIR</button>
-                    </div>
+                    {publicationData.map(publication => (
+                        <>
+                            <div className='publication-card' key={publication.id}>
+                                <div>
+                                    <img src={publication.image} alt="" />
+                                    <div className='publication-url'>
+                                        <p>URL</p>
+                                        <Link to={publication.url} target="_blank"><p>{publication.url}</p></Link>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3>{publication.name}</h3>
+                                    <div className="publication-authors">
+                                        {publication.authors.map(author => (<p>{author}</p>))}
+                                    </div>
+                                    <button onClick={()=>openFileAtURL(publication.url)}>ABRIR</button>
+                                </div>
+                            </div>
+                        </>
+                    ))}
+
+                
                 </div>
-
-                <div className='publication-card'>
-
-                    <div>
-                        <img src={SecondArticle} alt="" />
-                        <div className='publication-url'>
-                            <p>URL</p>
-                            <Link to={urlSIEPE} target="_blank"><p>{urlSIEPE}</p></Link>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3>BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética</h3>
-                        <div className="publication-authors">
-                            {authorsSIEPE.map(author => (<p>{author}</p>))}
-                        </div>
-                        <button onClick={()=>openFileAtURL(urlArticleSIEPE)}>ABRIR</button>
-                    </div>
-                </div>
-
-
 
             </div>
         </section>

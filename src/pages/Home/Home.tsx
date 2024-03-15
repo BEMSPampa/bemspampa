@@ -6,7 +6,7 @@ import TitlePage from "../../components/TitlePage/TitlePage";
 import MapeamentoPic from "../../assets/home/mapeamento.png";
 import MetodologiaPic from "../../assets/home/metodologia.png";
 
-import InfoPic from "../../assets/home/infopic.png";
+//import InfoPic from "../../assets/home/infopic.png";
 import PublicationPic from "../../assets/home/publicationpic.png";
 import DashboardPic from "../../assets/home/dashboardpic.png";
 
@@ -18,6 +18,13 @@ import ArrowPic from "../../assets/home/arrowpic.png";
 import CarouselEvents from "../../components/CarouselEvents/CarouselEvents";
 
 const Home = () => {
+  const handleClick = () => {
+    const element = document.getElementById('home-infografico');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='home-container'>
       <div className='home-frontbg'>
@@ -27,21 +34,21 @@ const Home = () => {
           <div className="home-cardabout">
             <div className="home-carditem">
               <img src={CheckPic} alt="" />
-              <h5>Apurado dos montantes de energia por fonte de energia</h5>
+              <h5>Montantes de energia por fonte de energia</h5>
             </div>  
             <div className="home-carditem">
               <img src={CheckPic} alt="" />
-              <h5>Dados abertos sobre o setor eletroenergético</h5>
+              <h5>Dados abertos por Município sobre o setor eletroenergético</h5>
             </div>  
             <div className="home-carditem">
               <img src={CheckPic} alt="" />
-              <h5>Relatório disponível para download</h5>
+              <h5>Relatórios técnicos disponíveis para download</h5>
             </div>
           </div>
           <div className="home-cardbuttons">
-            <Link to="/info"><button className="home-card-buttons-info"><div><img src={InfoPic}/><p>Info</p></div></button></Link>
-            <Link to="/publicacoes"><button className="home-card-buttons-pub"><div><img src={PublicationPic}/><p>Publicações</p></div></button></Link>
-            <Link to="/dashboard"><button className="home-card-buttons-dashboard"><div><img src={DashboardPic}/><p>Dashboard</p></div></button></Link>
+            <Link to="/webmapa"><button className="home-card-buttons-info"><div><img src={DashboardPic}/><p>Webmapa</p></div></button></Link>
+            <button className="home-card-buttons-pub" onClick={() => handleClick()}><div><img src={PublicationPic}/><p>Infográficos</p></div></button>
+            <Link to="/dados"><button className="home-card-buttons-dashboard"><div><img src={DashboardPic}/><p>Dados</p></div></button></Link>
           </div>
         </div>
       </div>
@@ -62,9 +69,9 @@ const Home = () => {
             </div>
 
             <div className="home-aboutitems">
-              <p>Será realizado processo metodológico na forma de triagem das informações obtidas, posteriormente realizando conferência desses dados e, por fim, disponibilização dessas informações reunidas </p>
-              <p>Pensando na prospecção tecnológica, se recorre a conceitos inovadores no contexto da Transição Energética e Indústria 4.0.</p>
-              <p>Relatórios que consolidam os resultados da pesquisa, com armazenamento na nuvem, são disponibilizadas para download.</p>
+              <p>Consiste de processo metodológico com etapa de triagem das informações obtidas, posteriormente realizando validação desses dados e, por fim, disponibilização dessas informações reunidas.</p>
+              <p>Pensando na prospecção tecnológica, se recorre a conceitos inovadores no contexto da Transição Energética, Indústria 4.0 e neoindustrialização. </p>
+              <p>Disponibiliza relatórios que consolidam os resultados da pesquisa, com armazenamento na nuvem, são disponibilizadas para download na forma de dados abertos.</p>
             </div>
 
             <div className="home-aboutcard">
@@ -88,7 +95,7 @@ const Home = () => {
           <div className="home-methodologycard-items">
               <div>
                 <img src={CheckPic} alt="" />
-                <p>Obter Dados Gerais</p>
+                <p>Obter Dados Gerais:</p>
               </div>
               <ul>
                 <li>produção e consumo de energia;</li>
@@ -98,7 +105,7 @@ const Home = () => {
               </ul>
               <div>
                 <img src={CheckPic} alt="" />
-                <p>Registro de Patente</p>
+                <p>Realizar publicações;</p>
               </div>
           </div>
         </div>
@@ -111,7 +118,7 @@ const Home = () => {
           <div className="home-methodologycard-items">
               <div>
                 <img src={CheckPic} alt="" />
-                <p>Inovação Tecnológica</p>
+                <p>Inovação Tecnológica;</p>
               </div>
               <div>
                 <img src={CheckPic} alt="" />
@@ -140,27 +147,27 @@ const Home = () => {
           <div className="home-methodologycard-items">
               <div>
                 <img src={CheckPic} alt="" />
-                <p>Exibição de Informações consolidadas</p>
+                <p>Exibição de Informações consolidadas;</p>
               </div>
               <div>
                 <img src={CheckPic} alt="" />
-                <p>São aplicados filtros pelo usuário;</p>
+                <p>Aplicação de filtros pelo usuário;</p>
               </div>
               <div>
                 <img src={CheckPic} alt="" />
-                <p>Plataforma exibe resultados;</p>
+                <p>Apresentação de resultados na plataforma;</p>
               </div>
               <div>
                 <img src={CheckPic} alt="" />
-                <p>Relatórios, gráficos e e-book;</p>
+                <p>Disponibilização de relatórios e e-book de infográficos;</p>
               </div>
               <div>
                 <img src={CheckPic} alt="" />
-                <p>Visualização por Webmapa. </p>
+                <p>Visualização por Webmapa; </p>
               </div>
               <div>
                 <img src={CheckPic} alt="" />
-                <p>Publicações e divulgação.</p>
+                <p>Divulgação de resultados obtidos.</p>
               </div>
           </div>
         </div>
@@ -173,7 +180,7 @@ const Home = () => {
         <CarouselEvents/>
       </div>
 
-      <div className="home-infograficos">
+      <div className="home-infograficos" id="home-infografico">
         <TitlePage name="Infográficos"/>
       </div>
       <DashboardMenu/>

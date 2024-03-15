@@ -77,3 +77,61 @@ export const collaborators: MembersData[] = [
     {id: '5', name: 'Dra. Ana Rosa Costa Muniz', image: Ana},
     {id: '6', name: 'Dra. Cristine Machado Schwanke', image: Cristine}
 ]
+
+
+import BalancoEnergetico from '@Assets/data/BalancoEnergetico.png'
+import Bioenergia from '@Assets/data/Bioenergia.png'
+import CarvaoMineral from '@Assets/data/CarvaoMineral.png'
+import Consumo from '@Assets/data/Consumo.png'
+import Eolica from '@Assets/data/Eolica.png'
+import Fossil from '@Assets/data/Fossil.png'
+import GeracaoDistribuida from '@Assets/data/GeracaoDistribuida.png'
+import Hidrica from '@Assets/data/Hidrica.png'
+import Potencial from '@Assets/data/Potencial.png'
+import Solar from '@Assets/data/Solar.png'
+import SubestacoesDeEnergia from '@Assets/data/SubestacoesDeEnergia.png'
+import TransmissaoDeEnergia from '@Assets/data/TransmissaoDeEnergia.png'
+
+export type DataType = {
+    id: string,
+    image: string,
+    name: string,
+    url: string
+}
+const linkData = "https://drive.google.com/drive/folders/1HoyETMMzg0ocvCUmTVOgwyXmzgjMD4rf?usp=share_link";
+
+export const listData: DataType[] = [
+    {id: '1', url: linkData, image: BalancoEnergetico, name: "Balanço Energético"},
+    {id: '2', url: linkData, image: Bioenergia, name: "Bioenergia"},
+    {id: '3', url: linkData, image: CarvaoMineral, name: "Carvão Mineral"},
+    {id: '4', url: linkData, image: Consumo, name: "Consumo"},
+    {id: '5', url: linkData, image: Eolica, name: "Eólica"},
+    {id: '6', url: linkData, image: Fossil, name: "Fóssil"},
+    {id: '7', url: linkData, image: GeracaoDistribuida, name: "Geração Distribuída"},
+    {id: '8', url: linkData, image: Hidrica, name: "Hídrica"},
+    {id: '9', url: linkData, image: Potencial, name: "Potencial"},
+    {id: '10', url: linkData, image: Solar, name: "Solar"},
+    {id: '11', url: linkData, image: SubestacoesDeEnergia, name: "Subestações de Energia"},
+    {id: '12', url: linkData, image: TransmissaoDeEnergia, name: "Transmissão de Energia"}
+]
+
+
+import UFSMArticle from '@Assets/publication/firstarticle.png';
+import SiepeArticle from '@Assets/publication/secondarticle.jpeg';
+
+export type PublicationType = {
+    id: string,
+    image: string,
+    name: string,
+    authors: string[],
+    url: string,
+}
+
+export const publicationData: PublicationType[] = [
+    {id: "1", image: UFSMArticle, name: "BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética", url: "/bemspampa/articleUFSM.pdf", authors: ["Autores", "Silva, Vinicius Amaro Ferreira", "Garcia, Enoque Dutra", "Silva, Dominnic Gomes", "Machado, Rodrigo Buroni", "Rodrigues, Thiago Prestes", "Filho, Itiberê Gonçalves Silva", "Santana, Caique Nunes Maria"]},
+    {id: "2", image: SiepeArticle, name: "BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética", url: "/bemspampa/articleSIEPE.pdf", authors: ["Autores", "Rodrigues, Thiago Prestes", "Silva, Dominnic Gomes", "Silva, Vinicius Amaro Ferreira", "Santana, Caique Nunes Maria", "Machado, Rodrigo Buroni", "Garcia, Enoque Dutra"]},
+    
+    {id: "3", image: SiepeArticle, name: "Aplicação do Opendss no Contexto da Transição Energética pela Ótica da Engenharia de Energia", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/117460", authors: ['Autores', 'Dominnic Gomes da Silva, Thiago Prestes Rodrigues', 'Eduardo Ferreira Leite', 'Vinicius Amaro Ferreira da Silva', 'Thiago Quadros dos Santos', 'Enoque Dutra Garcia']},
+    {id: "4", image: SiepeArticle, name: "Geração de Energia Eólica em Rio Grande na Praia do Cassino", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/117458", authors: ['Autores', 'Louise Domingues Coelho', 'Carlos Sonier Cardoso do Nascimento']},
+    {id: "5", image: SiepeArticle, name: "Estudo de Implementação de um Parque Eólico na Região de Bagé/RS", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/116941", authors: ['Autores', 'Vinicius Silva', 'Vinicius Amaro Ferreira da Silva', 'Carlos Sonier Cardoso Do Nascimento']},
+]

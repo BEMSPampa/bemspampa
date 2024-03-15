@@ -38,7 +38,7 @@ const Info = () => {
 
                 <div className='info-about'>
                     <div>
-                        {stringsInfoAbout.map((item) => (<div className='info-aboutitem'><img src={CheckPic} alt="" className='info-checkpic'/><h3>{item}</h3></div>))}
+                        {stringsInfoAbout.map((item) => (<div className='info-aboutitem' key={item}><img src={CheckPic} alt="" className='info-checkpic'/><h3>{item}</h3></div>))}
                     </div>
                     <img src={FirstInfo} alt="" className='firstinfo-img'/>
                 </div>
@@ -47,7 +47,7 @@ const Info = () => {
                     <img src={SecondInfo} alt="" className='secondinfo-img'/>
                     <div>
                         <h2>Informações consolidadas sobre:</h2>
-                        {stringsInfoConsolidated.map((item) => (<div className='info-consolidateditem'><img src={CheckPic} className='info-checkpic'/><h3>{item}</h3></div>))}
+                        {stringsInfoConsolidated.map((item) => (<div className='info-consolidateditem' key={item}><img src={CheckPic} className='info-checkpic'/><h3>{item}</h3></div>))}
                     </div>
                 </div>
                 
@@ -55,7 +55,7 @@ const Info = () => {
 
             <div className='info-step'>
                 <TitlePage name='Etapas'/>
-                {stringsStep.map((item) => (<div className='info-stepitem'><h2>{item.num}</h2><p>{item.description}</p></div>))}
+                {stringsStep.map((item) => (<div className='info-stepitem' key={item.num}><h2>{item.num}</h2><p>{item.description}</p></div>))}
             </div>
             
             <div className='info-future'>   
