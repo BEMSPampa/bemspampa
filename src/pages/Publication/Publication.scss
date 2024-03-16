@@ -127,7 +127,7 @@
     }
 }
 
-.publication-card:nth-child(2), .publication-card:nth-child(4){
+.publication-card:nth-child(2), .publication-card:nth-child(4), .publication-card:nth-child(6){
     img{
         border-color: #0D473F;
     }
@@ -158,12 +158,14 @@
             width: 100%;
         }
         .publication-right{
+            overflow-y:inherit;
+            height: auto;
             padding: 10rem 0;
             width: 100%;
             gap: 10rem;
         }
     }
-    .publication-card, .publication-card:nth-child(2){
+    .publication-card, .publication-card:nth-child(2), .publication-card:nth-child(4), .publication-card:nth-child(6){
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
@@ -198,6 +200,8 @@
             width: 100%;
         }
         .publication-right{
+            overflow-y:inherit;
+            height: auto;
             padding: 3vw 0;
             width: 100%;
         }

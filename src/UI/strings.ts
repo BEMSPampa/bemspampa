@@ -12,6 +12,10 @@ import seminario_socioambiental from '../assets/events/seminario_socioambiental.
 //GOOGLE ANALYTICS
 export const idGoogleAnalytics: string = "teste"
 
+
+// ----------------------------------------------------------------------------------------------------------------
+// --------------------------------------EVENTOS---------------------------------------
+// ----------------------------------------------------------------------------------------------------------------
 export type EventData = {
     id: string,
     image: string,
@@ -31,6 +35,10 @@ export const events: EventData[] = [
     {id: '7', image: siepe, title: "15° SIEPE Ciência, Geodiversidade e Desenvolvimento Sustentável. ", date: "29 de novembro, 2023", description: "No 15° SIEPE, a apresentação do projeto BEMSPampa ficou por conta do bolsista Thiago Prestes, onde destacou a importância do projeto visto que o levantamento de informações revelou alta dispersão e irregularidade entre as bases de dados utilizadas, reforçando a relevância desse projeto para o estudo do potencial dos recursos energéticos na região. "},
     {id: '8', image: encif, title: "7° Encontro de Ciência e Tecnologia do IFSul - ENCIF Bagé.", date: "06 de dezembro, 2023", description: "No 7° ENCIF, a apresentação do projeto BEMSPampa ficou por conta da bolsista Dominnic Gomes, que colocou em destaque o escopo inovador da plataforma digital, onde o design e divulgação de conteúdos segue uma estratégia para o usuário. A iniciativa visa investigar e mapear os recursos energéticos da região, justificando-se pela necessidade de consolidar informações geoenergéticas."}
 ]
+
+// ----------------------------------------------------------------------------------------------------------------
+// --------------------------------------MEMBROS---------------------------------------
+// ----------------------------------------------------------------------------------------------------------------
 
 import Enoque from '../assets/about-us/members/Enoque.png';
 import Dominnic from '../assets/about-us/members/Dominnic.png';
@@ -79,6 +87,10 @@ export const collaborators: MembersData[] = [
 ]
 
 
+// ----------------------------------------------------------------------------------------------------------------
+// ---------------------------------------DADOS----------------------------------------
+// ----------------------------------------------------------------------------------------------------------------
+
 import BalancoEnergetico from '@Assets/data/BalancoEnergetico.png'
 import Bioenergia from '@Assets/data/Bioenergia.png'
 import CarvaoMineral from '@Assets/data/CarvaoMineral.png'
@@ -115,23 +127,70 @@ export const listData: DataType[] = [
     {id: '12', url: linkData, image: TransmissaoDeEnergia, name: "Transmissão de Energia"}
 ]
 
-
+// ----------------------------------------------------------------------------------------------------------------
+// ------------------------------------PUBLICAÇÕES-------------------------------------
+// ----------------------------------------------------------------------------------------------------------------
 import UFSMArticle from '@Assets/publication/firstarticle.png';
 import SiepeArticle from '@Assets/publication/secondarticle.jpeg';
 
 export type PublicationType = {
     id: string,
+    file: string,
     image: string,
     name: string,
     authors: string[],
     url: string,
 }
 
+
+//SEM URL DO DOCUMENTO DO ENCIF, ALTERAR NO MOMENTO QUE TIVER
+//SEM FILE PRA ABRIR DIRETO OS ULTIMOS 3 DO ENCIF
+
 export const publicationData: PublicationType[] = [
-    {id: "1", image: UFSMArticle, name: "BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética", url: "/bemspampa/articleUFSM.pdf", authors: ["Autores", "Silva, Vinicius Amaro Ferreira", "Garcia, Enoque Dutra", "Silva, Dominnic Gomes", "Machado, Rodrigo Buroni", "Rodrigues, Thiago Prestes", "Filho, Itiberê Gonçalves Silva", "Santana, Caique Nunes Maria"]},
-    {id: "2", image: SiepeArticle, name: "BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética", url: "/bemspampa/articleSIEPE.pdf", authors: ["Autores", "Rodrigues, Thiago Prestes", "Silva, Dominnic Gomes", "Silva, Vinicius Amaro Ferreira", "Santana, Caique Nunes Maria", "Machado, Rodrigo Buroni", "Garcia, Enoque Dutra"]},
+    {id: "1", image: UFSMArticle, file: "/bemspampa/documentos/docUFSM.pdf", name: "BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética", url: "http://repositorio.ufsm.br/handle/1/30583", authors: ["Autores", "Silva, Vinicius Amaro Ferreira", "Garcia, Enoque Dutra", "Silva, Dominnic Gomes", "Machado, Rodrigo Buroni", "Rodrigues, Thiago Prestes", "Filho, Itiberê Gonçalves Silva", "Santana, Caique Nunes Maria"]},
+    {id: "2", image: SiepeArticle, file: "/bemspampa/documentos/docSIEPE.pdf", name: "BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/116940", authors: ["Autores", "Rodrigues, Thiago Prestes", "Silva, Dominnic Gomes", "Silva, Vinicius Amaro Ferreira", "Santana, Caique Nunes Maria", "Machado, Rodrigo Buroni", "Garcia, Enoque Dutra"]},
+    {id: "3", image: UFSMArticle, file: "/bemspampa/documentos/docENCIF.pdf", name: "BEMSPampa: Balanço Energético da Metade Sul - Bioma Pampa no contexto da Transição Energética", url: "", authors: ["Autores", "SILVA, G.D", "SILVA. F.A.V.", "GARCIA, D.E", "RODRIGUES, P.T", "MACHADO, B.R."]},
     
-    {id: "3", image: SiepeArticle, name: "Aplicação do Opendss no Contexto da Transição Energética pela Ótica da Engenharia de Energia", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/117460", authors: ['Autores', 'Dominnic Gomes da Silva, Thiago Prestes Rodrigues', 'Eduardo Ferreira Leite', 'Vinicius Amaro Ferreira da Silva', 'Thiago Quadros dos Santos', 'Enoque Dutra Garcia']},
-    {id: "4", image: SiepeArticle, name: "Geração de Energia Eólica em Rio Grande na Praia do Cassino", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/117458", authors: ['Autores', 'Louise Domingues Coelho', 'Carlos Sonier Cardoso do Nascimento']},
-    {id: "5", image: SiepeArticle, name: "Estudo de Implementação de um Parque Eólico na Região de Bagé/RS", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/116941", authors: ['Autores', 'Vinicius Silva', 'Vinicius Amaro Ferreira da Silva', 'Carlos Sonier Cardoso Do Nascimento']},
+    {id: "4", image: SiepeArticle, file: "", name: "Aplicação do Opendss no Contexto da Transição Energética pela Ótica da Engenharia de Energia", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/117460", authors: ['Autores', 'Dominnic Gomes da Silva', 'Thiago Prestes Rodrigues', 'Eduardo Ferreira Leite', 'Vinicius Amaro Ferreira da Silva', 'Thiago Quadros dos Santos', 'Enoque Dutra Garcia']},
+    {id: "5", image: SiepeArticle, file: "", name: "Geração de Energia Eólica em Rio Grande na Praia do Cassino", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/117458", authors: ['Autores', 'Louise Domingues Coelho', 'Carlos Sonier Cardoso do Nascimento']},
+    {id: "6", image: SiepeArticle, file: "", name: "Estudo de Implementação de um Parque Eólico na Região de Bagé/RS", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/116941", authors: ['Autores', 'Vinicius Silva', 'Vinicius Amaro Ferreira da Silva', 'Carlos Sonier Cardoso Do Nascimento']},
+]
+
+
+// ----------------------------------------------------------------------------------------------------------------
+// ------------------------------------INFOGRAFICOS-------------------------------------
+// ----------------------------------------------------------------------------------------------------------------
+
+import Infografico_Bioenergia from "/bemspampa/infograficos/Infografico_Bioenergia.pdf"
+import Infografico_CarvaoMineral from "/bemspampa/infograficos/Infografico_CarvaoMineral.pdf"
+import Infografico_Fossil from "/bemspampa/infograficos/Infografico_Fossil.pdf"
+import Infografico_HidrogenioVerde from "/bemspampa/infograficos/Infografico_HidrogenioVerde.pdf"
+import Infografico_MobilidadeEletrica from "/bemspampa/infograficos/Infografico_MobilidadeEletrica.pdf"
+import Infografico_Solar from "/bemspampa/infograficos/Infografico_Solar.pdf"
+
+//RESTANTE DAS IMAGENS
+//import hidrica from '@Assets/dashboard/hidrica.png'
+import bioenergia from '@Assets/dashboard/bioenergia.png'
+import carvao_mineral from '@Assets/dashboard/carvao_mineral.png'
+//import eolica from '@Assets/dashboard/eolica.png'
+import fossil from '@Assets/dashboard/fossil.png'
+import solar from '@Assets/dashboard/solar.png'
+import hidrogenio_verde from '@Assets/dashboard/hidrogenio_verde.png'
+import mobilidade_eletrica from '@Assets/dashboard/mobilidade_eletrica.png'
+
+
+export type InfographicItemType = {
+    id: string,
+    image: string,
+    name: string,
+    file: string
+}
+
+export const infographicData: InfographicItemType[] = [
+    {id: "1", file: Infografico_Bioenergia, name: "Bioenergia", image: bioenergia},
+    {id: "2", file: Infografico_CarvaoMineral, name: "Carvão Mineral", image: carvao_mineral},
+    {id: "3", file: Infografico_Fossil, name: "Fóssil", image: fossil},
+    {id: "4", file: Infografico_HidrogenioVerde, name: "Hidrogênio Verde", image: hidrogenio_verde},
+    {id: "5", file: Infografico_MobilidadeEletrica, name: "Mobilidade Elétrica", image: mobilidade_eletrica},
+    {id: "6", file: Infografico_Solar, name: "Solar", image: solar},
 ]
