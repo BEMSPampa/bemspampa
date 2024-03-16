@@ -161,12 +161,13 @@ export const publicationData: PublicationType[] = [
 // ------------------------------------INFOGRAFICOS-------------------------------------
 // ----------------------------------------------------------------------------------------------------------------
 
-import Infografico_Bioenergia from "/bemspampa/infograficos/Infografico_Bioenergia.pdf"
-import Infografico_CarvaoMineral from "/bemspampa/infograficos/Infografico_CarvaoMineral.pdf"
-import Infografico_Fossil from "/bemspampa/infograficos/Infografico_Fossil.pdf"
-import Infografico_HidrogenioVerde from "/bemspampa/infograficos/Infografico_HidrogenioVerde.pdf"
-import Infografico_MobilidadeEletrica from "/bemspampa/infograficos/Infografico_MobilidadeEletrica.pdf"
-import Infografico_Solar from "/bemspampa/infograficos/Infografico_Solar.pdf"
+//ARQUIVOS
+const Infografico_Bioenergia: string = "/bemspampa/infograficos/Infografico_Bioenergia.pdf";
+const Infografico_CarvaoMineral: string = "/bemspampa/infograficos/Infografico_CarvaoMineral.pdf"
+const Infografico_Fossil: string = "/bemspampa/infograficos/Infografico_Fossil.pdf"
+const Infografico_HidrogenioVerde: string = "/bemspampa/infograficos/Infografico_HidrogenioVerde.pdf"
+const Infografico_MobilidadeEletrica: string = "/bemspampa/infograficos/Infografico_MobilidadeEletrica.pdf"
+const Infografico_Solar: string = "/bemspampa/infograficos/Infografico_Solar.pdf"
 
 //RESTANTE DAS IMAGENS
 //import hidrica from '@Assets/dashboard/hidrica.png'
