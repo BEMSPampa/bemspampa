@@ -9,11 +9,13 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
 
   const email = 'bemspampa@gmail.com';
+  const linkedinURL = 'https://www.linkedin.com/company/grupo-de-estudos-avan%C3%A7ados-em-engenharia-de-energia-green/';
+  const instagramURL = 'https://www.instagram.com/green.unipampa/';
 
   const [copied, setCopied] = useState(false);
-  const copyToClipboard = () => {
+  const copyToClipboard = (name: string) => {
     const inputElement = document.createElement('input');
-    inputElement.value = email;
+    inputElement.value = name;
     document.body.appendChild(inputElement);
     inputElement.select();
     inputElement.setSelectionRange(0, 99999);
@@ -39,9 +41,9 @@ const Footer = () => {
         </div>
 
         <div className='footer-socialgallery'>
-          <img onClick={copyToClipboard} src={emailpic} className='footer-social'/>
-          <img onClick={copyToClipboard} src={instagrampic} className='footer-social'/>
-          <img onClick={copyToClipboard} src={linkedinpic} className='footer-social'/>
+          <img onClick={() => copyToClipboard(email)} src={emailpic} className='footer-social'/>
+          <Link to={instagramURL} target='_blank'><img src={instagrampic} className='footer-social'/></Link>
+          <Link to={linkedinURL} target='_blank'><img src={linkedinpic} className='footer-social'/></Link>
         </div>
       </div>
     </section>
