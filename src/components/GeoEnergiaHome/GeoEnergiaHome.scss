@@ -8,10 +8,16 @@
     height: 80rem;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    
+    /*justify-content: space-around;
+    align-items: center;*/
+    overflow: hidden;
+
     .gehome-frontleft{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        z-index: 1;
+        
         display: flex;
         flex-flow: column nowrap;
         
@@ -85,6 +91,12 @@
     }
     
     .gehome-frontright{
+        
+        position: relative;
+        top: 0%;
+        right: 2%;
+        z-index: 0;
+
         width: 50%;
         display: flex;
         align-items: center;
@@ -98,16 +110,24 @@
 }
 
 //SMARTPHONE
+
 @media (min-width: 0px) and (max-width: 767px) {
     .gehome-front{
-        height: 100rem;
         flex-flow: column nowrap;
-        padding: 3vw 0;
+        height: auto;
+        gap: 5rem;
         .gehome-frontleft{
-            padding: 0;
-            .gehome-frontinfo{
-                padding: 0;
+            top: 0%;
+            .gelogo-container{
+                margin: 3vw 10vw;
             }
+            padding: 0;
+            width: 100%;
+            gap: 10rem;
+        }
+        .gehome-frontright{
+            padding: 0;
+            width: 100%;
         }
     }
 } 
@@ -116,11 +136,16 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .gehome-front{
         flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
+        height: auto;
+        gap: 5rem;
         .gehome-frontleft{
+            top: 0%;
+            .gelogo-container{
+                margin: 3vw 10vw;
+            }
             padding: 0;
             width: 100%;
+            gap: 10rem;
         }
         .gehome-frontright{
             padding: 0;
