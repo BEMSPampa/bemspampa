@@ -10,6 +10,8 @@ import GeoEnergiaSolarFront from '@Components/GeoEnergiaSolarFront/GeoEnergiaSol
 import GeoEnergiaEolica from '@Components/GeoEnergiaEolica/GeoEnergiaEolica'
 import GeoEnergiaHidraulica from '@Components/GeoEnergiaHidraulica/GeoEnergiaHidraulica'
 import GeoEnergiaHome from '@Components/GeoEnergiaHome/GeoEnergiaHome'
+import GeoEnergiaEolicaFront from '@Components/GeoEnergiaEolicaFront/GeoEnergiaEolicaFront'
+import GeoEnergiaHidraulicaFront from '@Components/GeoEnergiaHidraulicaFront/GeoEnergiaHidraulicaFront'
 
 const GeoEnergia = () => {
   const [selected, setSelected] = useState<string | null>("Home");
@@ -20,8 +22,8 @@ const GeoEnergia = () => {
       {selected === "Solar" && <><GeoEnergiaSolarFront setSelected={setSelected}/><GeoEnergiaSolar/></>}
       {selected === "Termoelétrica" && <><GeoEnergiaTermoFront setSelected={setSelected}/><GeoEnergiaTermo/></>}
       {selected === "Nuclear" && <><GeoEnergiaNuclearFront setSelected={setSelected}/><GeoEnergiaNuclear/></>}
-      {selected === "Eólica" && <><GeoEnergiaEolica/></>}
-      {selected === "Hidráulica" && <><GeoEnergiaHidraulica/></>}
+      {selected === "Eólica" && <><GeoEnergiaEolicaFront setSelected={setSelected}/> <GeoEnergiaEolica/></>}
+      {selected === "Hidráulica" && <><GeoEnergiaHidraulicaFront setSelected={setSelected}/><GeoEnergiaHidraulica/></>}
     </div>
   )
 }

@@ -8,7 +8,7 @@ import pic6 from '@Assets/geoenergia/hidraulica/6.png'
 const GeoEnergiaHidraulica = () => {
   return (
     <div className='gehidraulica-container'>
-        <h2>ENERGIA HIDRÁULICA</h2>
+        <h2 id='gehidraulica-title'>ENERGIA HIDRÁULICA</h2>
         <div className='gehidraulica-card1'>
           <p>A <span>energia hidráulica</span> é a energia que vem da <span>água em movimento,</span> como rios, quedas d'água ou até mesmo da água que sai da torneira.</p>
           <img src={pic2} alt="" />

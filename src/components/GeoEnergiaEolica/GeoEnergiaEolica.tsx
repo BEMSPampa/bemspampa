@@ -7,7 +7,7 @@ import pic4 from '@Assets/geoenergia/eolica/5.png';
 const GeoEnergiaEolica = () => {
   return (
     <div className='geeolica-container'>
-        <h2>ENERGIA EÓLICA</h2>
+        <h2 id='geeolica-title'>ENERGIA EÓLICA</h2>
 
         <div className='geeolica-cards'>
           <div className='geeolica-card1'>
