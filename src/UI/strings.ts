@@ -168,12 +168,14 @@ const Infografico_Fossil: string = "/bemspampa/infograficos/Infografico_Fossil.p
 const Infografico_HidrogenioVerde: string = "/bemspampa/infograficos/Infografico_HidrogenioVerde.pdf"
 const Infografico_MobilidadeEletrica: string = "/bemspampa/infograficos/Infografico_MobilidadeEletrica.pdf"
 const Infografico_Solar: string = "/bemspampa/infograficos/Infografico_Solar.pdf"
+const Infografico_Hidrica: string = "/bemspampa/infograficos/Infografico_Hidrica.pdf"
+const Infografico_Eolica: string = "/bemspampa/infograficos/Infografico_Eolica.pdf"
 
 //RESTANTE DAS IMAGENS
-//import hidrica from '@Assets/dashboard/hidrica.png'
+import hidrica from '@Assets/dashboard/hidrica.png'
 import bioenergia from '@Assets/dashboard/bioenergia.png'
 import carvao_mineral from '@Assets/dashboard/carvao_mineral.png'
-//import eolica from '@Assets/dashboard/eolica.png'
+import eolica from '@Assets/dashboard/eolica.png'
 import fossil from '@Assets/dashboard/fossil.png'
 import solar from '@Assets/dashboard/solar.png'
 import hidrogenio_verde from '@Assets/dashboard/hidrogenio_verde.png'
@@ -194,4 +196,6 @@ export const infographicData: InfographicItemType[] = [
     {id: "4", file: Infografico_HidrogenioVerde, name: "Hidrogênio Verde", image: hidrogenio_verde},
     {id: "5", file: Infografico_MobilidadeEletrica, name: "Mobilidade Elétrica", image: mobilidade_eletrica},
     {id: "6", file: Infografico_Solar, name: "Solar", image: solar},
+    {id: "7", file: Infografico_Hidrica, name: "Hídrica", image: hidrica},
+    {id: "8", file: Infografico_Eolica, name: "Eólica", image: eolica},
 ]
