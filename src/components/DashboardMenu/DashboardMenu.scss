@@ -1,0 +1,60 @@
+@use '../../UI/animations';
+@use '../../UI/colors';
+@use '../../UI/mixins';
+
+.dashbaord-description{
+    padding: 2vw 7vw;
+    font-size: 2.2rem;
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: normal;
+}
+.dashboard-container{
+    @include mixins.defaultFlexRow(center,center);
+    flex-flow: row wrap;
+    padding-bottom: 5vw;
+}
+
+.dashboard-item{
+    @include mixins.defaultFlexColumn(center, center);
+    width: 24.5rem;
+    height: 55rem;
+    gap: 3rem;
+
+    .dashboard-item-logo{
+        img{
+            width: 20rem;
+            height: 20rem;
+            border-radius: 10rem;
+            overflow-clip-margin: none;
+            overflow: none;
+            border: .3rem solid #006601;
+        }
+    }
+
+    .dashboard-item-description{
+        background-color: #E9E9E7;
+        width: 20rem;
+        height: 7rem;
+        border-radius: 1rem;
+        @include mixins.defaultFlexColumn(center, center);
+        h3{
+            color: #D8670D;
+            font-family: Roca One;
+            font-weight: 700;
+            font-style: bold;
+            font-size: 2.4rem;
+            text-align: center;
+            max-width: 100%;
+            overflow-wrap: break-word;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+.dashboard-item:hover{
+    border-radius: 2rem;
+    border: .1rem solid #304538;
+    cursor: pointer;
+}

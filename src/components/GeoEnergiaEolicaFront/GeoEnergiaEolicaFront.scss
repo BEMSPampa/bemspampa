@@ -1,0 +1,150 @@
+@use '../../UI/animations';
+
+.ge-eolicafront-container{
+    background: linear-gradient(90deg, #440947, #ae3ab4);
+    height: 70rem;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas com largura igual */
+    grid-template-rows: 1fr 1fr; /* Duas linhas com altura igual */
+    grid-gap: 1rem;
+    grid-template-areas:
+        "logo name"
+        "image name";
+    padding: 10rem;
+}
+.ge-eolicafront-logo{
+    position: relative;
+    top: 0%;
+    left: 2.5%;
+    z-index: 2;
+    grid-area: logo;
+}
+
+.ge-eolicafront-img{
+    position: relative;
+    bottom: 14%;
+    left: 0%;
+    z-index: 0;
+
+    grid-area: image;
+    width: 95rem;
+    img{
+        height: 100%;
+        width: 100%;
+        z-index: 0; 
+    }
+}
+.ge-eolicafront-title{
+    position: relative;
+    top: -15%;
+    right: 0%;
+    z-index: 1;
+
+    grid-area: name;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap:12rem;
+    div{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    h1{
+        margin-block: 0;
+        margin-inline: 0;
+        font-family: Poppins;
+        font-weight: 900;
+        font-size: 17.5rem;
+        color: #D6AFE1;
+        text-align: center;
+        margin: -2.5rem;
+    }
+    h1:nth-child(2){
+        font-family: Poppins;
+        font-weight: 900;
+        font-size:20rem;
+        letter-spacing: 0.3rem;
+        color: #D6AFE1;
+        text-align: center;
+    }
+    button{
+        font-family: Poppins;
+        font-weight: 900;
+        font-size: 3.5rem;
+        color: #fff;
+        background-color: #CB6CE6;
+        border-radius: 5rem;
+        padding: 2rem 2.5rem;
+        cursor: pointer;
+        z-index: 1;
+    }button:hover{
+        @include animations.defaultHover();
+    }
+}
+
+
+//SMARTPHONE
+@media (min-width: 0px) and (max-width: 767px) {
+    .ge-eolicafront-container{
+        grid-template-columns: 1fr; /* Duas colunas com largura igual */
+        grid-template-rows: 1fr ; /* Duas linhas com altura igual */
+        grid-template-areas:
+            "logo "
+            "image title ";
+        padding: 0;
+    }
+    .ge-eolicafront-logo{
+        position: relative;
+        top: 50%;
+        left: 5%;
+        z-index: 2;
+        grid-area: logo;
+    }
+    .ge-eolicafront-img{
+        left: -14%;
+    }
+    .ge-eolicafront-title{
+        position: relative;
+        top: -10%;
+        right: 178%;
+
+        h1, h1:nth-child(2){
+            font-size: 12rem;
+        }
+        button{
+        }
+    }
+} 
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ge-eolicafront-container{
+        grid-template-columns: 1fr; /* Duas colunas com largura igual */
+        grid-template-rows: 1fr ; /* Duas linhas com altura igual */
+        grid-template-areas:
+            "logo "
+            "image title ";
+    }
+    .ge-eolicafront-logo{
+        position: relative;
+        top: -50%;
+        left: -2.5%;
+        z-index: 2;
+        grid-area: logo;
+    }
+
+    .ge-eolicafront-title{
+        position: relative;
+        top: -15%;
+        right: 105%;
+
+        h1, h1:nth-child(2){
+        }
+        button{
+        }
+    }
+} 

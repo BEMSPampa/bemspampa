@@ -1,0 +1,158 @@
+.genuclear-container{
+    background-color: #E9AE93;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 3vw 5vw;
+
+    h2{
+        font-family: Poppins;
+        font-weight: 900;
+        font-style: bold;
+        text-align: center;
+        font-size: 7.7rem;
+        color: #E25B61;
+    }
+
+    p{
+        font-family: Poppins;
+        font-size: 2.3rem;
+        font-style: normal;
+        font-weight: 400;
+        color: #000;
+        text-align: justify;
+        letter-spacing: 0.2rem;
+
+        span{
+            font-style: bold;
+            font-family: Poppins;
+            font-size: 2.3rem;
+            font-style: bold;
+            font-weight: 700;
+            color: #000;
+            text-align: justify;
+            letter-spacing: 0.2rem;
+        }
+    }
+    .genuclear-cards-layout{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+    .genuclear-card1, .genuclear-card2{
+        height: 70rem;
+    }
+    .genuclear-card1{
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3vw 4vw;
+        border-radius: 4rem;
+        div{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 3rem;
+        }
+        img{
+            width: 50rem;
+            height: 50rem;
+            margin: -5.5rem 0 -7rem 0;
+        }
+    }
+
+
+    .genuclear-card2{
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 3rem;
+        padding: 3vw 4vw;
+        border-radius: 4rem;
+        
+        img{
+            align-self: center;
+            width: 50rem;
+            height: 50rem;
+            margin: 0 -20rem;
+        }
+    }
+
+
+    .genuclear-card3{
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+        padding: 3vw 4vw;
+        border-radius: 4rem;
+        
+        img{
+            align-self: center;
+            width: 86rem;
+            height: 85rem;
+            margin: -20rem;
+        }
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .genuclear-container{
+        .genuclear-cards-layout{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        
+        .genuclear-card1{
+            height: auto;
+            img{
+                margin: -5rem 0;
+            }
+        }
+        .genuclear-card2{
+            height: auto;
+            img{
+                margin: -3rem 0 -1rem 0;
+            }
+        }
+
+        .genuclear-card3{
+            img{
+                align-self: center;
+                width: 50rem;
+                height: 49rem;
+                margin: -10rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .genuclear-container{
+        .genuclear-cards-layout{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+    
+        .genuclear-card3{
+            img{
+                align-self: center;
+                width: 66rem;
+                height: 65rem;
+                margin: -15rem;
+            }
+        }
+    }
+}

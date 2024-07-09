@@ -1,0 +1,209 @@
+@use '../../UI/animations';
+@use '../../UI/colors';
+@use '../../UI/mixins';
+
+.publication-container{
+    @include mixins.defaultFlexRow(center, center);
+}
+
+.publication-left{
+    @include mixins.defaultFlexColumn(space-around, center);
+    height: 100rem;
+    width: 45%;
+    background-image: url('../../assets/publication/backgroundwfilter.png');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    h3{
+        color: #f0f0f0;
+        font-family: Red Hat Display;
+        font-weight: 500;
+        font-size: 3rem;
+        span{
+            font-family: Red Hat Display;
+            font-weight: 500;
+            font-size: 3rem;
+            color: #fff;
+            font-style: bold;
+        }
+    }
+
+    h1{
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 7.7rem;
+        color: #f0f0f0;
+    }
+}
+
+.publication-right{
+    height: 100rem;
+    width: 60%;
+    overflow-y: scroll;
+
+    //ALTERAR AQUI
+}
+
+.publication-rightscroll{
+    @include mixins.defaultFlexColumn(center, center);
+    gap: 5rem;
+    padding: 5rem 0;
+}
+
+.publication-card{
+    @include mixins.defaultFlexRow(flex-start, center);
+    width: 105rem;
+    gap: 3rem;
+    img{
+        border: 2rem solid #D8670D;
+        border-radius: 4rem;
+        min-width: 28rem;   
+        height: 35rem;
+    }
+    
+    div{
+        @include mixins.defaultFlexColumn(space-around, flex-start);
+        gap: 0.5rem;
+
+        .publication-url{
+            max-width: 28rem;
+            p{
+                font-family: Red Hat Display;
+                font-weight: 500;
+                color: #000;
+                font-size: 1.5rem;
+                padding-left: 1rem;
+                cursor: pointer;
+            }
+        }
+
+        .publication-url:nth-child(2){
+            p{
+                font-family: Red Hat Display;
+                font-weight: 500;
+                color: #000;
+                font-size: 1.5rem;
+                padding-right: 1rem;
+                cursor: pointer;
+            }
+        }
+        .publication-authors{
+            p{
+                font-family: Red Hat Display;
+                font-weight: 500;
+                font-size: 1.7rem;
+                color: #000;
+            }
+        }
+
+        h3{
+            color: #000;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 3.3rem;
+        }   
+    
+        button{
+            color: #F68712;
+            font-family: Inter;
+            font-style: bold;
+            background-color: transparent;
+            border-radius: 3rem;
+            border: 0.4rem solid #F68712;
+            padding: 1rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+            align-self: flex-end;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+//MODIFICAR AQUI
+.publication-card:nth-child(3), .publication-card:nth-child(4), .publication-card:nth-child(5){
+    div{
+        justify-content: space-between;
+    }
+}
+
+.publication-card:nth-child(2), .publication-card:nth-child(4), .publication-card:nth-child(6){
+    img{
+        border-color: #0D473F;
+    }
+    flex-direction: row-reverse;
+    div{
+        @include mixins.defaultFlexColumn(space-around, flex-end);
+        h3{
+            text-align: end;
+        }
+        button{
+            align-self: flex-start;
+        }
+    }
+
+    div{
+        button{
+            border: 0.4rem solid #0D473F;
+            color: #0D473F;
+        }
+    }
+}
+
+//SMARTPHONE
+@media (min-width: 0px) and (max-width: 767px) {
+    .publication-container{
+        flex-flow: column wrap;
+        .publication-left{
+            width: 100%;
+        }
+        .publication-right{
+            overflow-y:inherit;
+            height: auto;
+            padding: 10rem 0;
+            width: 100%;
+            gap: 10rem;
+        }
+    }
+    .publication-card, .publication-card:nth-child(2), .publication-card:nth-child(4), .publication-card:nth-child(6){
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+        div{
+            flex-flow: column nowrap;
+            align-items: center;
+            width: 95%;
+            gap: 1rem;
+            button{
+                margin-top: 2rem;
+                align-self: center;
+                width: 100%;
+                font-size: 2.5rem;
+            }
+            h3{
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .publication-container{
+        flex-flow: column wrap;
+        .publication-left{
+            width: 100%;
+        }
+        .publication-right{
+            overflow-y:inherit;
+            height: auto;
+            padding: 3vw 0;
+            width: 100%;
+        }
+    }
+} 

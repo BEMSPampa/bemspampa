@@ -3,65 +3,45 @@
 @use '../../UI/mixins';
 
 .data-container{
-    width: 100%;
-    height: 100vh;
-    background: colors.$primaryColor;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 0vw;
+}
 
-    .warning{
+.data-item{
+    @include mixins.defaultFlexColumn(center, center);
+    width: 26rem;
+    height: 40rem;
+    gap: 3rem;
+
+    img{
+        padding-right: 2.5rem; //para corrigir a dimensão da imagem, que está com espaços à esquerda sobrando
+        width: 30rem;
+        height: 21rem;
+        margin-right: -2rem;
+    }
+    
+    .data-item-description{
+        background-color: #E9E9E7;
+        width: 20rem;
+        height: 7rem;
+        border-radius: 1rem;
         @include mixins.defaultFlexColumn(center, center);
-        gap: 5rem;
-        width: 100%;
-        height: 100%;
-        img{
-            width: 23rem;
-            height: 23rem;
-            @include animations.spin();
-        }
-
-        div{
-            @include mixins.defaultFlexColumn(center, center);
-            width: 40rem;
-            gap: 2rem;
-            h3{
-                font-size: 2.7rem;
-                font-family: Red Hat Display;
-                font-weight: 700;
-                font-style: bold;
-                letter-spacing: 0.05rem;
-                color: #FEFEFE;
-            }
-            div{
-                gap: 0;
-                @include mixins.defaultFlexColumn(center, center);
-                h5{
-                    font-size: 2rem;
-                    font-family: Red Hat Display;
-                    font-weight: 700;
-                    font-style: bold;
-                    letter-spacing: 0.08rem;
-                    color: #FEFEFE;
-                }
-            }
-            
-        }
-        
-
-        button{
-            width: 21rem;
-            height: 8rem;
-            border-radius: 1rem;
-            font-family: Red Hat Display;
-            font-weight: 600;
-            font-size: 1.7rem;
+        h3{
+            color: #D8670D;
+            font-family: Roca One;
+            font-weight: 400;
             font-style: bold;
-            color: #FEFEFE;
-            background-color: colors.$secondaryColor;
-        }
-        button:hover{
-            @include animations.smallHover();
-            color: colors.$fontColor;
-            background: #C3C2C8;
+            font-size: 2.4rem;
+            text-align: center;
         }
     }
 }
 
+.data-item:hover{
+    border-radius: 2rem;
+    border: .1rem solid #304538;
+    cursor: pointer;
+}

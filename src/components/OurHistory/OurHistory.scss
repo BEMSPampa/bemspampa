@@ -1,0 +1,97 @@
+.ourhistory-container{
+    padding: 3vw 5vw;
+}
+
+.lifetime-gallery{
+    padding: 3vw 5vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+
+    div{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        img{
+            //border: 10px solid #000;
+            width: 31rem;
+            height: 20rem;
+        }
+        .lifetime-number1, .lifetime-number2, .lifetime-number3, .lifetime-number4, .lifetime-number5{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 10rem;
+            
+
+            h2{
+                font-size: 4rem;
+                color: white;
+                text-transform: uppercase;
+            }
+            
+        }
+        .lifetime-number1{background-color: #2757B5;}
+        .lifetime-number2{background-color: #FEC510;}
+        .lifetime-number3{background-color: #F68712;}
+        .lifetime-number4{background-color: #ACB1DC;}
+        .lifetime-number5{background-color: #394A71;}
+
+        .lifetime-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row nowrap;
+        }
+
+        h4{
+            color: #000000;
+            font-family: Roboto;
+            font-weight: 700;
+            font-style: bold;
+            font-size: 3rem;
+        }
+
+        p{
+            font-family: Roboto;
+            max-width: 30rem;
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+    
+}
+
+.lifetime-line{
+    width: 7.8rem;
+    height: 0.5rem;
+    background-color: #000;
+}
+
+//SMARTPHONE
+@media (min-width: 0px) and (max-width: 767px) {
+    .lifetime-line{
+        width:18rem;
+    }
+    .lifetime-gallery{
+        padding: 3vw 0;
+        flex-flow: row wrap;
+        gap: 3.5rem;
+    }
+} 
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+    .lifetime-gallery{
+        padding: 3vw 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3.5rem;
+    }
+
+}

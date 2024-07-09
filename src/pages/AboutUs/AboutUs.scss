@@ -1,0 +1,184 @@
+.aboutus-container{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.aboutus-organization{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 3vw 5vw;
+    img{
+        justify-self: center;
+        align-self: center;
+        width: 70vw;
+        height: 40vw;
+    }
+}
+.aboutus-front{
+    background-image: url('../../assets/about-us/Background.png');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    //filter: blur(2.5px);
+    background-color: #000;
+    width: 100%;
+    height: 85rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    .aboutus-frontleft{
+        .titlepage-container{
+            h2{
+                font-family: Poppins;
+                font-weight: 700;
+                font-style: bold;
+                font-size: 3rem;
+                
+                border-left: 0.4rem solid #D8670D;
+                padding-left: 1rem;
+                color: #fff;
+            }
+        }
+        width: 50%;
+        height: 100%;
+        gap: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+
+        .aboutus-description{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-evenly;
+            height: 100%;
+            width: 60%;
+            p{
+                font-family: Poppins;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 2rem;
+                color: #fff;
+                text-align: start;
+            }
+            div{
+                display: flex;
+                flex-flow: column nowrap;
+            }
+            h1{   
+                font-family: Poppins;
+                font-weight: 700;
+                font-style: bold;
+                font-size: 8rem;
+                color: #fff;
+            }
+        }
+    }
+
+    .aboutus-frontright{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        .about-uspampapic{
+            align-self: flex-end;    
+            width: 85rem;
+            height: 60rem;
+        }
+        div{
+            padding-left: 1vw;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 1rem;
+            align-items: flex-start;
+            justify-content: flex-start;
+            div{
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 1rem;
+                
+                img{
+                    width: 5rem;
+                    height: 3.5rem;
+                }
+                h5{
+                    font-family: Poppins;
+                    font-weight: 300;
+                    font-style: bold;
+                    font-size: 2rem;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+//SMARTPHONE
+@media (min-width: 0px) and (max-width: 767px) {
+    .aboutus-front{
+        padding: 3vw 0;
+        height: auto; 
+        flex-flow: column nowrap; 
+        .aboutus-frontleft{
+            width: 90%; 
+            height: auto; 
+            align-items: flex-start;
+            .aboutus-description{   
+                width: 100%;
+                gap: 3rem;
+            }
+        }
+    
+        .aboutus-frontright{
+            width: 100%; 
+            .about-uspampapic{   
+                width: 80rem;
+                height: 55rem;
+            }
+        }
+    }
+
+    .aboutus-organization{
+        padding: 0;
+        .titlepage-container{
+            padding: 5vw;
+        }
+        img{
+            width: 100%;
+            height: 55vw;
+        }
+    }
+} 
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    
+    .aboutus-front{
+        .aboutus-frontleft{
+            align-items: flex-start;
+            padding-left: 5vw;
+        }
+
+        .aboutus-frontright{
+            .about-uspampapic{
+                align-self: flex-end;   
+                width: 70rem;
+                height: 50rem;
+            }
+        }
+
+    }   
+    .aboutus-organization{
+        img{
+            width: 100vw;
+            height: 55vw;
+        }
+    }
+} 

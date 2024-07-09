@@ -1,0 +1,274 @@
+.getermo-container{
+    background-color: #9CC2C4;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 3vw 5vw;
+
+    h2{
+        font-family: Poppins;
+        font-weight: 900;
+        font-style: bold;
+        text-align: center;
+        font-size: 7.7rem;
+        color: #fff;
+    }
+
+    p{
+        font-family: Poppins;
+        font-size: 2.3rem;
+        font-style: normal;
+        font-weight: 400;
+        color: #000;
+        text-align: justify;
+        letter-spacing: 0.2rem;
+
+        span{
+            font-style: bold;
+            font-family: Poppins;
+            font-size: 2.3rem;
+            font-style: bold;
+            font-weight: 700;
+            color: #000;
+            text-align: justify;
+            letter-spacing: 0.2rem;
+        }
+    }
+
+    .getermo-card1{
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+        padding: 3vw 4vw;
+        border-radius: 4rem;
+        overflow: hidden;
+        
+        div{
+            align-self: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        img{
+            align-self: center;
+            width: 50rem;
+            height: 49rem;
+        }
+    }
+
+    .getermo-card2{
+        background-color: #fff;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 7rem;
+        padding: 0 4vw;
+        border-radius: 4rem;
+        overflow: hidden;
+        div{
+            display: flex;
+            flex-flow: column nowrap;
+            align-self: center;
+            justify-content: center;
+            gap: 3rem;
+            width: 45%;
+        }
+        img{  
+            width: 55%;
+            height: 80rem;
+            margin-bottom: -18.5rem;
+        }
+    }
+
+    .getermo-card3{
+        background-color: #fff;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 7rem;
+        padding: 0 4vw;
+        border-radius: 4rem;
+        overflow: hidden;
+        div{
+            display: flex;
+            flex-flow: column nowrap;
+            align-self: center;
+            justify-content: center;
+            gap: 3rem;
+            width: 60%;
+        }
+        img{  
+            width: 40%;
+            height: 65rem;
+            margin-right: -16.5rem;
+            margin-bottom: -8.2rem;
+            margin-top: -8rem;
+        }
+    }
+
+    .getermo-card4{
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw 4vw 0 4vw;
+        border-radius: 4rem;
+        overflow: hidden;
+
+        div{
+            display: flex;
+            flex-flow: row nowrap;
+            align-self: center;
+            justify-content: space-between;
+            div{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 2rem;
+                width: 55%;
+            }
+            img{  
+                width: 45%;
+                height: 70rem;
+                margin-bottom: -22rem;
+                margin-left: -7.7rem;
+                margin-top: -20rem;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .getermo-container{
+        h2{
+            font-size: 7rem;
+        }
+        .getermo-card1{
+            img{
+                align-self: center;
+                width: 45rem;
+                height: 45rem;
+                margin: -2.5rem -7.5rem;
+            }
+        }
+
+        .getermo-card2{
+            flex-flow: column nowrap;
+            gap: 0;
+            padding: 3vw 4vw;
+            div{
+                width: 100%;
+            }
+            img{  
+                width: 100%;
+                height: 70rem;
+                margin: -15rem;
+                margin-bottom: -20rem;
+            }
+        }
+
+        .getermo-card3{
+            flex-flow: column nowrap;
+            justify-content: center;
+            gap: 0;
+            padding: 3vw 4vw;
+            div{
+                width: 100%;
+            }
+            img{  
+                width: 100%;
+                height: 55rem;
+                margin-top: -5rem;
+                margin-bottom: -9.5rem;
+                margin-right: -21rem;
+            }
+        }
+
+        .getermo-card4{
+            padding: 3vw 4vw;
+    
+            div{
+                padding: 3vw 0 0 0;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                div{
+                    width: 100%;
+                }
+                img{  
+                    width: 100%;
+                    height: 60rem;
+                    margin: -15rem -10rem -15rem -15.2rem;
+                }
+            }
+        }
+    }   
+} 
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    .getermo-container{
+        .getermo-card1{
+            
+            img{
+                align-self: center;
+                width: 45rem;
+                height: 45rem;
+                margin: 0 -7.5rem;
+            }
+        }
+
+        .getermo-card2{
+            div{
+                display: flex;
+                flex-flow: column nowrap;
+                align-self: center;
+                justify-content: center;
+                gap: 3rem;
+                width: 45%;
+                padding: 3vw 0;
+            }
+            img{  
+                width: 55%;
+                height: 62rem;
+                margin-bottom: -18.5rem;
+            }
+        }
+
+        .getermo-card3{
+            div{
+                padding: 3vw 0;
+            }
+            img{  
+                height: 42rem;
+                margin-top: -4rem;
+                margin-right: -9.4rem;
+                margin-bottom: -7.5rem;
+            }
+        }
+
+        .getermo-card4{
+            div{
+                img{  
+                    align-self: flex-end;
+                    margin-left: -4.5rem;
+                    width: 45%;
+                    height: 50rem;
+                    margin-bottom: -16rem;
+                    margin-top: -5rem;
+                }
+            }
+        }
+    }    
+
+}

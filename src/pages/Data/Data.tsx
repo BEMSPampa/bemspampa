@@ -1,22 +1,18 @@
 import './Data.scss';
-import pic from '../../assets/engpic.png';
 import { Link } from 'react-router-dom';
+import {listData} from '@UI/strings'
 
 const Data = () => {
-    const linkData = "https://drive.google.com/drive/folders/1HoyETMMzg0ocvCUmTVOgwyXmzgjMD4rf?usp=share_link";
-
     return (
         <div className='data-container'>
-            <div className='warning'>
-                <img src={pic}/>
-                <div>
-                    <div>
-                        <h3>Parece que a página está</h3>
-                        <h3>em desenvolvimento...</h3>
+            {listData.map(item => (
+                <Link to={item.url} target="_blank"><div className='data-item' key={item.id}>
+                    <img src={item.image} alt="" />
+                    <div className='data-item-description'>
+                        <h3>{item.name}</h3>
                     </div>
-                </div>
-                <Link to={linkData} target="_blank"><button>Acessar Dados</button></Link>
-            </div>
+                </div></Link>
+            ))}
         </div>
     )
 }

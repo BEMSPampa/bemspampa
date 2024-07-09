@@ -1,0 +1,156 @@
+@use '../../UI/animations';
+
+.ge-solarfront-container{
+    background-image: linear-gradient(to bottom, #FF741E, #FF914D);
+    height: 70rem;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas com largura igual */
+    grid-template-rows: 1fr 1fr; /* Duas linhas com altura igual */
+    grid-gap: 1rem;
+    grid-template-areas:
+        "logo name"
+        "image name";
+    padding: 10rem;
+}
+.ge-solarfront-logo{
+    position: relative;
+    top: 0%;
+    left: 2.5%;
+    z-index: 2;
+    
+    grid-area: logo;
+}
+
+.ge-solarfront-img{
+    position: relative;
+    bottom: 19%;
+    left: 0%;
+    z-index: 0;
+
+
+    //margin-top: -30rem;
+    //margin-bottom: -16rem;
+    grid-area: image;
+    width: 95rem;
+    img{
+        height: 100%;
+        width: 100%;
+        z-index: 0; 
+    }
+}
+
+.ge-solarfront-title{
+    position: relative;
+    top: -15%;
+    right: 0%;
+    z-index: 1;
+
+
+    grid-area: name;
+    z-index: 0;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap:12rem;
+    div{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    h1{
+        margin-block: 0;
+        margin-inline: 0;
+        font-family: Poppins;
+        font-weight: 900;
+        font-size: 15.8rem;
+        color: #fff;
+        text-align: center;
+        margin: -3rem;
+    }
+    h1:nth-child(2){
+        font-family: Poppins;
+        font-weight: 900;
+        font-size:20.4rem;
+        letter-spacing: 0.3rem;
+        color: #fff;
+        text-align: center;
+    }
+    button{
+        font-family: Poppins;
+        font-weight: 900;
+        font-size: 3.5rem;
+        color: #fff;
+        background-color: #FFCA7A;
+        border-radius: 5rem;
+        padding: 2rem 2.5rem;
+        cursor: pointer;
+    }button:hover{
+        @include animations.defaultHover();
+    }
+}
+
+//SMARTPHONE
+@media (min-width: 0px) and (max-width: 767px) {
+    .ge-solarfront-container{
+        grid-template-columns: 1fr; /* Duas colunas com largura igual */
+        grid-template-rows: 1fr ; /* Duas linhas com altura igual */
+        grid-template-areas:
+            "logo "
+            "image title ";
+        padding: 0;
+    }
+    .ge-solarfront-logo{
+        position: relative;
+        top: 50%;
+        left: 5%;
+        z-index: 2;
+        grid-area: logo;
+    }
+    .ge-solarfront-img{
+        left: -14%;
+        bottom: 30%;
+    }
+    .ge-solarfront-title{
+        position: relative;
+        top: -10%;
+        right: 182%;
+
+        h1, h1:nth-child(2){
+            font-size: 12rem;
+        }
+        button{
+        }
+    }
+} 
+
+//TABLET
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ge-solarfront-container{
+        grid-template-columns: 1fr; /* Duas colunas com largura igual */
+        grid-template-rows: 1fr ; /* Duas linhas com altura igual */
+        grid-template-areas:
+            "logo "
+            "image title ";
+    }
+    .ge-solarfront-logo{
+        position: relative;
+        top: -50%;
+        left: -2.5%;
+        z-index: 2;
+        grid-area: logo;
+    }
+
+    .ge-solarfront-title{
+        position: relative;
+        top: -15%;
+        right: 105%;
+
+        h1, h1:nth-child(2){
+        }
+        button{
+        }
+    }
+} 
