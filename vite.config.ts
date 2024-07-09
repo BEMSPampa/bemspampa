@@ -7,5 +7,11 @@ export default defineConfig({
 
   plugins: [react(), tsConfigPaths()],
   
-  base: "/bemspampa",
+  base: "/",
+
+  preview: {
+    host: true,
+    port: 8080
+  }
+
 })
