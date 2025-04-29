@@ -133,6 +133,8 @@ export const listData: DataType[] = [
 import UFSMArticle from '@Assets/publication/firstarticle.png';
 import SiepeArticle from '@Assets/publication/secondarticle.jpeg';
 import BemspampaImage from '@Assets/publication/bemspampa-img.png';
+import TCCImage from '@Assets/publication/tccimage.png'
+
 
 export type PublicationType = {
     id: string,
@@ -155,7 +157,12 @@ export const publicationData: PublicationType[] = [
     {id: "4", image: SiepeArticle, file: "", name: "Aplicação do Opendss no Contexto da Transição Energética pela Ótica da Engenharia de Energia", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/117460", authors: ['Autores', 'Dominnic Gomes da Silva', 'Thiago Prestes Rodrigues', 'Eduardo Ferreira Leite', 'Vinicius Amaro Ferreira da Silva', 'Thiago Quadros dos Santos', 'Enoque Dutra Garcia']},
     {id: "5", image: SiepeArticle, file: "", name: "Geração de Energia Eólica em Rio Grande na Praia do Cassino", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/117458", authors: ['Autores', 'Louise Domingues Coelho', 'Carlos Sonier Cardoso do Nascimento']},
     {id: "6", image: SiepeArticle, file: "", name: "Estudo de Implementação de um Parque Eólico na Região de Bagé/RS", url: "https://periodicos.unipampa.edu.br/index.php/SIEPE/article/view/116941", authors: ['Autores', 'Vinicius Silva', 'Vinicius Amaro Ferreira da Silva', 'Carlos Sonier Cardoso Do Nascimento']},
-    {id: "7", image: BemspampaImage, file: "/bemspampa/documentos/ebookBEMSPAMPA.pdf", name: "BEMSPampa: Balanço Energético da Metade Sul", url: "", authors: ['Autores', 'Enoque Garcia', 'Dominnic Silva', 'Caique Nunes', 'Vinicius Amaro', 'Rodrigo Buroni', 'Itiberê Filho', 'Guilherme Caneda']}
+    {id: "7", image: BemspampaImage, file: "/bemspampa/documentos/ebookBEMSPAMPA.pdf", name: "BEMSPampa: Balanço Energético da Metade Sul", url: "", authors: ['Autores', 'Enoque Garcia', 'Dominnic Silva', 'Caique Nunes', 'Vinicius Amaro', 'Rodrigo Buroni', 'Itiberê Filho', 'Guilherme Caneda']},
+    {id: "8", image: TCCImage, file: "/bemspampa/documentos/TCC_Carolina_Muniz.pdf", name:"Desenvolvimento de Atlas Energético para Microgeração Híbrida: Um Estudo na Região da Campanha", url: "", authors: ['Autores', 'Carol Muniz de Oliveira']},
+    {id: "9", image: TCCImage, file: "/bemspampa/documentos/TCC_Vinicius_Amaro.pdf", name:"Avaliação do Potencial de Geração de Energia Eólica no Rio Grande do Sul: Mapas de Calor de Velocidade do Vento e Cálculo de Potência de Turbinas", url: "", authors: ['Autores', 'Vinicius Amaro Ferreira da Silva']},
+    {id: "10", image: TCCImage, file: "/bemspampa/documentos/TCC_Thiago_Quadros.pdf", name:"Complementaridade das Fontes Eólica, Solar e Armazenamento: Estudo de Usina Híbrida na Região do Pampa", url: "", authors: ['Autores', 'Thiago Quadros dos Santos']}
+
+
 ]
 
 
