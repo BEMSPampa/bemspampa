@@ -21,8 +21,8 @@ const DropdownMenuHeader: React.FC = () => {
             </div>
         
             {isActive && <div className='dropdownheader-content'>
-                {options.map(option=> (
-                    <Link to={option.link}><div className='dropdownheader-item' key={option.name} onClick={() => {setIsActive(false);}}>
+                {options.map((option, index)=> (
+                    <Link to={option.link} key={index}><div className='dropdownheader-item' key={index} onClick={() => {setIsActive(false);}}>
                         <p>{option.name}</p>
                     </div></Link>
                 ))}

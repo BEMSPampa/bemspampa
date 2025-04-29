@@ -1,6 +1,7 @@
 import './Publication.scss'
 import { Link } from 'react-router-dom';
 import {publicationData} from '@UI/strings'
+import { Fragment } from 'react';
 const Publication = () => {
     
     const openFileAtURL = (url: string) => {
@@ -27,9 +28,9 @@ const Publication = () => {
 
             <div className='publication-right'>
                 <div className='publication-rightscroll'>
-                    {publicationData.map(publication => (
-                        <>
-                            <div className='publication-card' key={publication.id}>
+                    {publicationData.map((publication, index) => (
+                        <Fragment key={publication.id}>
+                            <div className='publication-card' key={index}>
                                 <div>
                                     <img src={publication.image} alt="" />
                                     {publication.url !=="" && 
@@ -42,13 +43,13 @@ const Publication = () => {
                                 <div>
                                     <h3>{publication.name}</h3>
                                     <div className="publication-authors">
-                                        {publication.authors.map(author => (<p>{author}</p>))}
+                                        {publication.authors.map((author, index) => (<p key={index}>{author}</p>))}
                                     </div>
                                     {publication.file !== "" && <button onClick={()=>openFileAtURL(publication.file)}>ABRIR</button>}
                                     {publication.file === "" && <button onClick={()=>openFileAtURL(publication.url)}>ABRIR</button>}
                                 </div>
                             </div>
-                        </>
+                        </Fragment>
                     ))}
                 </div>
             </div>

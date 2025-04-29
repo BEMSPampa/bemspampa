@@ -34,7 +34,7 @@ const Info = () => {
             
             <div>
                 <TitlePage name='Visão Geral'/>
-                {stringsInfo.map((item) => (<p>{item}</p>))}
+                {stringsInfo.map((item, index) => (<p key={index}>{item}</p>))}
 
                 <div className='info-about'>
                     <div>

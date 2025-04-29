@@ -1,5 +1,5 @@
 import './DashboardMenu.scss'
-
+import { Fragment } from 'react';
 import { infographicData } from '@UI/strings'
 
 const DashboardMenu = () => {
@@ -20,8 +20,8 @@ const DashboardMenu = () => {
       <h2 className='dashbaord-description'>As informações sobre a região geoenergética do BEMSPampa estão organizadas de forma sintetizada nos Infográficos (e-book).</h2>
       <div className='dashboard-container'>
         {
-          infographicData.map(item => (
-            <>
+          infographicData.map((item, index) => (
+            <Fragment key={index}>
               <div className='dashboard-item' onClick={() => openFileAtURL(item.file)} key={item.id}>
                 <div className='dashboard-item-logo'>
                   <img src={item.image} alt="" />
@@ -30,7 +30,7 @@ const DashboardMenu = () => {
                   <h3>{item.name}</h3>
                 </div>
               </div>
-            </>
+            </Fragment>
           ))
         }
       </div>
